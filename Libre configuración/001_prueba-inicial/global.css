@@ -1,0 +1,22 @@
+.header {
+    background-color: lightcyan;
+    width: 100%;
+}
+
+.header_start {
+    position: fixed;
+    left: 10px;
+}
+
+.header_end {
+    position: fixed;
+    right: 10px;
+}
+
+.searchbar {
+    position: absolute;
+    margin-right: 20%;
+    margin-left: 20%;
+    margin-top: 10%;
+    width: 80%;
+}
