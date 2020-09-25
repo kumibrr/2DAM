@@ -22,20 +22,30 @@
 
     <div class="header" role="toolbar" aria-label="">
         <div class=" header_start" role="group" aria-label="">
-            <button type="button" class="btn btn-primary">El bookas</button>
-            <button type="button" class="btn btn-primary">q</button>
-            <button type="button" class="btn btn-primary">2</button>
+            <a href="index.html">
+                <img class="logo" src="assets/logo.png">
+            </a>
+            <button type="button" class="btn btn-primary">Mis reservas</button>
         </div>
         <div class=" header_end" role="group" aria-label="">
-            <button type="button" class="btn btn-primary">3</button>
-            <button type="button" class="btn btn-primary">4</button>
+            <button type="button" class="btn btn-primary">Iniciar Sesión</button>
         </div>
     </div>
 
-    <div class="searchbar">
-        <i class="fa fa-search searchbar" aria-hidden="true">
-            <input type="search" name="location_search" id="">
-        </i>
+    <div>
+        <video autoplay muted loop id="backgroundVideo" class="spot">
+            <source src="assets/playa.mp4" type="video/mp4">
+        </video>
+        <div class="search_area">
+            <h1 class="home_title">Encuentra tu lugar de escapada perfecto.</h1>
+            <i>
+                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-search" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M10.442 10.442a1 1 0 0 1 1.415 0l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1 1 0 0 1 0-1.415z"/>
+                    <path fill-rule="evenodd" d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z"/>
+                </svg>
+                <input type="search" name="location_search" id="" />
+            </i>
+        </div>
     </div>
 </body>
 
