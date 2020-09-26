@@ -1,0 +1,53 @@
+<bookings>
+    <booking>
+        <place>
+            Hotel Las Marismas - Valencia
+        </place>
+        <booking_date>
+            02-07-2020T17:52:33
+        <booking_date>
+        <booked_date>
+            07-16-2020T12:00:00
+        </booked_date>
+        <room>
+            Premium 2 Personas + Desayuno Mediterráneo
+        </room>
+        <price>
+            475.57€
+        </price>
+    </booking>
+    <booking>
+        <place>
+            Hotelinho mentalidat du tiburon - Porto
+        </place>
+        <booking_date>
+            01-15-2019T15:12:21
+        <booking_date>
+        <booked_date>
+            07-31-2020T12:00:00
+        </booked_date>
+        <room>
+            Premium 2 Personas + Desayuno actimel + cocainha
+        </room>
+        <price>
+            905.20€
+        </price>
+    </booking>
+    <booking>
+        <place>
+            [object Object]
+        </place>
+        <booking_date>
+            02-07-2020T17:52:33
+        <booking_date>
+        <booked_date>
+            07-16-2020T12:00:00
+        </booked_date>
+        <room>
+            Deluxe 1 Cama + Desayuno
+        </room>
+        <price>
+            475.57€
+        </price>
+    </booking>
+</bookings>

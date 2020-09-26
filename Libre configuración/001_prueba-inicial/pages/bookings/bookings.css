@@ -1,0 +1,32 @@
+.header {
+    position: sticky;
+    background-color: lightcyan;
+    width: 100%;
+    height: 40px;
+    z-index: 2;
+}
+
+.header_start {
+    position: fixed;
+    left: 10px;
+    height: 32px;
+    border: none;
+}
+
+.header_end {
+    position: fixed;
+    right: 10px;
+    height: 32px;
+}
+
+table, th, td {
+    margin: auto;
+    border: solid 1px black;
+    padding: 10px;
+    text-align: center;
+}
+
+.content {
+    padding-top: 100px;
+    width: 100%;
+}

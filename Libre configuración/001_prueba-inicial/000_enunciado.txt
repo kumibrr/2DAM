@@ -1,3 +1,3 @@
 Realiza una página web donde al pulsar un botón se muestren, en forma de tabla o de otra manera que creas oportuna,
 las reservas de alojamientos que has realizado. Los datos se consiguen desde el servidor en formato XML o JSON.
-La solicitud puedes realizarla usando Ajax tradicional o la libería Fetch que vimos el curso pasado. 
+La solicitud puedes realizarla usando Ajax tradicional o la libería Fetch que vimos el curso pasado.
