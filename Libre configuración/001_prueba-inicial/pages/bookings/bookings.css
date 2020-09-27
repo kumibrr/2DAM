@@ -21,7 +21,7 @@
 
 table, th, td {
     margin: auto;
-    border: solid 1px black;
+    border: solid 1px rgb(156, 156, 156);
     padding: 10px;
     text-align: center;
 }
