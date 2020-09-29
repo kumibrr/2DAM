@@ -1,0 +1,13 @@
+C:\Users\User\git\2DAM\Desarrollo de Interfaces\001_First-project\bin\Debug\netcoreapp3.1\001_First-project.exe
+C:\Users\User\git\2DAM\Desarrollo de Interfaces\001_First-project\bin\Debug\netcoreapp3.1\001_First-project.deps.json
+C:\Users\User\git\2DAM\Desarrollo de Interfaces\001_First-project\bin\Debug\netcoreapp3.1\001_First-project.runtimeconfig.json
+C:\Users\User\git\2DAM\Desarrollo de Interfaces\001_First-project\bin\Debug\netcoreapp3.1\001_First-project.runtimeconfig.dev.json
+C:\Users\User\git\2DAM\Desarrollo de Interfaces\001_First-project\bin\Debug\netcoreapp3.1\001_First-project.dll
+C:\Users\User\git\2DAM\Desarrollo de Interfaces\001_First-project\bin\Debug\netcoreapp3.1\001_First-project.pdb
+C:\Users\User\git\2DAM\Desarrollo de Interfaces\001_First-project\obj\Debug\netcoreapp3.1\001_First-project.csprojAssemblyReference.cache
+C:\Users\User\git\2DAM\Desarrollo de Interfaces\001_First-project\obj\Debug\netcoreapp3.1\001_First-project.AssemblyInfoInputs.cache
+C:\Users\User\git\2DAM\Desarrollo de Interfaces\001_First-project\obj\Debug\netcoreapp3.1\001_First-project.AssemblyInfo.cs
+C:\Users\User\git\2DAM\Desarrollo de Interfaces\001_First-project\obj\Debug\netcoreapp3.1\001_First-project.csproj.CoreCompileInputs.cache
+C:\Users\User\git\2DAM\Desarrollo de Interfaces\001_First-project\obj\Debug\netcoreapp3.1\001_First-project.dll
+C:\Users\User\git\2DAM\Desarrollo de Interfaces\001_First-project\obj\Debug\netcoreapp3.1\001_First-project.pdb
+C:\Users\User\git\2DAM\Desarrollo de Interfaces\001_First-project\obj\Debug\netcoreapp3.1\001_First-project.genruntimeconfig.cache
