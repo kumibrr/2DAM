@@ -1,0 +1,13 @@
+C:\Users\Israel de la Barrera\git\2DAM\Desarrollo de Interfaces\002_Ejercicio-factorial\bin\Debug\netcoreapp3.1\002_Ejercicio-factorial.exe
+C:\Users\Israel de la Barrera\git\2DAM\Desarrollo de Interfaces\002_Ejercicio-factorial\bin\Debug\netcoreapp3.1\002_Ejercicio-factorial.deps.json
+C:\Users\Israel de la Barrera\git\2DAM\Desarrollo de Interfaces\002_Ejercicio-factorial\bin\Debug\netcoreapp3.1\002_Ejercicio-factorial.runtimeconfig.json
+C:\Users\Israel de la Barrera\git\2DAM\Desarrollo de Interfaces\002_Ejercicio-factorial\bin\Debug\netcoreapp3.1\002_Ejercicio-factorial.runtimeconfig.dev.json
+C:\Users\Israel de la Barrera\git\2DAM\Desarrollo de Interfaces\002_Ejercicio-factorial\bin\Debug\netcoreapp3.1\002_Ejercicio-factorial.dll
+C:\Users\Israel de la Barrera\git\2DAM\Desarrollo de Interfaces\002_Ejercicio-factorial\bin\Debug\netcoreapp3.1\002_Ejercicio-factorial.pdb
+C:\Users\Israel de la Barrera\git\2DAM\Desarrollo de Interfaces\002_Ejercicio-factorial\obj\Debug\netcoreapp3.1\002_Ejercicio-factorial.csprojAssemblyReference.cache
+C:\Users\Israel de la Barrera\git\2DAM\Desarrollo de Interfaces\002_Ejercicio-factorial\obj\Debug\netcoreapp3.1\002_Ejercicio-factorial.AssemblyInfoInputs.cache
+C:\Users\Israel de la Barrera\git\2DAM\Desarrollo de Interfaces\002_Ejercicio-factorial\obj\Debug\netcoreapp3.1\002_Ejercicio-factorial.AssemblyInfo.cs
+C:\Users\Israel de la Barrera\git\2DAM\Desarrollo de Interfaces\002_Ejercicio-factorial\obj\Debug\netcoreapp3.1\002_Ejercicio-factorial.csproj.CoreCompileInputs.cache
+C:\Users\Israel de la Barrera\git\2DAM\Desarrollo de Interfaces\002_Ejercicio-factorial\obj\Debug\netcoreapp3.1\002_Ejercicio-factorial.dll
+C:\Users\Israel de la Barrera\git\2DAM\Desarrollo de Interfaces\002_Ejercicio-factorial\obj\Debug\netcoreapp3.1\002_Ejercicio-factorial.pdb
+C:\Users\Israel de la Barrera\git\2DAM\Desarrollo de Interfaces\002_Ejercicio-factorial\obj\Debug\netcoreapp3.1\002_Ejercicio-factorial.genruntimeconfig.cache
