@@ -6,6 +6,7 @@ namespace _001_First_project
     {
         static void Main(string[] args)
         {
+            /*
             int a;
             int b;
             int c;
@@ -60,6 +61,44 @@ namespace _001_First_project
                 Console.WriteLine(a + "*" + i + "=" + (a * i));
             }
             Console.WriteLine("*****************************************************************");
+
+            */
+            /*String str = "";
+            bool loop = true;
+
+            Console.Write("Escribe la clave elegida: ");
+            do {
+                ConsoleKeyInfo a = Console.ReadKey(false);
+                if (a.KeyChar == 42) {
+                    loop = false;
+                } else {
+                    str += a.KeyChar.ToString();
+                }
+                
+            } while (loop == true);
+
+            Console.WriteLine("\n");
+            Console.WriteLine($"La clave es: \"{str}\"");*/
+            
+            int[] numbers = new int[5];
+            String[] cardinals =  new []{"primer", "segundo", "tercer", "cuarto", "quinto"};
+
+            for (int i = 0; i < numbers.Length; i++)
+            {
+                Console.WriteLine($"Introduzca el {cardinals[i]} número");
+                numbers[i] = int.Parse(Console.ReadLine());
+            }
+            
+            Console.Write("\n Al revés: {");
+            for (int i = numbers.Length - 1; i >= 0; i--)
+            {
+                Console.Write($"{numbers[i]}");
+                if (i != 0)
+                {
+                    Console.Write(", ");
+                }
+            }
+            Console.Write("}");
         }
     }
 }
