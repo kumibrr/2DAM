@@ -117,7 +117,6 @@ namespace _002_Ejercicio_factorial
 
         static void fourthExercise()
         {
-            // 90 to 65
             for (int i = 90; i >= 65; i--)
             {
                 char c = (char) i;
