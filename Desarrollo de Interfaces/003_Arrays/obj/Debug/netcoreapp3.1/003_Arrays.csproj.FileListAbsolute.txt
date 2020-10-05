@@ -1,0 +1,13 @@
+C:\Users\User\git\2DAM\Desarrollo de Interfaces\003_Arrays\bin\Debug\netcoreapp3.1\003_Arrays.exe
+C:\Users\User\git\2DAM\Desarrollo de Interfaces\003_Arrays\bin\Debug\netcoreapp3.1\003_Arrays.deps.json
+C:\Users\User\git\2DAM\Desarrollo de Interfaces\003_Arrays\bin\Debug\netcoreapp3.1\003_Arrays.runtimeconfig.json
+C:\Users\User\git\2DAM\Desarrollo de Interfaces\003_Arrays\bin\Debug\netcoreapp3.1\003_Arrays.runtimeconfig.dev.json
+C:\Users\User\git\2DAM\Desarrollo de Interfaces\003_Arrays\bin\Debug\netcoreapp3.1\003_Arrays.dll
+C:\Users\User\git\2DAM\Desarrollo de Interfaces\003_Arrays\bin\Debug\netcoreapp3.1\003_Arrays.pdb
+C:\Users\User\git\2DAM\Desarrollo de Interfaces\003_Arrays\obj\Debug\netcoreapp3.1\003_Arrays.csprojAssemblyReference.cache
+C:\Users\User\git\2DAM\Desarrollo de Interfaces\003_Arrays\obj\Debug\netcoreapp3.1\003_Arrays.AssemblyInfoInputs.cache
+C:\Users\User\git\2DAM\Desarrollo de Interfaces\003_Arrays\obj\Debug\netcoreapp3.1\003_Arrays.AssemblyInfo.cs
+C:\Users\User\git\2DAM\Desarrollo de Interfaces\003_Arrays\obj\Debug\netcoreapp3.1\003_Arrays.csproj.CoreCompileInputs.cache
+C:\Users\User\git\2DAM\Desarrollo de Interfaces\003_Arrays\obj\Debug\netcoreapp3.1\003_Arrays.dll
+C:\Users\User\git\2DAM\Desarrollo de Interfaces\003_Arrays\obj\Debug\netcoreapp3.1\003_Arrays.pdb
+C:\Users\User\git\2DAM\Desarrollo de Interfaces\003_Arrays\obj\Debug\netcoreapp3.1\003_Arrays.genruntimeconfig.cache
