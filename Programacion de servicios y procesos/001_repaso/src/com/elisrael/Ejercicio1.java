@@ -1,9 +1,10 @@
+
 package com.elisrael;
 
 import java.util.Scanner;
 
 public class Ejercicio1 {
-    static public void loopear() {
+    public static void loopear() {
         // 1. Escribir un bucle equivalente al del siguiente programa sin utilizar el operador &&.
 
         int lim = 10;
