@@ -1,0 +1,13 @@
+C:\Users\User\git\2DAM\Desarrollo de Interfaces\004_Structs\bin\Debug\netcoreapp3.1\004_Structs.exe
+C:\Users\User\git\2DAM\Desarrollo de Interfaces\004_Structs\bin\Debug\netcoreapp3.1\004_Structs.deps.json
+C:\Users\User\git\2DAM\Desarrollo de Interfaces\004_Structs\bin\Debug\netcoreapp3.1\004_Structs.runtimeconfig.json
+C:\Users\User\git\2DAM\Desarrollo de Interfaces\004_Structs\bin\Debug\netcoreapp3.1\004_Structs.runtimeconfig.dev.json
+C:\Users\User\git\2DAM\Desarrollo de Interfaces\004_Structs\bin\Debug\netcoreapp3.1\004_Structs.dll
+C:\Users\User\git\2DAM\Desarrollo de Interfaces\004_Structs\bin\Debug\netcoreapp3.1\004_Structs.pdb
+C:\Users\User\git\2DAM\Desarrollo de Interfaces\004_Structs\obj\Debug\netcoreapp3.1\004_Structs.csprojAssemblyReference.cache
+C:\Users\User\git\2DAM\Desarrollo de Interfaces\004_Structs\obj\Debug\netcoreapp3.1\004_Structs.AssemblyInfoInputs.cache
+C:\Users\User\git\2DAM\Desarrollo de Interfaces\004_Structs\obj\Debug\netcoreapp3.1\004_Structs.AssemblyInfo.cs
+C:\Users\User\git\2DAM\Desarrollo de Interfaces\004_Structs\obj\Debug\netcoreapp3.1\004_Structs.csproj.CoreCompileInputs.cache
+C:\Users\User\git\2DAM\Desarrollo de Interfaces\004_Structs\obj\Debug\netcoreapp3.1\004_Structs.dll
+C:\Users\User\git\2DAM\Desarrollo de Interfaces\004_Structs\obj\Debug\netcoreapp3.1\004_Structs.pdb
+C:\Users\User\git\2DAM\Desarrollo de Interfaces\004_Structs\obj\Debug\netcoreapp3.1\004_Structs.genruntimeconfig.cache
