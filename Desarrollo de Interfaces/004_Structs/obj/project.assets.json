@@ -8,19 +8,19 @@
     ".NETCoreApp,Version=v3.1": []
   },
   "packageFolders": {
-    "C:\\Users\\User\\.nuget\\packages\\": {}
+    "C:\\Users\\Israel de la Barrera\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\User\\git\\2DAM\\Desarrollo de Interfaces\\004_Structs\\004_Structs.csproj",
+      "projectUniqueName": "C:\\Users\\Israel de la Barrera\\git\\2DAM\\Desarrollo de Interfaces\\004_Structs\\004_Structs.csproj",
       "projectName": "004_Structs",
-      "projectPath": "C:\\Users\\User\\git\\2DAM\\Desarrollo de Interfaces\\004_Structs\\004_Structs.csproj",
-      "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\User\\git\\2DAM\\Desarrollo de Interfaces\\004_Structs\\obj\\",
+      "projectPath": "C:\\Users\\Israel de la Barrera\\git\\2DAM\\Desarrollo de Interfaces\\004_Structs\\004_Structs.csproj",
+      "packagesPath": "C:\\Users\\Israel de la Barrera\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Israel de la Barrera\\git\\2DAM\\Desarrollo de Interfaces\\004_Structs\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Israel de la Barrera\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

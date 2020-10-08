@@ -19,5 +19,9 @@ public class Main {
         System.out.println(g.secondQueue.toString());
         System.out.println("***********************************");
         System.out.println(g.thirdQueue.toString());
+        System.out.println("***********************************");
+        System.out.println(g.onInit.toString());
+        System.out.println("***********************************");
+        System.out.println(g.onExec.toString());
     }
 }

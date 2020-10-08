@@ -29,7 +29,7 @@ public class GestionColas implements Runnable {
             } while (!this.onInit.isEmpty());
         }else {
             do {
-                Thread.sleep(700);
+                Thread.sleep(3000);
                 insertInQueue(this.onExec);
             } while (!this.onExec.isEmpty());
         }
@@ -67,10 +67,13 @@ public class GestionColas implements Runnable {
                 p = thirdQueue.desenCola();
                 p.Execute();
             } else {
-                System.out.println("Fallo. Colas vacías.");
+                System.out.println("Las colas están vacías actualmente");
             }
 
-        } while (!firstQueue.esVaciaCola() || !secondQueue.esVaciaCola() || !thirdQueue.esVaciaCola());
+        } while (
+                !firstQueue.esVaciaCola() || !secondQueue.esVaciaCola() || !thirdQueue.esVaciaCola()
+                || !onInit.isEmpty() || !onExec.isEmpty()
+        );
     }
 
     @Override

@@ -26,7 +26,7 @@ namespace _004_Structs
         
         static void Main(string[] args)
         {
-            ejercicio1();
+            ejercicio2();
         }
 
         static void ejercicio1() {
@@ -68,26 +68,32 @@ namespace _004_Structs
         static void ejercicio2()
         {
             Console.WriteLine("Introduzca el número de Atletas: ");
-            int nAthletes =  Console.Read();
+            int nAthletes =  Int32.Parse(Console.ReadLine());
             athlete[] athletes = new athlete[nAthletes];
-            getAthletesData(nAthletes);
-
+            athlete maxMedals = default(athlete);
+            for (int i = 0; i < nAthletes; i++) {
+                athletes[i] = getAthletesData(i + 1);
+                if (athletes[i].medals > maxMedals.medals) {
+                    maxMedals = athletes[i];
+                }
+            }
+            Console.WriteLine($"{maxMedals.person.name}, de {maxMedals.person.country}, es quien tiene más medallas: {maxMedals.medals}");
         }
 
-        static void getAthletesData(int numberOfAthletes)
+        static athlete getAthletesData(int index)
         {
             String name, country, sport;
             int medals;
             
-            Console.WriteLine($"*************** ATLETA {numberOfAthletes} ***************");
-            Console.Write("\nIntroduzca el nombre del Atleta: ");
+            Console.WriteLine($"*************** ATLETA {index} ***************");
+            Console.WriteLine("Introduzca el nombre del Atleta: ");
             name = Console.ReadLine();
-            Console.Write("\nIntroduzca el país del Atleta: ");
+            Console.WriteLine("Introduzca el país del Atleta: ");
             country = Console.ReadLine();
-            Console.Write("\nIntroduzca el deporte del Atleta: ");
+            Console.WriteLine("Introduzca el deporte del Atleta: ");
             sport = Console.ReadLine();
-            Console.Write("\nIntroduzca el número de medallas del Atleta: ");
-            medals = Console.Read();
+            Console.WriteLine("Introduzca el número de medallas del Atleta: ");
+            medals = Int32.Parse(Console.ReadLine());
 
             return new athlete()
                 {medals = medals, person = new datos() {country = country, name = name}, sport = sport};
