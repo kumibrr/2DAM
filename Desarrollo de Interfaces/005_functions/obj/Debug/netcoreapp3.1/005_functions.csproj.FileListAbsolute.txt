@@ -1,0 +1,13 @@
+C:\Users\User\git\2DAM\Desarrollo de Interfaces\005_functions\bin\Debug\netcoreapp3.1\005_functions.exe
+C:\Users\User\git\2DAM\Desarrollo de Interfaces\005_functions\bin\Debug\netcoreapp3.1\005_functions.deps.json
+C:\Users\User\git\2DAM\Desarrollo de Interfaces\005_functions\bin\Debug\netcoreapp3.1\005_functions.runtimeconfig.json
+C:\Users\User\git\2DAM\Desarrollo de Interfaces\005_functions\bin\Debug\netcoreapp3.1\005_functions.runtimeconfig.dev.json
+C:\Users\User\git\2DAM\Desarrollo de Interfaces\005_functions\bin\Debug\netcoreapp3.1\005_functions.dll
+C:\Users\User\git\2DAM\Desarrollo de Interfaces\005_functions\bin\Debug\netcoreapp3.1\005_functions.pdb
+C:\Users\User\git\2DAM\Desarrollo de Interfaces\005_functions\obj\Debug\netcoreapp3.1\005_functions.csprojAssemblyReference.cache
+C:\Users\User\git\2DAM\Desarrollo de Interfaces\005_functions\obj\Debug\netcoreapp3.1\005_functions.AssemblyInfoInputs.cache
+C:\Users\User\git\2DAM\Desarrollo de Interfaces\005_functions\obj\Debug\netcoreapp3.1\005_functions.AssemblyInfo.cs
+C:\Users\User\git\2DAM\Desarrollo de Interfaces\005_functions\obj\Debug\netcoreapp3.1\005_functions.csproj.CoreCompileInputs.cache
+C:\Users\User\git\2DAM\Desarrollo de Interfaces\005_functions\obj\Debug\netcoreapp3.1\005_functions.dll
+C:\Users\User\git\2DAM\Desarrollo de Interfaces\005_functions\obj\Debug\netcoreapp3.1\005_functions.pdb
+C:\Users\User\git\2DAM\Desarrollo de Interfaces\005_functions\obj\Debug\netcoreapp3.1\005_functions.genruntimeconfig.cache
