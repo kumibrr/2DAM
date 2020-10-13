@@ -20,7 +20,7 @@ public class Cola {
             this.queue.add(p);
             return true;
         } else {
-            // I'd rather throw an exception, but we were told not to use them yet.
+//             I'd rather throw an exception, but we were told not to use them yet.
             return false;
         }
     }
