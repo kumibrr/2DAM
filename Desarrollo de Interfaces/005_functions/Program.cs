@@ -13,7 +13,7 @@ namespace _005_functions
             swapNumbers(ref n1, ref n2);
             Console.WriteLine($"n1 = {n1}, n2 = {n2}");
             */
-            diceProb(500000);
+            diceProb(50000);
         }
 
         private static ulong factorial(int n1) {
@@ -58,7 +58,7 @@ namespace _005_functions
 
             for (int i = 0; i < dice.Length; i++)
             {
-                int perc = dice[i] * 100 / times;
+                float perc = (float) dice[i] * 100 / times;
                 Console.WriteLine($"La cara {i + 1} ha salido {dice[i]} veces. Una probabilidad del {perc}%");
             }
         }
