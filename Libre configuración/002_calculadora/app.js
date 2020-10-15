@@ -31,6 +31,8 @@ function register(ev) {
                 inputString = '';
             } 
         });
+
+        console.log(retrievedESP);
     
         if (canPushInput) {
             inputString += ev.target.value;
@@ -44,11 +46,13 @@ function register(ev) {
            let result = calc(retrievedESP.reverse(), input.reverse());
            ac.textContent = result;
            if (result != 'ERROR') {
-            input = [];
-            inputString = result;
-            retrievedESP = [];
-           }
-           console.log(input);
+               console.log('🤡');
+                console.log(retrievedESP);
+                console.log('😅');
+                input = [];
+                inputString = result;
+                input.push(result);                
+            }
         }
     }
     
