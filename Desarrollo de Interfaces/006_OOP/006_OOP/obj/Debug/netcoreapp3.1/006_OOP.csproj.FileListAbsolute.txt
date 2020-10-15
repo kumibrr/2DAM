@@ -1,0 +1,12 @@
+/Users/israeldelabarrera/git/2DAM/Desarrollo de Interfaces/006_OOP/006_OOP/bin/Debug/netcoreapp3.1/006_OOP.deps.json
+/Users/israeldelabarrera/git/2DAM/Desarrollo de Interfaces/006_OOP/006_OOP/bin/Debug/netcoreapp3.1/006_OOP.runtimeconfig.json
+/Users/israeldelabarrera/git/2DAM/Desarrollo de Interfaces/006_OOP/006_OOP/bin/Debug/netcoreapp3.1/006_OOP.runtimeconfig.dev.json
+/Users/israeldelabarrera/git/2DAM/Desarrollo de Interfaces/006_OOP/006_OOP/bin/Debug/netcoreapp3.1/006_OOP.dll
+/Users/israeldelabarrera/git/2DAM/Desarrollo de Interfaces/006_OOP/006_OOP/bin/Debug/netcoreapp3.1/006_OOP.pdb
+/Users/israeldelabarrera/git/2DAM/Desarrollo de Interfaces/006_OOP/006_OOP/obj/Debug/netcoreapp3.1/006_OOP.csprojAssemblyReference.cache
+/Users/israeldelabarrera/git/2DAM/Desarrollo de Interfaces/006_OOP/006_OOP/obj/Debug/netcoreapp3.1/006_OOP.AssemblyInfoInputs.cache
+/Users/israeldelabarrera/git/2DAM/Desarrollo de Interfaces/006_OOP/006_OOP/obj/Debug/netcoreapp3.1/006_OOP.AssemblyInfo.cs
+/Users/israeldelabarrera/git/2DAM/Desarrollo de Interfaces/006_OOP/006_OOP/obj/Debug/netcoreapp3.1/006_OOP.csproj.CoreCompileInputs.cache
+/Users/israeldelabarrera/git/2DAM/Desarrollo de Interfaces/006_OOP/006_OOP/obj/Debug/netcoreapp3.1/006_OOP.dll
+/Users/israeldelabarrera/git/2DAM/Desarrollo de Interfaces/006_OOP/006_OOP/obj/Debug/netcoreapp3.1/006_OOP.pdb
+/Users/israeldelabarrera/git/2DAM/Desarrollo de Interfaces/006_OOP/006_OOP/obj/Debug/netcoreapp3.1/006_OOP.genruntimeconfig.cache
