@@ -2,12 +2,14 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
-import { MyComponentComponent } from './my-component/my-component.component';
+import { JokeComponent } from './components/joke/joke.component';
+import { JokeListComponent } from './components/joke-list/joke-list.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    MyComponentComponent
+    JokeComponent,
+    JokeListComponent,
   ],
   imports: [
     BrowserModule
