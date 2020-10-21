@@ -1,0 +1,12 @@
+/Users/israeldelabarrera/git/2DAM/Desarrollo de Interfaces/007_Electrodomesticos/007_Electrodomesticos/bin/Debug/netcoreapp3.1/007_Electrodomesticos.deps.json
+/Users/israeldelabarrera/git/2DAM/Desarrollo de Interfaces/007_Electrodomesticos/007_Electrodomesticos/bin/Debug/netcoreapp3.1/007_Electrodomesticos.runtimeconfig.json
+/Users/israeldelabarrera/git/2DAM/Desarrollo de Interfaces/007_Electrodomesticos/007_Electrodomesticos/bin/Debug/netcoreapp3.1/007_Electrodomesticos.runtimeconfig.dev.json
+/Users/israeldelabarrera/git/2DAM/Desarrollo de Interfaces/007_Electrodomesticos/007_Electrodomesticos/bin/Debug/netcoreapp3.1/007_Electrodomesticos.dll
+/Users/israeldelabarrera/git/2DAM/Desarrollo de Interfaces/007_Electrodomesticos/007_Electrodomesticos/bin/Debug/netcoreapp3.1/007_Electrodomesticos.pdb
+/Users/israeldelabarrera/git/2DAM/Desarrollo de Interfaces/007_Electrodomesticos/007_Electrodomesticos/obj/Debug/netcoreapp3.1/007_Electrodomesticos.csprojAssemblyReference.cache
+/Users/israeldelabarrera/git/2DAM/Desarrollo de Interfaces/007_Electrodomesticos/007_Electrodomesticos/obj/Debug/netcoreapp3.1/007_Electrodomesticos.AssemblyInfoInputs.cache
+/Users/israeldelabarrera/git/2DAM/Desarrollo de Interfaces/007_Electrodomesticos/007_Electrodomesticos/obj/Debug/netcoreapp3.1/007_Electrodomesticos.AssemblyInfo.cs
+/Users/israeldelabarrera/git/2DAM/Desarrollo de Interfaces/007_Electrodomesticos/007_Electrodomesticos/obj/Debug/netcoreapp3.1/007_Electrodomesticos.csproj.CoreCompileInputs.cache
+/Users/israeldelabarrera/git/2DAM/Desarrollo de Interfaces/007_Electrodomesticos/007_Electrodomesticos/obj/Debug/netcoreapp3.1/007_Electrodomesticos.dll
+/Users/israeldelabarrera/git/2DAM/Desarrollo de Interfaces/007_Electrodomesticos/007_Electrodomesticos/obj/Debug/netcoreapp3.1/007_Electrodomesticos.pdb
+/Users/israeldelabarrera/git/2DAM/Desarrollo de Interfaces/007_Electrodomesticos/007_Electrodomesticos/obj/Debug/netcoreapp3.1/007_Electrodomesticos.genruntimeconfig.cache

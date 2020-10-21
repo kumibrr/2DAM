@@ -1,0 +1,25 @@
+﻿<Properties StartupConfiguration="{D94A7CFA-54A6-4958-B756-B71B300950B4}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="007_Electrodomesticos/Program.cs">
+    <Files>
+      <File FileName="007_Electrodomesticos/Program.cs" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="007_Electrodomesticos" expanded="True">
+            <Node name="007_Electrodomesticos" expanded="True">
+              <Node name="Program.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.007__Electrodomesticos FirstBuild="True" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
