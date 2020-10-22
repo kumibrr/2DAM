@@ -1,6 +1,6 @@
 namespace _007_Electrodomesticos
 {
-    public class Appliance
+    public abstract class Appliance
     {
         protected double basePrice = 100.00;
         protected char powerEfficiency = 'F';
@@ -20,39 +20,39 @@ namespace _007_Electrodomesticos
         {
             this.basePrice = price;
             this.weight = weight;
-            this.powerEfficiency = comprobarConsumoEnergetico(powerEfficiency);
+            this.powerEfficiency = ComprobarConsumoEnergetico(powerEfficiency);
             this.color = color;
-            precioFinal();
+            PrecioFinal();
         }
 
-        public double getPrice() 
+        public double GetPrice() 
         {
             return basePrice;
         }
 
-        public char getPowerEfficiency()
+        public char GetPowerEfficiency()
         {
             return powerEfficiency;
         }
 
-        public double getWeight() 
+        public double GetWeight() 
         {
             return weight;
         }
 
-        public Color getColor() 
+        public Color GetColor() 
         {
             return color;
         }
 
-        private char comprobarConsumoEnergetico(char letra)
+        private char ComprobarConsumoEnergetico(char letra)
         {
             char r = letra < 'F' ? letra : 'F';
             return r;
         }
         
         // El método "ComprobarColor no es necesario al haber hecho uso de un enum para identificar el color."
-        public double precioFinal()
+        public double PrecioFinal()
         {
             double r = basePrice;
             switch (powerEfficiency)
