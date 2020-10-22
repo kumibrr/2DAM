@@ -24,7 +24,7 @@ namespace _007_Electrodomesticos
             return load;
         }
 
-        public double PrecioFinal()
+        public new double PrecioFinal()
         {
             double r = base.PrecioFinal();
 
