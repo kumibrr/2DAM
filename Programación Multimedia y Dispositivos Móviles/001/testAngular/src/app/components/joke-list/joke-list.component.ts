@@ -1,3 +1,4 @@
+import { JokeService } from './../../services/joke.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,12 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class JokeListComponent implements OnInit {
 
-  constructor() { }
+  constructor(private jokeService: JokeService) { }
 
   public jokes = [1,1,1,1,1];
 
   ngOnInit(): void {
-
+    this.jokeService.getJokes().then((r) => {
+      console.log(r);
+    })
   }
 
 }

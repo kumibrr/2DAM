@@ -1,3 +1,4 @@
+import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 
 @Injectable({
@@ -5,7 +6,16 @@ import { Injectable } from '@angular/core';
 })
 export class JokeService {
 
-  constructor(private http: XMLHttpRequest) {}
+  constructor(private http: HttpClient) {}
+
+  getJokes() {
+    return new Promise((resolve, reject) => {
+      this.http.post('./assets/jokes.json', {})
+      .subscribe(data => {
+        resolve(data);
+      })
+    });
+  }
 
 
 }
