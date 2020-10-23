@@ -18,7 +18,7 @@ public class PeopleDAO {
         data.put(p, p);
 
         p = new Passenger(
-                "31509322F",
+                "31509234F",
                 Country.SPAIN,
                 ShipArea.BOW,
                 "Pablo Pérez",
@@ -28,7 +28,7 @@ public class PeopleDAO {
         );
 
         p = new Passenger(
-                "31509322F",
+                "32409322F",
                 Country.SPAIN,
                 ShipArea.BOW,
                 "Pipo ",
@@ -38,7 +38,7 @@ public class PeopleDAO {
         );
 
         p = new Passenger(
-                "31509322F",
+                "31319322F",
                 Country.SPAIN,
                 ShipArea.BOW,
                 "Pep Sánchez",
@@ -48,7 +48,7 @@ public class PeopleDAO {
         );
 
         p = new Passenger(
-                "31509322F",
+                "31578522F",
                 Country.SPAIN,
                 ShipArea.BOW,
                 "Pep Sánchez",
@@ -58,7 +58,7 @@ public class PeopleDAO {
         );
 
         p = new Passenger(
-                "31509322F",
+                "31554522F",
                 Country.SPAIN,
                 ShipArea.BOW,
                 "Pep Sánchez",
@@ -68,7 +68,7 @@ public class PeopleDAO {
         );
 
         p = new Passenger(
-                "31509322F",
+                "31509578F",
                 Country.SPAIN,
                 ShipArea.BOW,
                 "Pep Sánchez",
@@ -78,7 +78,7 @@ public class PeopleDAO {
         );
 
         p = new Passenger(
-                "31509322F",
+                "31340022F",
                 Country.SPAIN,
                 ShipArea.BOW,
                 "Pep Sánchez",
@@ -88,7 +88,7 @@ public class PeopleDAO {
         );
 
         p = new Passenger(
-                "31509322F",
+                "41509322F",
                 Country.SPAIN,
                 ShipArea.BOW,
                 "Pep Sánchez",
@@ -98,7 +98,7 @@ public class PeopleDAO {
         );
 
         p = new Passenger(
-                "31509322F",
+                "51509322F",
                 Country.SPAIN,
                 ShipArea.BOW,
                 "Pep Sánchez",
@@ -108,7 +108,7 @@ public class PeopleDAO {
         );
 
         p = new Passenger(
-                "31509322F",
+                "61509322F",
                 Country.SPAIN,
                 ShipArea.BOW,
                 "Pep Sánchez",
@@ -118,7 +118,7 @@ public class PeopleDAO {
         );
 
         p = new Passenger(
-                "31509322F",
+                "71509322F",
                 Country.SPAIN,
                 ShipArea.BOW,
                 "Pep Sánchez",
@@ -128,7 +128,7 @@ public class PeopleDAO {
         );
 
         p = new Passenger(
-                "31509322F",
+                "81509322F",
                 Country.SPAIN,
                 ShipArea.BOW,
                 "Pep Sánchez",
@@ -138,7 +138,7 @@ public class PeopleDAO {
         );
 
         p = new Passenger(
-                "31509322F",
+                "91509322F",
                 Country.SPAIN,
                 ShipArea.BOW,
                 "Pep Sánchez",
@@ -148,7 +148,7 @@ public class PeopleDAO {
         );
 
         p = new Passenger(
-                "31509322F",
+                "11509322F",
                 Country.SPAIN,
                 ShipArea.BOW,
                 "Pep Sánchez",
@@ -158,7 +158,7 @@ public class PeopleDAO {
         );
 
         p = new Passenger(
-                "31509322F",
+                "21509322F",
                 Country.SPAIN,
                 ShipArea.BOW,
                 "Pep Sánchez",
@@ -168,7 +168,7 @@ public class PeopleDAO {
         );
 
         p = new CrewMember(
-                "31509322F",
+                "30509322F",
                 Country.SPAIN,
                 ShipArea.BOW,
                 "Pep Sánchez",
@@ -177,7 +177,7 @@ public class PeopleDAO {
         );
 
         p = new CrewMember(
-                "31509322F",
+                "32509322F",
                 Country.SPAIN,
                 ShipArea.BOW,
                 "Pep Sánchez",
@@ -186,7 +186,7 @@ public class PeopleDAO {
         );
 
         p = new CrewMember(
-                "31509322F",
+                "33509322F",
                 Country.SPAIN,
                 ShipArea.BOW,
                 "Pep Sánchez",
@@ -195,7 +195,7 @@ public class PeopleDAO {
         );
 
         p = new CrewMember(
-                "31509322F",
+                "34509322F",
                 Country.SPAIN,
                 ShipArea.BOW,
                 "Pep Sánchez",
@@ -204,7 +204,7 @@ public class PeopleDAO {
         );
 
         p = new CrewMember(
-                "31509322F",
+                "35509322F",
                 Country.SPAIN,
                 ShipArea.BOW,
                 "Pep Sánchez",
@@ -213,7 +213,7 @@ public class PeopleDAO {
         );
 
         p = new CrewMember(
-                "31509322F",
+                "36509322F",
                 Country.SPAIN,
                 ShipArea.BOW,
                 "Pep Sánchez",
@@ -222,7 +222,7 @@ public class PeopleDAO {
         );
 
         p = new CrewMember(
-                "31509322F",
+                "37509322F",
                 Country.SPAIN,
                 ShipArea.BOW,
                 "Pep Sánchez",

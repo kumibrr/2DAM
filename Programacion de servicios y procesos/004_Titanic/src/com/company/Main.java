@@ -1,8 +1,12 @@
 package com.company;
 
+import java.util.TreeMap;
+
 public class Main {
 
     public static void main(String[] args) {
-	// write your code here
+        TreeMap<Integer, Boat> b = BoatDAO.getBoats();
+
+	    System.out.println();
     }
 }

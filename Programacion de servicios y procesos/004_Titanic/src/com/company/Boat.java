@@ -12,4 +12,7 @@ public class Boat {
         this.location = location;
     }
 
+    public int getId() {
+        return id;
+    }
 }

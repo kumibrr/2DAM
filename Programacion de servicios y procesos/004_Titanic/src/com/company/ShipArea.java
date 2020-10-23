@@ -8,7 +8,7 @@ public enum ShipArea {
     STARBOARD(5, 9),
     PORT(1, 6);
 
-    private ArrayList<Integer> stairs;
+    private ArrayList<Integer> stairs = new ArrayList<Integer>();
 
     private ShipArea(Integer ...numberOfStairs) {
         for (Integer stairs: numberOfStairs) {
