@@ -14,7 +14,7 @@
         "outputPath": "/Users/israeldelabarrera/git/2DAM/Desarrollo de Interfaces/007_Electrodomesticos/007_Electrodomesticos/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/israeldelabarrera/.nuget/NuGet/NuGet.Config"
+          "/Users/israeldelabarrera/.config/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"

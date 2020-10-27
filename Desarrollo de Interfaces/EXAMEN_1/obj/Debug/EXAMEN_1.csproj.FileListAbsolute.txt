@@ -1,0 +1,6 @@
+/Users/israeldelabarrera/git/2DAM/Desarrollo de Interfaces/EXAMEN_1/bin/Debug/EXAMEN_1.exe
+/Users/israeldelabarrera/git/2DAM/Desarrollo de Interfaces/EXAMEN_1/bin/Debug/EXAMEN_1.pdb
+/Users/israeldelabarrera/git/2DAM/Desarrollo de Interfaces/EXAMEN_1/obj/Debug/EXAMEN_1.csprojAssemblyReference.cache
+/Users/israeldelabarrera/git/2DAM/Desarrollo de Interfaces/EXAMEN_1/obj/Debug/EXAMEN_1.csproj.CoreCompileInputs.cache
+/Users/israeldelabarrera/git/2DAM/Desarrollo de Interfaces/EXAMEN_1/obj/Debug/EXAMEN_1.exe
+/Users/israeldelabarrera/git/2DAM/Desarrollo de Interfaces/EXAMEN_1/obj/Debug/EXAMEN_1.pdb
