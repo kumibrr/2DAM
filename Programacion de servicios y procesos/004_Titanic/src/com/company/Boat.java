@@ -15,4 +15,8 @@ public class Boat {
     public int getId() {
         return id;
     }
+
+    public String toString() {
+        return "\tcapacidad: " + capacity + "\tLugar: " + location;
+    }
 }

@@ -1,12 +1,13 @@
 package com.company;
 
+import java.util.Map;
 import java.util.TreeMap;
 
 public class Main {
 
     public static void main(String[] args) {
-        TreeMap<Integer, Boat> b = BoatDAO.getBoats();
+        TitanicManagement m = new TitanicManagement();
 
-	    System.out.println();
+        m.Callout();
     }
 }

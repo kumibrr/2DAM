@@ -21,214 +21,215 @@ public class PeopleDAO {
                 "31509234F",
                 Country.SPAIN,
                 ShipArea.BOW,
-                "Pablo Pérez",
-                22, 12,1933,
-                3,
+                "Álvaro el xabo",
+                22, 12,1938,
+                7,
                 true
         );
-
+        data.put(p, p);
         p = new Passenger(
                 "32409322F",
                 Country.SPAIN,
                 ShipArea.BOW,
-                "Pipo ",
-                22, 12,1933,
-                3,
+                "Pipo Ventura",
+                22, 12,1976,
+                10,
                 true
         );
-
+        data.put(p, p);
         p = new Passenger(
                 "31319322F",
                 Country.SPAIN,
                 ShipArea.BOW,
-                "Pep Sánchez",
-                22, 12,1933,
-                3,
+                "Bárbara Kzachovste",
+                22, 12,1987,
+                7,
                 true
         );
-
+        data.put(p, p);
         p = new Passenger(
                 "31578522F",
-                Country.SPAIN,
-                ShipArea.BOW,
-                "Pep Sánchez",
-                22, 12,1933,
-                3,
+                Country.FRANCE,
+                ShipArea.STERN,
+                "Pablo Rivas",
+                22, 12,1945,
+                7,
                 true
         );
-
+        data.put(p, p);
         p = new Passenger(
                 "31554522F",
-                Country.SPAIN,
-                ShipArea.BOW,
+                Country.FRANCE,
+                ShipArea.STERN,
                 "Pep Sánchez",
-                22, 12,1933,
-                3,
+                22, 12,1977,
+                7,
                 true
         );
-
+        data.put(p, p);
         p = new Passenger(
                 "31509578F",
-                Country.SPAIN,
+                Country.ITALY,
                 ShipArea.BOW,
                 "Pep Sánchez",
-                22, 12,1933,
-                3,
+                22, 12,1987,
+                7,
                 true
         );
-
+        data.put(p, p);
         p = new Passenger(
                 "31340022F",
-                Country.SPAIN,
-                ShipArea.BOW,
+                Country.ITALY,
+                ShipArea.STERN,
                 "Pep Sánchez",
-                22, 12,1933,
-                3,
+                22, 12,1996,
+                2,
                 true
         );
-
+        data.put(p, p);
         p = new Passenger(
                 "41509322F",
                 Country.SPAIN,
                 ShipArea.BOW,
                 "Pep Sánchez",
-                22, 12,1933,
-                3,
+                22, 12,2014,
+                2,
                 true
         );
-
+        data.put(p, p);
         p = new Passenger(
                 "51509322F",
                 Country.SPAIN,
-                ShipArea.BOW,
+                ShipArea.PORT,
                 "Pep Sánchez",
-                22, 12,1933,
-                3,
+                22, 12,2008,
+                2,
                 true
         );
-
+        data.put(p, p);
         p = new Passenger(
                 "61509322F",
                 Country.SPAIN,
-                ShipArea.BOW,
+                ShipArea.PORT,
                 "Pep Sánchez",
-                22, 12,1933,
-                3,
+                22, 12,2014,
+                2,
                 true
         );
-
+        data.put(p, p);
         p = new Passenger(
                 "71509322F",
                 Country.SPAIN,
-                ShipArea.BOW,
+                ShipArea.PORT,
                 "Pep Sánchez",
-                22, 12,1933,
-                3,
+                22, 12,2003,
+                2,
                 true
         );
-
+        data.put(p, p);
         p = new Passenger(
                 "81509322F",
-                Country.SPAIN,
-                ShipArea.BOW,
+                Country.ENGLAND,
+                ShipArea.STARBOARD,
                 "Pep Sánchez",
-                22, 12,1933,
-                3,
+                22, 12,2015,
+                5,
                 true
         );
-
+        data.put(p, p);
         p = new Passenger(
                 "91509322F",
-                Country.SPAIN,
-                ShipArea.BOW,
+                Country.ENGLAND,
+                ShipArea.STARBOARD,
                 "Pep Sánchez",
-                22, 12,1933,
-                3,
+                22, 12,1968,
+                5,
                 true
         );
-
+        data.put(p, p);
         p = new Passenger(
                 "11509322F",
                 Country.SPAIN,
-                ShipArea.BOW,
+                ShipArea.STARBOARD,
                 "Pep Sánchez",
-                22, 12,1933,
-                3,
+                22, 12,1968,
+                1,
                 true
         );
-
+        data.put(p, p);
         p = new Passenger(
                 "21509322F",
-                Country.SPAIN,
-                ShipArea.BOW,
+                Country.GREECE,
+                ShipArea.STARBOARD,
                 "Pep Sánchez",
-                22, 12,1933,
-                3,
+                22, 12,1985,
+                1,
                 true
         );
-
+        data.put(p, p);
         p = new CrewMember(
                 "30509322F",
                 Country.SPAIN,
-                ShipArea.BOW,
+                ShipArea.PORT,
                 "Pep Sánchez",
-                22, 12,1933,
+                22, 12,1986,
                 CrewResponsability.HIGH
         );
-
+        data.put(p, p);
         p = new CrewMember(
                 "32509322F",
-                Country.SPAIN,
-                ShipArea.BOW,
+                Country.GREECE,
+                ShipArea.PORT,
                 "Pep Sánchez",
-                22, 12,1933,
+                22, 12,1934,
                 CrewResponsability.LOW
         );
-
+        data.put(p, p);
         p = new CrewMember(
                 "33509322F",
                 Country.SPAIN,
                 ShipArea.BOW,
                 "Pep Sánchez",
-                22, 12,1933,
+                22, 12,1945,
                 CrewResponsability.MEDIUM
         );
-
+        data.put(p, p);
         p = new CrewMember(
                 "34509322F",
                 Country.SPAIN,
                 ShipArea.BOW,
                 "Pep Sánchez",
-                22, 12,1933,
+                22, 12,1976,
                 CrewResponsability.MAX
         );
-
+        data.put(p, p);
         p = new CrewMember(
                 "35509322F",
                 Country.SPAIN,
-                ShipArea.BOW,
+                ShipArea.STERN,
                 "Pep Sánchez",
-                22, 12,1933,
+                22, 12,2009,
                 CrewResponsability.VERY_HIGH
         );
-
+        data.put(p, p);
         p = new CrewMember(
                 "36509322F",
                 Country.SPAIN,
                 ShipArea.BOW,
                 "Pep Sánchez",
-                22, 12,1933,
+                22, 12,1992,
                 CrewResponsability.HIGH
         );
-
+        data.put(p, p);
         p = new CrewMember(
                 "37509322F",
                 Country.SPAIN,
                 ShipArea.BOW,
                 "Pep Sánchez",
-                22, 12,1933,
+                22, 12,1975,
                 CrewResponsability.HIGH
         );
+        data.put(p, p);
 
         return new TreeMap<Person, Person>();
     }

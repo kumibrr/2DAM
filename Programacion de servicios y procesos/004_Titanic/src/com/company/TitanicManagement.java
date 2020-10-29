@@ -1,6 +1,9 @@
 package com.company;
 
+import com.sun.tools.jconsole.JConsoleContext;
+
 import java.util.Map;
+import java.util.TreeMap;
 
 public class TitanicManagement {
     private Map<Person, Person> peopleMap;
@@ -11,8 +14,11 @@ public class TitanicManagement {
         peopleMap = PeopleDAO.getData();
     }
 
-    public void printShit() {
-        peopleMap.toString();
+    public void Callout() {
+        System.out.println(boatsMap.toString());
+        for (Map.Entry<Person, Person> p: peopleMap.entrySet()) {
+            System.out.println(p.getValue().toString());
+        }
     }
 
 }

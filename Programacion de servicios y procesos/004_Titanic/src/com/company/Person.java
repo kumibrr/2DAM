@@ -1,9 +1,8 @@
 package com.company;
 
 import java.time.LocalDate;
-import java.util.Objects;
 
-public abstract class Person {
+public abstract class Person implements Comparable<Person> {
     private String dni;
     private Country country;
     private ShipArea shipArea;
@@ -30,11 +29,6 @@ public abstract class Person {
     }
 
     @Override
-    public int hashCode() {
-        return Objects.hash(dni);
-    }
-
-    @Override
     public String toString() {
         return "Person{" +
                 "dni='" + dni + '\'' +
@@ -43,5 +37,10 @@ public abstract class Person {
                 ", name='" + name + '\'' +
                 ", birthDate=" + birthDate +
                 '}';
+    }
+
+    @Override
+    public int compareTo(Person o) {
+        return ;
     }
 }
