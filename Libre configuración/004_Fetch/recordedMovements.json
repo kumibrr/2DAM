@@ -1,0 +1,17 @@
+[
+    {
+        "date": "2020-09-30",
+        "concept": "Comida",
+        "quantity": 45.43
+    },
+    {
+        "date": "2020-10-09",
+        "concept": "Cerveza",
+        "quantity": 68.43
+    }, 
+    {
+        "date": "2020-10-25",
+        "concept": "Más cerveza",
+        "quantity": 14.90
+    }
+]
