@@ -11,40 +11,16 @@
     <title>Banco completamente legit</title>
 </head>
 <body>
-
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-        <a class="navbar-brand" href="index.html">Mi banco</a>
-        <button class="navbar-toggler" data-target="#my-nav" data-toggle="collapse" aria-controls="my-nav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div id="my-nav" class="collapse navbar-collapse">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Ver movimientos <span class="sr-only">(current)</span></a>
-                </li>
-            </ul>
-        </div>
-    </nav>
     <div class="container-sm">
-        <button class="btn btn-success" type="button">Ver movimientos</button>
+        <h2 class="title">Mi banco</h2>
+        <button class="btn btn-success getMovements" type="button">
+            <span class="spinner-border spinner-border-sm loadMovements" role="status" aria-hidden="true" hidden></span>
+            Ver movimientos
+        </button>
         <br>
-        <table class="table table-light myTable">
-            <thead class="thead-light">
-                <tr>
-                    <th>Fecha</th>
-                    <th>Concepto</th>
-                    <th class="endRow">Importe</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Ejemplo</td>
-                    <td>Nombre ejemplo</td>
-                    <td class="endRow">0.00€</td>
-                </tr>
-            </tbody>
-            
-        </table>
+        <div class="movementTable">
+
+        </div>
     </div>
 </body>
 </html>
