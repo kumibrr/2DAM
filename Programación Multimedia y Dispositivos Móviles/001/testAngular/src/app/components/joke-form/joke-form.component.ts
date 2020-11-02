@@ -1,4 +1,4 @@
-import { Component, EventEmitter, OnInit, Output } from '@angular/core';
+import { Component, ElementRef, EventEmitter, OnInit, Output, ViewChild } from '@angular/core';
 import { Joke } from 'src/app/class/joke';
 
 @Component({
@@ -9,14 +9,24 @@ import { Joke } from 'src/app/class/joke';
 export class JokeFormComponent implements OnInit {
 
   @Output() jokeToCreate = new EventEmitter<Joke>();
+  
+  @ViewChild('question') question: ElementRef;
+  @ViewChild('punchline') punchline: ElementRef;
+
 
   constructor() {}
 
   ngOnInit(): void {
   }
 
-  sendSubmitJokeEv(question, punchline) {
-    this.jokeToCreate.emit(new Joke(question, punchline));
+  clearTextInputs() {
+    this.question.nativeElement.value = '';
+    this.punchline.nativeElement.value = '';
+  }
+
+  sendSubmitJokeEv() {
+    this.jokeToCreate.emit(new Joke(this.question.nativeElement.value, this.punchline.nativeElement.value, null));
+    this.clearTextInputs();
   }
 
 }

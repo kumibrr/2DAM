@@ -22,8 +22,6 @@ export class JokeComponent implements OnInit {
   }
 
   sendDeleteJokeEv(ev) {
-    // En un real-case-scenario importaría el servicio y llamaría a la función para borrar
-    // la broma directamente en Firebase, ya que obtiene los datos de forma dinámica.
     this.jokeToDelete.emit(this.joke);
   }
 

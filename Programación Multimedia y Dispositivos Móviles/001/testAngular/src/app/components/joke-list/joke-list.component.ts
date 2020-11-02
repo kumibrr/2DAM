@@ -9,25 +9,26 @@ import { Joke } from 'src/app/class/joke';
 })
 export class JokeListComponent implements OnInit {
 
-  public jokes: Joke[] = [new Joke('que malo el brii', 'en el lolito mis muertos')];
+  public jokes: Joke[] = [];
 
   constructor(private jokeService: JokeService) { }
 
   ngOnInit(): void {
-    // this.jokeService.getJokes()
-    // .subscribe(rawJoke => {
-    //   rawJoke.map((joke: any) => {
-    //     this.jokes.push(new Joke(joke.question, joke.punchline));
-    //   });
-    // });
+    this.jokeService.getJokes()
+    .subscribe(rawJokes => {
+      this.jokes = rawJokes.map<Joke>((rawJoke: any) => new Joke(rawJoke.question, rawJoke.punchline, rawJoke.creationDate));
+    });
   }
 
-  deleteJoke() {
-    
+  createJoke(jokeCapturedFromEv) {
+    this.jokeService.submitJoke(jokeCapturedFromEv);
   }
 
-  createJoke() {
-    
+  deleteJoke(jokeCapturedFromEv) {
+    // console.log(jokeCapturedFromEv);
+    this.jokeService.deleteJoke(jokeCapturedFromEv);
   }
+
+
 
 }
