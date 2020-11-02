@@ -1,0 +1,15 @@
+<div class="joke-container">
+    <div class="card">
+        <div class="card-body">
+            <h1>Submit your own pun!</h1>
+            <br>
+            <div class="form-group">
+                <input #question class="form-control" type="text" placeholder="Question...">
+            </div>
+            <div class="form-group">
+                <input #punchline class="form-control" type="text" placeholder="Punchline...">
+            </div>
+            <button class="btn btn-primary" type="button" (click)="sendSubmitJokeEv(question.value, punchline.value)">Add Joke</button>
+        </div>
+    </div>
+</div>

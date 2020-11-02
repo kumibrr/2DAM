@@ -1,1 +1,2 @@
-<app-joke *ngFor="let joke of jokes"></app-joke>
+<app-joke-form (jokeToCreate)="createJoke()"></app-joke-form>
+<app-joke *ngFor="let joke of jokes" [joke]="joke" (jokeToDelete)="deleteJoke()"></app-joke>

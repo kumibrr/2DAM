@@ -1,21 +1,15 @@
-import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { AngularFirestore } from '@angular/fire/firestore';
 
 @Injectable({
   providedIn: 'root'
 })
 export class JokeService {
 
-  constructor(private http: HttpClient) {}
+  constructor(private firestore: AngularFirestore) {}
 
   getJokes() {
-    return new Promise((resolve, reject) => {
-      this.http.post('./assets/jokes.json', {})
-      .subscribe(data => {
-        resolve(data);
-      })
-    });
+    return this.firestore.collection("jokes").valueChanges();
   }
-
 
 }

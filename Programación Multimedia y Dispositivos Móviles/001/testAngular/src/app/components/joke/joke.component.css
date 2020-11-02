@@ -1,0 +1,18 @@
+.joke-container {
+    margin-top: 35px;
+}
+.card {
+    margin: auto;
+    max-width: 750px;
+    width: 90%;
+
+}
+
+.card-text {
+    margin-top: 5px;
+}
+
+.close {
+    position: absolute;
+    left: 96%;
+}
