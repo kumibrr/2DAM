@@ -1,0 +1,4 @@
+<div class="btn-container">
+    <button (click)="bool = !bool">Mostrar/Ocultar</button>
+</div>
+<app-child-component [hidden]="bool" *ngFor="let a of arr"></app-child-component>
