@@ -16,7 +16,7 @@ public class Window extends JFrame implements ActionListener {
         this.getContentPane().add(panel);
         setTitle("Colores");
         setVisible(true);
-        
+
         setButtons();
         addButtonsToPanel(btnBlack, btnGreen, btnCyan);
 
