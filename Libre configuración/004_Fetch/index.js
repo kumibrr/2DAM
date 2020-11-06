@@ -55,7 +55,7 @@ function renderDataHTML() {
         tr.appendChild(td);
         td = document.createElement('td')
         td.classList.add('endRow');
-        td.textContent = element.quantity;
+        td.textContent = element.quantity + "€";
         tr.appendChild(td);
         
         table.appendChild(tr);
