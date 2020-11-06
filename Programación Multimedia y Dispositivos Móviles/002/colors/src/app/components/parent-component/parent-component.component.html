@@ -1,2 +1,5 @@
 <button (click)="cicleColor()">Change child color</button>
+<button (click)="this.colorsCurrentIndex = 0"> Rojo</button>
+<button (click)="this.colorsCurrentIndex = 1"> Verde</button>
+<button (click)="this.colorsCurrentIndex = 2"> Azul</button>
 <app-child-component [color]="this.colors[colorsCurrentIndex]"></app-child-component>
