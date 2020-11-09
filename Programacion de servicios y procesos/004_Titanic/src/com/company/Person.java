@@ -3,11 +3,11 @@ package com.company;
 import java.time.LocalDate;
 
 public abstract class Person implements Comparable<Person> {
-    private String dni;
-    private Country country;
-    private ShipArea shipArea;
-    private String name;
-    private LocalDate birthDate;
+    private final String dni;
+    private final Country country;
+    private final ShipArea shipArea;
+    private final String name;
+    private final LocalDate birthDate;
 
     public Person(
             String dni, Country country, ShipArea shipArea, String name, int birthDay, int birthMonth,
@@ -41,6 +41,6 @@ public abstract class Person implements Comparable<Person> {
 
     @Override
     public int compareTo(Person o) {
-        return ;
+        return dni.compareTo(o.dni);
     }
 }

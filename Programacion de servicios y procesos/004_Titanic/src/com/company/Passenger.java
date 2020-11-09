@@ -13,6 +13,4 @@ public class Passenger extends Person {
         this.cabinNumber = cabinNumber;
         this.hasDisability = hasDisability;
     }
-
-
 }

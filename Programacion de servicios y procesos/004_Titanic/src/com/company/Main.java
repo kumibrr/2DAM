@@ -6,8 +6,8 @@ import java.util.TreeMap;
 public class Main {
 
     public static void main(String[] args) {
-        TitanicManagement m = new TitanicManagement();
+        TitanicManagement management = new TitanicManagement();
 
-        m.Callout();
+        System.out.println(management.peopleMap.values());
     }
 }

@@ -5,7 +5,7 @@ import java.util.TreeMap;
 public class PeopleDAO {
 
     public static TreeMap<Person, Person> getData() {
-        TreeMap<Person, Person> data = new TreeMap<Person, Person>();
+        TreeMap<Person, Person> data = new TreeMap<>();
         Person p = new Passenger(
                 "31509322F",
                 Country.SPAIN,
@@ -13,7 +13,7 @@ public class PeopleDAO {
                 "Pep Sánchez",
                 22, 12,1933,
                 3,
-                true
+                false
         );
         data.put(p, p);
 
@@ -34,7 +34,7 @@ public class PeopleDAO {
                 "Pipo Ventura",
                 22, 12,1976,
                 10,
-                true
+                false
         );
         data.put(p, p);
         p = new Passenger(
@@ -44,7 +44,7 @@ public class PeopleDAO {
                 "Bárbara Kzachovste",
                 22, 12,1987,
                 7,
-                true
+                false
         );
         data.put(p, p);
         p = new Passenger(
@@ -54,7 +54,7 @@ public class PeopleDAO {
                 "Pablo Rivas",
                 22, 12,1945,
                 7,
-                true
+                false
         );
         data.put(p, p);
         p = new Passenger(
@@ -64,7 +64,7 @@ public class PeopleDAO {
                 "Pep Sánchez",
                 22, 12,1977,
                 7,
-                true
+                false
         );
         data.put(p, p);
         p = new Passenger(
@@ -84,7 +84,7 @@ public class PeopleDAO {
                 "Pep Sánchez",
                 22, 12,1996,
                 2,
-                true
+                false
         );
         data.put(p, p);
         p = new Passenger(
@@ -94,7 +94,7 @@ public class PeopleDAO {
                 "Pep Sánchez",
                 22, 12,2014,
                 2,
-                true
+                false
         );
         data.put(p, p);
         p = new Passenger(
@@ -104,7 +104,7 @@ public class PeopleDAO {
                 "Pep Sánchez",
                 22, 12,2008,
                 2,
-                true
+                false
         );
         data.put(p, p);
         p = new Passenger(
@@ -114,7 +114,7 @@ public class PeopleDAO {
                 "Pep Sánchez",
                 22, 12,2014,
                 2,
-                true
+                false
         );
         data.put(p, p);
         p = new Passenger(
@@ -124,7 +124,7 @@ public class PeopleDAO {
                 "Pep Sánchez",
                 22, 12,2003,
                 2,
-                true
+                false
         );
         data.put(p, p);
         p = new Passenger(
@@ -134,7 +134,7 @@ public class PeopleDAO {
                 "Pep Sánchez",
                 22, 12,2015,
                 5,
-                true
+                false
         );
         data.put(p, p);
         p = new Passenger(
@@ -144,7 +144,7 @@ public class PeopleDAO {
                 "Pep Sánchez",
                 22, 12,1968,
                 5,
-                true
+                false
         );
         data.put(p, p);
         p = new Passenger(
@@ -154,7 +154,7 @@ public class PeopleDAO {
                 "Pep Sánchez",
                 22, 12,1968,
                 1,
-                true
+                false
         );
         data.put(p, p);
         p = new Passenger(
@@ -164,7 +164,7 @@ public class PeopleDAO {
                 "Pep Sánchez",
                 22, 12,1985,
                 1,
-                true
+                false
         );
         data.put(p, p);
         p = new CrewMember(
@@ -230,8 +230,7 @@ public class PeopleDAO {
                 CrewResponsability.HIGH
         );
         data.put(p, p);
-
-        return new TreeMap<Person, Person>();
+        return data;
     }
 
 }

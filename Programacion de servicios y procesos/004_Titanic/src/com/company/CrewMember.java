@@ -12,4 +12,5 @@ public class CrewMember extends Person {
 
         this.responsability = responsability;
     }
+
 }

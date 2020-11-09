@@ -19,7 +19,7 @@ public class BoatDAO {
         boat = new Boat(5, ShipArea.STERN);
         r.put(boat.getId(), boat);
 
-        boat = new Boat(5, ShipArea.BOW);
+        boat = new Boat(3, ShipArea.BOW);
         r.put(boat.getId(), boat);
 
 
