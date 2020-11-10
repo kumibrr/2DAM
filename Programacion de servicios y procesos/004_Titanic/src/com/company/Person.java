@@ -20,6 +20,14 @@ public abstract class Person implements Comparable<Person> {
         this.birthDate = LocalDate.of(birthYear, birthMonth, birthDay);
     }
 
+    public Person(String dni) {
+        this.dni = dni;
+        this.country = null;
+        this.shipArea = null;
+        this.name = null;
+        this.birthDate = null;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;

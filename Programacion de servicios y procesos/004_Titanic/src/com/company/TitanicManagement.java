@@ -15,6 +15,7 @@ public class TitanicManagement {
         for (Map.Entry<Person, Person> p: peopleMap.entrySet()) {
             System.out.println(p.getValue().toString());
         }
+        // Para obtener un valor Persona en específico, hay que crear una persona con el constructor del dni.
     }
 
 }
