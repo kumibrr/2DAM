@@ -48,7 +48,7 @@ public class TitanicManagement {
         while (theresPeopleInShip()) {
             for (Map.Entry<Integer, Boat> boatRaw: boatsMap.entrySet()) {
                 Boat boat = boatRaw.getValue();
-                
+                boat.getSeatsAvailable();
 
             }
         }
