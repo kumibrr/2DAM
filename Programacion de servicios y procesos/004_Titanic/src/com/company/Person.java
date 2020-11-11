@@ -8,16 +8,18 @@ public abstract class Person implements Comparable<Person> {
     private final ShipArea shipArea;
     private final String name;
     private final LocalDate birthDate;
+    private boolean hasDisability;
 
     public Person(
             String dni, Country country, ShipArea shipArea, String name, int birthDay, int birthMonth,
-            int birthYear
+            int birthYear, boolean hasDisability
     ) {
         this.dni = dni;
         this.country = country;
         this.shipArea = shipArea;
         this.name = name;
         this.birthDate = LocalDate.of(birthYear, birthMonth, birthDay);
+        this.hasDisability = hasDisability;
     }
 
     public Person(String dni) {
@@ -38,17 +40,38 @@ public abstract class Person implements Comparable<Person> {
 
     @Override
     public String toString() {
-        return "Person{" +
-                "dni='" + dni + '\'' +
+        return  "dni='" + dni + '\'' +
                 ", country=" + country +
                 ", shipArea=" + shipArea +
                 ", name='" + name + '\'' +
-                ", birthDate=" + birthDate +
-                '}';
+                ", birthDate=" + birthDate
+                + ", ";
     }
 
     @Override
     public int compareTo(Person o) {
         return dni.compareTo(o.dni);
+    }
+
+    public boolean isChildren() {
+        if (this.birthDate.getYear() > LocalDate.now().getYear() - 18) {
+            return true;
+        }
+        return false;
+    }
+
+    public boolean isElder() {
+        if (this.birthDate.getYear() < LocalDate.now().getYear() - 65) {
+            return true;
+        }
+        return false;
+    }
+
+    public boolean isHandicapped() {
+        return this.hasDisability;
+    }
+
+    public ShipArea getShipArea() {
+        return shipArea;
     }
 }

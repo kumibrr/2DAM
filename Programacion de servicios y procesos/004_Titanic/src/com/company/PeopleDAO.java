@@ -173,7 +173,8 @@ public class PeopleDAO {
                 ShipArea.PORT,
                 "Pep Sánchez",
                 22, 12,1986,
-                CrewResponsability.HIGH
+                CrewResponsability.HIGH,
+                false
         );
         data.put(p, p);
         p = new CrewMember(
@@ -182,7 +183,8 @@ public class PeopleDAO {
                 ShipArea.PORT,
                 "Pep Sánchez",
                 22, 12,1934,
-                CrewResponsability.LOW
+                CrewResponsability.LOW,
+                false
         );
         data.put(p, p);
         p = new CrewMember(
@@ -191,7 +193,8 @@ public class PeopleDAO {
                 ShipArea.BOW,
                 "Pep Sánchez",
                 22, 12,1945,
-                CrewResponsability.MEDIUM
+                CrewResponsability.MEDIUM,
+                false
         );
         data.put(p, p);
         p = new CrewMember(
@@ -200,7 +203,8 @@ public class PeopleDAO {
                 ShipArea.BOW,
                 "Pep Sánchez",
                 22, 12,1976,
-                CrewResponsability.MAX
+                CrewResponsability.MAX,
+                false
         );
         data.put(p, p);
         p = new CrewMember(
@@ -209,7 +213,8 @@ public class PeopleDAO {
                 ShipArea.STERN,
                 "Pep Sánchez",
                 22, 12,2009,
-                CrewResponsability.VERY_HIGH
+                CrewResponsability.VERY_HIGH,
+                false
         );
         data.put(p, p);
         p = new CrewMember(
@@ -218,7 +223,8 @@ public class PeopleDAO {
                 ShipArea.BOW,
                 "Pep Sánchez",
                 22, 12,1992,
-                CrewResponsability.HIGH
+                CrewResponsability.HIGH,
+                false
         );
         data.put(p, p);
         p = new CrewMember(
@@ -227,7 +233,8 @@ public class PeopleDAO {
                 ShipArea.BOW,
                 "Pep Sánchez",
                 22, 12,1975,
-                CrewResponsability.HIGH
+                CrewResponsability.HIGH,
+                false
         );
         data.put(p, p);
         return data;
