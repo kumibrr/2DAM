@@ -74,7 +74,7 @@ public class PeopleDAO {
                 "Pep Sánchez",
                 22, 12,1987,
                 7,
-                true
+                false
         );
         data.put(p, p);
         p = new Passenger(

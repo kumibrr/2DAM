@@ -48,33 +48,73 @@ public class TitanicManagement {
         while (theresPeopleInShip()) {
             for (Map.Entry<Integer, Boat> boatRaw: boatsMap.entrySet()) {
                 Boat boat = boatRaw.getValue();
-                boat.getSeatsAvailable();
-
+                Person[] people = getPerson(boat.getLocation());
+                for (Person p: people) {
+                    boat.add(p);
+                }
             }
+        }
+    }
+
+    public Person[] getPerson(ShipArea location) {
+        if (kids.size() > 0) {
+            return getChild(location);
+        } else if (elders.size() > 0) {
+            return getPassenger(location, elders);
+        } else if (adults.size() > 0) {
+            return getPassenger(location, adults);
+        } else {
+            return getCrew(location, crew);
         }
     }
 
     public void evacuate() {
         classifyPeople();
         allocateToBoat();
+        for (Map.Entry<Integer, Boat> boatRaw: boatsMap.entrySet()) {
+            System.out.println(boatRaw.getValue().toString());
+        }
+    }
 
+    public Passenger[] getPassenger(ShipArea location, ArrayList<Passenger> p) {
+        Passenger[] passengerRet = new Passenger[1];
+
+        for (int i = p.size() - 1; i >= 0; i--) {
+            if (p.get(i).getShipArea().equals(location)) {
+                passengerRet[0] = p.get(i);
+                p.remove(i);
+            }
+        }
+        return passengerRet;
+    }
+
+    public CrewMember[] getCrew(ShipArea location, ArrayList<CrewMember> p) {
+        CrewMember[] personRet = new CrewMember[1];
+
+        for (int i = p.size() - 1; i >= 0; i--) {
+            if (p.get(i).getShipArea().equals(location)) {
+                personRet[0] = p.get(i);
+                p.remove(i);
+            }
+        }
+        return personRet;
     }
 
     public Passenger[] getChild(ShipArea location) {
         // returns an array: child and adult.
         Passenger[] childAndCompanion = new Passenger[2];
-        for(Passenger kid: kids) {
-            if (kid.getShipArea().equals(location)) {
-                childAndCompanion[0] = getChildCompanion(kid.getCabinNumber());
-                childAndCompanion[1] = kid;
-                kids.remove(kid);
+        for(int i = kids.size() - 1; i >= 0; i--) {
+            if (kids.get(i).getShipArea().equals(location)) {
+                childAndCompanion[0] = getChildCompanion(kids.get(i).getCabinNumber());
+                childAndCompanion[1] = kids.get(i);
+                kids.remove(i);
             }
         }
         return childAndCompanion;
     }
 
     public boolean theresPeopleInShip() {
-        return kids.size() > 0 && elders.size() > 0 && handicapped.size() > 0 && adults.size() > 0 && crew.size() > 0;
+        return kids.size() > 0 || elders.size() > 0 || handicapped.size() > 0 || adults.size() > 0 || crew.size() > 0;
     }
 
     public Passenger getChildCompanion(int cabin) {
