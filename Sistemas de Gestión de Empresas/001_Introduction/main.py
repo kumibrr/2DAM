@@ -40,9 +40,39 @@ def ejercicio7():
     for i in range(0,101, 2):
         print(i)
 
+def ejercicio8():
+    months = (
+        "Enero",
+        "Febrero",
+        "Marzo",
+        "Abril",
+        "Mayo",
+        "Junio",
+        "Julio",
+        "Agosto",
+        "Septiembre",
+        "Octubre",
+        "Noviembre",
+        "Diciembre"
+    );
+
+    execute = True
+    while execute == True:
+        monthNum = int(input("Introduzca un mes en números, 0 para salir: "))
+
+        if (monthNum <= 12 and monthNum >= 1):
+            print(months[monthNum - 1])
+
+        elif (monthNum == 0):
+            execute = False
+        else:
+            print("Ese número no es válido.")
+
+
 #ejercicio1()
 #ejercicio2()
 #ejercicio3()
 #ejercicio4()
 #ejercicio6()
-ejercicio7()
+#ejercicio7()
+ejercicio8()
