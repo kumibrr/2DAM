@@ -19,3 +19,11 @@ button {
 .text {
     margin: auto 15px;
 }
+
+.green {
+    color: green;
+}
+
+.red {
+    color: red;
+}

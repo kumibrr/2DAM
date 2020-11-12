@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ChildComponentComponent implements OnInit {
 
+  color: 'green' | 'red';
+
   constructor() { }
 
   ngOnInit(): void {
