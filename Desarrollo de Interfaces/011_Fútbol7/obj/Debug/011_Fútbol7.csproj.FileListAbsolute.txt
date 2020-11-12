@@ -1,0 +1,10 @@
+C:\Users\User\git\2DAM\Desarrollo de Interfaces\011_Fútbol7\bin\Debug\011_Fútbol7.exe.config
+C:\Users\User\git\2DAM\Desarrollo de Interfaces\011_Fútbol7\bin\Debug\011_Fútbol7.exe
+C:\Users\User\git\2DAM\Desarrollo de Interfaces\011_Fútbol7\bin\Debug\011_Fútbol7.pdb
+C:\Users\User\git\2DAM\Desarrollo de Interfaces\011_Fútbol7\obj\Debug\011_Fútbol7.csprojAssemblyReference.cache
+C:\Users\User\git\2DAM\Desarrollo de Interfaces\011_Fútbol7\obj\Debug\_011_Fútbol7.Form1.resources
+C:\Users\User\git\2DAM\Desarrollo de Interfaces\011_Fútbol7\obj\Debug\_011_Fútbol7.Properties.Resources.resources
+C:\Users\User\git\2DAM\Desarrollo de Interfaces\011_Fútbol7\obj\Debug\011_Fútbol7.csproj.GenerateResource.cache
+C:\Users\User\git\2DAM\Desarrollo de Interfaces\011_Fútbol7\obj\Debug\011_Fútbol7.csproj.CoreCompileInputs.cache
+C:\Users\User\git\2DAM\Desarrollo de Interfaces\011_Fútbol7\obj\Debug\011_Fútbol7.exe
+C:\Users\User\git\2DAM\Desarrollo de Interfaces\011_Fútbol7\obj\Debug\011_Fútbol7.pdb
