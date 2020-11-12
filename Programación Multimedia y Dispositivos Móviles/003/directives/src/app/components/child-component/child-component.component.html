@@ -1,7 +1,7 @@
 <div class="container">
-    <p #text class="text" [ngClass]="{ 'green': color == 'green', 'red': color == 'red' }" >texto</p>
+    <p #text class="text" [ngClass]="{ 'color1': color == 'color1', 'color2': color == 'color2' }" >texto</p>
     <div class="btn-container">
-        <button (click)="color = 'green'">Verde</button>
-        <button (click)="color = 'red'">Rojo</button>
+        <button (click)="color = 'color1'">Verde</button>
+        <button (click)="color = 'color2'">Rojo</button>
     </div>
 </div>

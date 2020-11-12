@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ChildComponentComponent implements OnInit {
 
-  color: 'green' | 'red';
+  color: 'color1' | 'color2';
 
   constructor() { }
 
