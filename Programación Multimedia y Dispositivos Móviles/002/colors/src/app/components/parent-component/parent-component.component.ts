@@ -15,7 +15,7 @@ export class ParentComponentComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  cicleColor() {
+  cycleColor() {
     this.colorsCurrentIndex++;
     if (this.colorsCurrentIndex > 2) {
       this.colorsCurrentIndex = 0;
