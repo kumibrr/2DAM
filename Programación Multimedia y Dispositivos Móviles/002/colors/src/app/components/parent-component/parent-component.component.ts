@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 
-// test para git
 @Component({
   selector: 'app-parent-component',
   templateUrl: './parent-component.component.html',
