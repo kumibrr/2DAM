@@ -41,6 +41,11 @@ namespace _011_Fútbol7
             }
         }
 
+        private bool thereAreSelectedPlayers()
+        {
+            return lsAvailablePlayers.SelectedItems.Count > 0 || lsTeamA.SelectedItems.Count > 0 || lsTeamB.SelectedItems.Count > 0;
+        }
+
         private void btnAddToA_Click(object sender, EventArgs e)
         {
             IOFromLsToLs(lsAvailablePlayers, lsTeamA);
@@ -69,6 +74,42 @@ namespace _011_Fútbol7
         private void btnSubstractAllFromB_Click(object sender, EventArgs e)
         {
             IOAllFromLsToLs(lsTeamB, lsAvailablePlayers);
+        }
+
+        private void btnRemovePlayer_Click(object sender, EventArgs e)
+        {
+            if (thereAreSelectedPlayers())
+            {
+                if (lsAvailablePlayers.SelectedItems.Count > 0) {
+                    for (int i = 0; i < lsAvailablePlayers.SelectedItems.Count;)
+                    {
+                        lsAvailablePlayers.Items.Remove(lsAvailablePlayers.SelectedItems[i]);
+                    }
+                }
+                if (lsTeamA.SelectedItems.Count > 0)
+                {
+                    for (int i = 0; i < lsTeamA.SelectedItems.Count; i++)
+                    {
+                        lsTeamA.Items.Remove(lsTeamA.SelectedItems[i]);
+                    }
+                }
+                if (lsTeamB.SelectedItems.Count > 0)
+                {
+                    for (int i = 0; i < lsTeamB.SelectedItems.Count;)
+                    {
+                        lsTeamB.Items.Remove(lsTeamB.SelectedItems[i]);
+                    }
+                } 
+            }
+        }
+
+        private void btnAddPlayer_Click(object sender, EventArgs e)
+        {
+            if (txtPlayerName.Text != "")
+            {
+                lsAvailablePlayers.Items.Add(txtPlayerName.Text);
+                txtPlayerName.Text = "";
+            }
         }
     }
 }
