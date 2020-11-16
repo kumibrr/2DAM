@@ -41,9 +41,9 @@
             this.btnAddToB = new System.Windows.Forms.Button();
             this.btnSubstractOneFromB = new System.Windows.Forms.Button();
             this.btnSubstractAllFromB = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.btnRemovePlayer = new System.Windows.Forms.Button();
+            this.btnAddPlayer = new System.Windows.Forms.Button();
+            this.txtPlayerName = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // lbl_playersAvailable
@@ -169,30 +169,32 @@
             this.btnSubstractAllFromB.UseVisualStyleBackColor = true;
             this.btnSubstractAllFromB.Click += new System.EventHandler(this.btnSubstractAllFromB_Click);
             // 
-            // button1
+            // btnRemovePlayer
             // 
-            this.button1.Location = new System.Drawing.Point(53, 335);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(198, 23);
-            this.button1.TabIndex = 13;
-            this.button1.Text = "Eliminar Jugador";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnRemovePlayer.Location = new System.Drawing.Point(53, 335);
+            this.btnRemovePlayer.Name = "btnRemovePlayer";
+            this.btnRemovePlayer.Size = new System.Drawing.Size(198, 23);
+            this.btnRemovePlayer.TabIndex = 13;
+            this.btnRemovePlayer.Text = "Eliminar Jugador";
+            this.btnRemovePlayer.UseVisualStyleBackColor = true;
+            this.btnRemovePlayer.Click += new System.EventHandler(this.btnRemovePlayer_Click);
             // 
-            // button2
+            // btnAddPlayer
             // 
-            this.button2.Location = new System.Drawing.Point(53, 357);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(198, 23);
-            this.button2.TabIndex = 14;
-            this.button2.Text = "Añadir Jugador";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnAddPlayer.Location = new System.Drawing.Point(53, 357);
+            this.btnAddPlayer.Name = "btnAddPlayer";
+            this.btnAddPlayer.Size = new System.Drawing.Size(198, 23);
+            this.btnAddPlayer.TabIndex = 14;
+            this.btnAddPlayer.Text = "Añadir Jugador";
+            this.btnAddPlayer.UseVisualStyleBackColor = true;
+            this.btnAddPlayer.Click += new System.EventHandler(this.btnAddPlayer_Click);
             // 
-            // textBox1
+            // txtPlayerName
             // 
-            this.textBox1.Location = new System.Drawing.Point(53, 378);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(198, 20);
-            this.textBox1.TabIndex = 15;
+            this.txtPlayerName.Location = new System.Drawing.Point(53, 380);
+            this.txtPlayerName.Name = "txtPlayerName";
+            this.txtPlayerName.Size = new System.Drawing.Size(198, 20);
+            this.txtPlayerName.TabIndex = 15;
             // 
             // Form1
             // 
@@ -200,9 +202,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(629, 410);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.txtPlayerName);
+            this.Controls.Add(this.btnAddPlayer);
+            this.Controls.Add(this.btnRemovePlayer);
             this.Controls.Add(this.btnSubstractAllFromB);
             this.Controls.Add(this.btnSubstractOneFromB);
             this.Controls.Add(this.btnAddToB);
@@ -237,9 +239,9 @@
         private System.Windows.Forms.Button btnAddToB;
         private System.Windows.Forms.Button btnSubstractOneFromB;
         private System.Windows.Forms.Button btnSubstractAllFromB;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button btnRemovePlayer;
+        private System.Windows.Forms.Button btnAddPlayer;
+        private System.Windows.Forms.TextBox txtPlayerName;
     }
 }
 
