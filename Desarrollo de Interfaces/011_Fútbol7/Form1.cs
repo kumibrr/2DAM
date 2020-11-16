@@ -21,15 +21,54 @@ namespace _011_Fútbol7
 
         private void IOFromLsToLs(ListBox lsInput, ListBox lsOutput)
         {
-            for (int i = 0; i < lsInput.SelectedItems.Count; i++)
+            // This method transfers items from one list to another.
+            // Removing it from the input list and adding it to the output list.
+            for (int i = 0; i < lsInput.SelectedItems.Count;)
             {
-                lsOutput.Items.Add(lsInput.SelectedItems[i].ToString());
+                lsOutput.Items.Add(lsInput.SelectedItems[i]);
+                lsInput.Items.Remove(lsInput.SelectedItems[i]);
+            }
+        }
+
+        private void IOAllFromLsToLs(ListBox lsInput, ListBox lsOutput)
+        {
+            // This method transfers items from one list to another.
+            // Removing it from the input list and adding it to the output list.
+            for (int i = 0; i < lsInput.Items.Count;)
+            {
+                lsOutput.Items.Add(lsInput.Items[i]);
+                lsInput.Items.Remove(lsInput.Items[i]);
             }
         }
 
         private void btnAddToA_Click(object sender, EventArgs e)
         {
             IOFromLsToLs(lsAvailablePlayers, lsTeamA);
+        }
+
+        private void btnSubstractOneFromA_Click(object sender, EventArgs e)
+        {
+            IOFromLsToLs(lsTeamA, lsAvailablePlayers);
+        }
+
+        private void btnSubstractAllFromA_Click(object sender, EventArgs e)
+        {
+            IOAllFromLsToLs(lsTeamA, lsAvailablePlayers);
+        }
+
+        private void btnAddToB_Click(object sender, EventArgs e)
+        {
+            IOFromLsToLs(lsAvailablePlayers, lsTeamB);
+        }
+
+        private void btnSubstractOneFromB_Click(object sender, EventArgs e)
+        {
+            IOFromLsToLs(lsTeamB, lsAvailablePlayers);
+        }
+
+        private void btnSubstractAllFromB_Click(object sender, EventArgs e)
+        {
+            IOAllFromLsToLs(lsTeamB, lsAvailablePlayers);
         }
     }
 }

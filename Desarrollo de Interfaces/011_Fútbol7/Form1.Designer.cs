@@ -41,6 +41,9 @@
             this.btnAddToB = new System.Windows.Forms.Button();
             this.btnSubstractOneFromB = new System.Windows.Forms.Button();
             this.btnSubstractAllFromB = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // lbl_playersAvailable
@@ -82,10 +85,10 @@
             // lsAvailablePlayers
             // 
             this.lsAvailablePlayers.FormattingEnabled = true;
-            this.lsAvailablePlayers.Location = new System.Drawing.Point(53, 37);
+            this.lsAvailablePlayers.Location = new System.Drawing.Point(53, 33);
             this.lsAvailablePlayers.Name = "lsAvailablePlayers";
             this.lsAvailablePlayers.SelectionMode = System.Windows.Forms.SelectionMode.MultiSimple;
-            this.lsAvailablePlayers.Size = new System.Drawing.Size(198, 329);
+            this.lsAvailablePlayers.Size = new System.Drawing.Size(198, 303);
             this.lsAvailablePlayers.TabIndex = 3;
             // 
             // lsTeamA
@@ -93,6 +96,7 @@
             this.lsTeamA.FormattingEnabled = true;
             this.lsTeamA.Location = new System.Drawing.Point(372, 64);
             this.lsTeamA.Name = "lsTeamA";
+            this.lsTeamA.SelectionMode = System.Windows.Forms.SelectionMode.MultiSimple;
             this.lsTeamA.Size = new System.Drawing.Size(174, 134);
             this.lsTeamA.TabIndex = 4;
             // 
@@ -101,6 +105,7 @@
             this.lsTeamB.FormattingEnabled = true;
             this.lsTeamB.Location = new System.Drawing.Point(372, 228);
             this.lsTeamB.Name = "lsTeamB";
+            this.lsTeamB.SelectionMode = System.Windows.Forms.SelectionMode.MultiSimple;
             this.lsTeamB.Size = new System.Drawing.Size(174, 134);
             this.lsTeamB.TabIndex = 5;
             // 
@@ -112,6 +117,7 @@
             this.btnSubstractOneFromA.TabIndex = 7;
             this.btnSubstractOneFromA.Text = "<";
             this.btnSubstractOneFromA.UseVisualStyleBackColor = true;
+            this.btnSubstractOneFromA.Click += new System.EventHandler(this.btnSubstractOneFromA_Click);
             // 
             // btnAddToA
             // 
@@ -131,6 +137,7 @@
             this.btnSubstractAllFromA.TabIndex = 9;
             this.btnSubstractAllFromA.Text = "<<";
             this.btnSubstractAllFromA.UseVisualStyleBackColor = true;
+            this.btnSubstractAllFromA.Click += new System.EventHandler(this.btnSubstractAllFromA_Click);
             // 
             // btnAddToB
             // 
@@ -140,6 +147,7 @@
             this.btnAddToB.TabIndex = 10;
             this.btnAddToB.Text = ">";
             this.btnAddToB.UseVisualStyleBackColor = true;
+            this.btnAddToB.Click += new System.EventHandler(this.btnAddToB_Click);
             // 
             // btnSubstractOneFromB
             // 
@@ -149,6 +157,7 @@
             this.btnSubstractOneFromB.TabIndex = 11;
             this.btnSubstractOneFromB.Text = "<";
             this.btnSubstractOneFromB.UseVisualStyleBackColor = true;
+            this.btnSubstractOneFromB.Click += new System.EventHandler(this.btnSubstractOneFromB_Click);
             // 
             // btnSubstractAllFromB
             // 
@@ -158,6 +167,32 @@
             this.btnSubstractAllFromB.TabIndex = 12;
             this.btnSubstractAllFromB.Text = "<<";
             this.btnSubstractAllFromB.UseVisualStyleBackColor = true;
+            this.btnSubstractAllFromB.Click += new System.EventHandler(this.btnSubstractAllFromB_Click);
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(53, 335);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(198, 23);
+            this.button1.TabIndex = 13;
+            this.button1.Text = "Eliminar Jugador";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(53, 357);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(198, 23);
+            this.button2.TabIndex = 14;
+            this.button2.Text = "Añadir Jugador";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(53, 378);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(198, 20);
+            this.textBox1.TabIndex = 15;
             // 
             // Form1
             // 
@@ -165,6 +200,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(629, 410);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.btnSubstractAllFromB);
             this.Controls.Add(this.btnSubstractOneFromB);
             this.Controls.Add(this.btnAddToB);
@@ -199,6 +237,9 @@
         private System.Windows.Forms.Button btnAddToB;
         private System.Windows.Forms.Button btnSubstractOneFromB;
         private System.Windows.Forms.Button btnSubstractAllFromB;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }
 
