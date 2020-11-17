@@ -8,3 +8,13 @@ C:\Users\User\git\2DAM\Desarrollo de Interfaces\009_Conversor-numerico\obj\Debug
 C:\Users\User\git\2DAM\Desarrollo de Interfaces\009_Conversor-numerico\obj\Debug\009_Conversor-numerico.csproj.CoreCompileInputs.cache
 C:\Users\User\git\2DAM\Desarrollo de Interfaces\009_Conversor-numerico\obj\Debug\009_Conversor-numerico.exe
 C:\Users\User\git\2DAM\Desarrollo de Interfaces\009_Conversor-numerico\obj\Debug\009_Conversor-numerico.pdb
+C:\Users\Israel\git\2DAM\Desarrollo de Interfaces\009_Conversor-numerico\bin\Debug\009_Conversor-numerico.exe.config
+C:\Users\Israel\git\2DAM\Desarrollo de Interfaces\009_Conversor-numerico\bin\Debug\009_Conversor-numerico.exe
+C:\Users\Israel\git\2DAM\Desarrollo de Interfaces\009_Conversor-numerico\bin\Debug\009_Conversor-numerico.pdb
+C:\Users\Israel\git\2DAM\Desarrollo de Interfaces\009_Conversor-numerico\obj\Debug\009_Conversor-numerico.csprojAssemblyReference.cache
+C:\Users\Israel\git\2DAM\Desarrollo de Interfaces\009_Conversor-numerico\obj\Debug\_009_Conversor_numerico.Form1.resources
+C:\Users\Israel\git\2DAM\Desarrollo de Interfaces\009_Conversor-numerico\obj\Debug\_009_Conversor_numerico.Properties.Resources.resources
+C:\Users\Israel\git\2DAM\Desarrollo de Interfaces\009_Conversor-numerico\obj\Debug\009_Conversor-numerico.csproj.GenerateResource.cache
+C:\Users\Israel\git\2DAM\Desarrollo de Interfaces\009_Conversor-numerico\obj\Debug\009_Conversor-numerico.csproj.CoreCompileInputs.cache
+C:\Users\Israel\git\2DAM\Desarrollo de Interfaces\009_Conversor-numerico\obj\Debug\009_Conversor-numerico.exe
+C:\Users\Israel\git\2DAM\Desarrollo de Interfaces\009_Conversor-numerico\obj\Debug\009_Conversor-numerico.pdb
