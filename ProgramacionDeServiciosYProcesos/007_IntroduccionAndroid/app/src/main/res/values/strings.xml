@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">007_IntroduccionAndroid</string>
-    <string name="btnGreet">Saludar</string>
+    <string name="btn_greet">Saludar</string>
+    <string name="greeted">Saludado</string>
 </resources>

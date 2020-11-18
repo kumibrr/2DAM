@@ -7,7 +7,7 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/txtGreet"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Hello World!"
@@ -17,15 +17,14 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btnGreet"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="145dp"
-        android:layout_marginTop="256dp"
         android:layout_marginEnd="146dp"
-        android:layout_marginBottom="36dp"
-        android:text="@string/btnGreet"
-        app:layout_constraintBottom_toTopOf="@+id/textView"
+        android:onClick="greet"
+        android:text="@string/btn_greet"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
