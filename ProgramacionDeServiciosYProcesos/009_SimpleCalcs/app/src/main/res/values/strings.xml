@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">009_SimpleCalcs</string>
+    <string name="first_number">Introduzca el primer numero</string>
+    <string name="second_number">Intorduzca el segundo numero</string>
+    <string name="add_numbers">Sumar</string>
+    <string name="substract_numbers">Restar</string>
+</resources>
