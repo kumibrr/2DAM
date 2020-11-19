@@ -1,0 +1,10 @@
+C:\Users\Israel\git\2DAM\Desarrollo de Interfaces\010_Calculadora\bin\Debug\010_Calculadora.exe.config
+C:\Users\Israel\git\2DAM\Desarrollo de Interfaces\010_Calculadora\bin\Debug\010_Calculadora.exe
+C:\Users\Israel\git\2DAM\Desarrollo de Interfaces\010_Calculadora\bin\Debug\010_Calculadora.pdb
+C:\Users\Israel\git\2DAM\Desarrollo de Interfaces\010_Calculadora\obj\Debug\010_Calculadora.csprojAssemblyReference.cache
+C:\Users\Israel\git\2DAM\Desarrollo de Interfaces\010_Calculadora\obj\Debug\_010_Calculadora.Form1.resources
+C:\Users\Israel\git\2DAM\Desarrollo de Interfaces\010_Calculadora\obj\Debug\_010_Calculadora.Properties.Resources.resources
+C:\Users\Israel\git\2DAM\Desarrollo de Interfaces\010_Calculadora\obj\Debug\010_Calculadora.csproj.GenerateResource.cache
+C:\Users\Israel\git\2DAM\Desarrollo de Interfaces\010_Calculadora\obj\Debug\010_Calculadora.csproj.CoreCompileInputs.cache
+C:\Users\Israel\git\2DAM\Desarrollo de Interfaces\010_Calculadora\obj\Debug\010_Calculadora.exe
+C:\Users\Israel\git\2DAM\Desarrollo de Interfaces\010_Calculadora\obj\Debug\010_Calculadora.pdb
