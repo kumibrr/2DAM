@@ -1,0 +1,67 @@
+.container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(251, 217, 229);
+}
+
+.buttons {
+    text-align: center;
+    width: 10%;
+    height: 100%;
+    background-color: lightcoral;
+}
+
+.button{
+    margin-top: 60%;
+    width: 80%;
+    padding-top: 80%;
+    border-radius: 50%;
+    background-color: rgb(30, 156, 156);
+}
+
+.board {
+    position: absolute;
+    background-color: lightgoldenrodyellow;
+    width: 70%;
+    top: 10%;
+    left: 20%;
+}
+
+.column {
+    float: left;
+    height: 100%;
+    width: 20%;
+    background-color: lightskyblue;
+    box-shadow: none;
+}
+
+.cell {
+    margin-top: 11%;
+    margin-bottom: 11%;
+    margin-left: 10%;
+    width: 80%;
+    padding-top: 80%;
+    border-radius: 50%;
+    pointer-events: none;
+}
+
+.empty {
+    background-color: rgb(251, 217, 229);
+}
+
+.cell.player1 {
+    background-color: rgb(185, 16, 16);
+}
+
+.cell.player2 {
+    background-color: rgb(230, 230, 104);
+}
+
+.board.player1 :hover {
+    box-shadow: 0 0 5px rgb(255, 0, 0), inset 0 0 10px rgb(185, 16, 16);
+}
+
+.board.player2 :hover {
+    box-shadow: 0 0 5px rgb(255, 255, 0), inset 0 0 10px rgb(230, 230, 104);
+}
