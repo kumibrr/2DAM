@@ -3,23 +3,27 @@ def ejercicio1():
     b = 4
     print(a + b)
 
+
 def ejercicio2():
     prod = 100
     print("iva: " + str(prod * 21 / 100) + "€")
     print("PVP: " + str((prod * 21 / 100) + prod) + "€")
 
+
 def ejercicio3():
     a = 5
     b = 3
-    if (a > b):
+    if a > b:
         print("El mayor es " + str(a))
     else:
         print("El mayor es ", b)
+
 
 def ejercicio4():
     a = 14
     if a >= 0 or a <= 10:
         print("Está entre 0 y 10")
+
 
 def ejercicio5():
     a = 14
@@ -30,15 +34,18 @@ def ejercicio5():
     else:
         print("Guau q grande")
 
+
 def ejercicio6():
     i = 1
     while i <= 100:
         print(i)
         i += 1
 
+
 def ejercicio7():
-    for i in range(0,101, 2):
+    for i in range(0, 101, 2):
         print(i)
+
 
 def ejercicio8():
     months = (
@@ -54,19 +61,20 @@ def ejercicio8():
         "Octubre",
         "Noviembre",
         "Diciembre"
-    );
+    )
 
     execute = True
-    while execute == True:
-        monthNum = int(input("Introduzca un mes en números, 0 para salir: "))
+    while execute:
+        month_num = int(input("Introduzca un mes en números, 0 para salir: "))
 
-        if (monthNum <= 12 and monthNum >= 1):
-            print(months[monthNum - 1])
+        if 12 >= month_num >= 1:
+            print(months[month_num - 1])
 
-        elif (monthNum == 0):
+        elif month_num == 0:
             execute = False
         else:
             print("Ese número no es válido.")
+
 
 def ejercicio9():
     rows = input("Introduzca el número de filas: ")
@@ -78,26 +86,29 @@ def ejercicio9():
             spaces = int(spaces)
             print(" " * spaces + "*" * i + " " * spaces)
 
-def ejercicio10():
-    list = []
-    wordsCount = int(input("¿Cúantas palabras tiene la lista? "))
 
-    for i in range(0, wordsCount):
+def ejercicio10():
+    wordlist = []
+    words_count = int(input("¿Cúantas palabras tiene la lista? "))
+
+    for i in range(0, words_count):
         print(i)
-        list.append(input("Díme la palabra " + str((i + 1)) + ": "))
-    print("La lista creada es: "+ str(list))
-    wordToChange = input("Sustituir la palabra: ")
-    i = list.index(wordToChange);
-    list[i] = input("¿Por qué palabra la quieres cambiar? ")
-    print(list)
+        wordlist.append(input("Díme la palabra " + str((i + 1)) + ": "))
+    print("La lista creada es: " + str(wordlist))
+    word_to_change = input("Sustituir la palabra: ")
+    i = wordlist.index(word_to_change)
+    wordlist[i] = input("¿Por qué palabra la quieres cambiar? ")
+    print(wordlist)
+
 
 def ejercicio11():
     num = int(input("Mete un número: "))
-    list = []
+    list_number = []
 
     for i in range(1, 11):
-        list.append(num * i)
-    print(list)
+        list_number.append(num * i)
+    print(list_number)
+
 
 def ejercicio12():
     temperaturas = [
@@ -164,32 +175,40 @@ def ejercicio12():
         [19.2, 18.7, 18.8, 18.5, 17.5, 17.3, 17.2, 17.1, 17.9, 18.4, 18.9, 20.4, 21.1, 22.1, 23.4, 23.7, 23.9, 23.8,
          23.7, 23.4, 22.3, 21.3, 20.1, 19.0]]
 
-    sum = 0
-    warmDays = 0
-    for i in temperaturas[11]:
-        sum += i
-        if (i > 20.0):
-            warmDays += 1
-    print("La temperatura media al mediodía es: " + str(round(sum/i, 2)))
+    days_in_month = 0
+    warm_days = 0
+    for i in temperaturas:
+        days_in_month += i[11]
+        if i[11] > 20.0:
+            warm_days += 1
+    print("La temperatura media al mediodía es: " + str(round(days_in_month / len(temperaturas), 2)))
 
-    highest = -100
+    highest = -270
     for day in temperaturas:
         for hour in day:
             if hour > highest:
                 highest = hour
     print("La temperatura más alta fue: " + str(round(highest, 2)))
-    print("Hubieron " + str(warmDays) + " días calientes.")
+    print("Hubieron " + str(warm_days) + " días calientes.")
+
+    print("A las 8:00, la temperaturas fueron:")
+
+    day_count = 1
+    for day in temperaturas:
+        print("Día " + str(day_count) + ": " + str(day[7]))
+        day_count += 1
+
+    # Listar por día la temperatura a las 8:00
 
 
-
-#ejercicio1()
-#ejercicio2()
-#ejercicio3()
-#ejercicio4()
-#ejercicio6()
-#ejercicio7()
-#ejercicio8()
-#ejercicio9()
-#ejercicio10()
-#ejercicio11()
+# ejercicio1()
+# ejercicio2()
+# ejercicio3()
+# ejercicio4()
+# ejercicio6()
+# ejercicio7()
+# ejercicio8()
+# ejercicio9()
+# ejercicio10()
+# ejercicio11()
 ejercicio12()
