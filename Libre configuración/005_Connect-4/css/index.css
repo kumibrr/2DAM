@@ -13,7 +13,7 @@
 }
 
 .button{
-    margin-top: 60%;
+    margin-top: 50%;
     width: 80%;
     padding-top: 80%;
     border-radius: 50%;
@@ -23,9 +23,9 @@
 .board {
     position: absolute;
     background-color: lightgoldenrodyellow;
-    width: 70%;
+    width: 40%;
     top: 10%;
-    left: 20%;
+    left: 35%;
 }
 
 .column {
@@ -59,9 +59,11 @@
 }
 
 .board.player1 :hover {
-    box-shadow: 0 0 5px rgb(255, 0, 0), inset 0 0 10px rgb(185, 16, 16);
+    box-shadow: 0 0 20px rgb(255, 0, 0);
+    background-color: rgba(205, 29, 29, 0.534);
 }
 
 .board.player2 :hover {
-    box-shadow: 0 0 5px rgb(255, 255, 0), inset 0 0 10px rgb(230, 230, 104);
+    box-shadow: 0 0 20px rgb(255, 255, 0);
+    background-color: rgba(194, 182, 43, 0.434);
 }
