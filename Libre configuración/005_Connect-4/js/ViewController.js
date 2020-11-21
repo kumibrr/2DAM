@@ -4,6 +4,11 @@ const boardController = new BoardController(5, 6);
 function insertChip(ev) {
     const columnClicked = ev.target.attributes['value'].value;
     cellToFill = boardController.insertChip(columnClicked, playerController.playerTurn);
+    console.log(ev);
+    if (cellToFill != -1) {
+        ev.target.children[cellToFill].classList.replace('empty', playerController.getPlayerClass());
+        boardController.checkWinner(columnClicked, cellToFill);
+    }
 }
 
 function main() {

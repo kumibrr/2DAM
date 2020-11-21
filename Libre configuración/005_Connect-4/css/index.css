@@ -3,29 +3,34 @@
     width: 100%;
     height: 100%;
     background-color: rgb(251, 217, 229);
+    text-align: center;
 }
 
 .buttons {
-    text-align: center;
+    position: relative;
+    align-items: center;
     width: 10%;
     height: 100%;
     background-color: lightcoral;
 }
 
 .button{
-    margin-top: 50%;
-    width: 80%;
-    padding-top: 80%;
+    margin-top: 20%;
+    width: 90px;
+    height: 90px;
     border-radius: 50%;
     background-color: rgb(30, 156, 156);
 }
 
 .board {
+    /* float: right; */
     position: absolute;
+    margin: auto;
     background-color: lightgoldenrodyellow;
     width: 40%;
-    top: 10%;
-    left: 35%;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
 }
 
 .column {
@@ -33,7 +38,6 @@
     height: 100%;
     width: 20%;
     background-color: lightskyblue;
-    box-shadow: none;
 }
 
 .cell {
@@ -59,11 +63,10 @@
 }
 
 .board.player1 :hover {
-    box-shadow: 0 0 20px rgb(255, 0, 0);
-    background-color: rgba(205, 29, 29, 0.534);
+    box-shadow: inset 0 0 30px rgb(255, 0, 0);
+    
 }
 
 .board.player2 :hover {
-    box-shadow: 0 0 20px rgb(255, 255, 0);
-    background-color: rgba(194, 182, 43, 0.434);
+    box-shadow: inset 0 0 30px rgb(255, 255, 0);
 }
