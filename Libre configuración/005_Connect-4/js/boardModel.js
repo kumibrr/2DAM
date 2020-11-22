@@ -47,6 +47,10 @@ class BoardController {
         return isFull;
     }
 
+    getColumn(column) {
+        return this.board[column];
+    }
+
     getRow(row) {
         let r = [];
         for (let i = 0; i < this.board[0].length - 1; i++) {
@@ -57,49 +61,60 @@ class BoardController {
     }
 
     getDiagonalFromLeftToRight(column, row) {
-        // This code below is an awful way to w̶a̶s̶t̶e̶ enjoy a friday night.
-        // Please enjoy.
         let r = [];
         let vector = [column, row];
-        if (vector[1] != 5) {
+        if (vector[1] < 4) {
             vector[1] = vector[0] + vector[1];
             vector[0] = vector[0] - vector[0];
         }
-        // Checks if the given coordinates are in at least a 4-length diagonal 
+
+
         // (gives false positives but whatever It's friday 2am).
-        if (this.board.length - vector[0] >= 4) {
-            if (this.board[column].length - vector[1] - 1 <= 2) {
-                for (let i = vector[0], j = vector[1]; i < this.board.length; i++, j--) {
-                    r.push(this.board[i][j]);
-                }
+        for (let i = vector[0], j = vector[1]; i < this.board.length; i++, j--) {
+            if (this.board[i][j] != undefined) {
+                r.push(this.board[i][j]);
             }
         }
         return r;
     }
 
-
-    /**TODO:
     getDiagonalFromRightToLeft(column, row) {
-        // This code below is an awful way to w̶a̶s̶t̶e̶ enjoy a friday night.
-        // Please enjoy.
         let r = [];
         let vector = [column, row];
-        if (vector[1] != 5) {
-            vector[1] = vector[0] + vector[1];
-            vector[0] = vector[0] - vector[0];
-        }
-        // Checks if the given coordinates are in at least a 4-length diagonal 
-        // (gives false positives but whatever It's friday 2am).
-        if (this.board.length - vector[0] >= 4) {
-            if (this.board[column].length - vector[1] - 1 <= 2) {
-                for (let i = vector[0], j = vector[1]; i < this.board.length; i++, j--) {
-                    r.push(this.board[i][j]);
-                }
+
+        vector[1] = vector[1] - vector[0];
+        vector[0] = vector[0] - vector[0];
+
+
+        // (gives false positives but whatever I have drank a beer and it kinda works).
+        for (let i = vector[0], j = vector[1]; i < this.board.length; i++, j++) {
+            if (this.board[i][j] != undefined) {
+                r.push(this.board[i][j]);
             }
         }
         return r;
     }
-    */
+
+    hasWon(arr) {
+        let player = 0;
+        let count = 0;
+        
+        for (let i = 0; i < arr.length && count < 4 ; i++) {
+            const cellValue = arr[i];
+            
+            if (cellValue != 0 && cellValue == player) {
+                count++;
+            } else {
+                player = cellValue;
+                count = 1;
+            }
+        }
+
+        if (player != 0 && count >= 4) {
+            return player
+        } 
+        return 0;
+    }
 
 
     /**
@@ -111,9 +126,29 @@ class BoardController {
     * @returns {Number} player - The playerId who won.
     */
     checkWinner(column, placedCell) {
-        console.log(this.getDiagonalFromLeftToRight(Number(column) , Number(placedCell)));
-        // console.log(placedCell);
+        let arr = [
+            this.getRow(placedCell),
+            this.getColumn(column),
+            this.getDiagonalFromLeftToRight(Number(column), Number(placedCell)),
+            this.getDiagonalFromRightToLeft(Number(column), Number(placedCell))
+        ];
 
-        return 0;
+        let values = [];
+        arr.forEach(line => {
+            values.push(this.hasWon(line));
+        });
+        
+        if (values.indexOf(1) != -1) {
+            let val = values.indexOf(1);
+            return values[val]
+        } else if (values.indexOf(2) != -1) {
+            let val = values.indexOf(2);
+            return values[val]
+        } else if (this.isBoardFull()) {
+            return -1
+        } else {
+            return 0;
+        }
+        
     }
 }
