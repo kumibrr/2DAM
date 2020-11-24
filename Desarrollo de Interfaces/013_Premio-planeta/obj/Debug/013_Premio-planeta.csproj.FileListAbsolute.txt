@@ -1,0 +1,10 @@
+C:\Users\User\git\2DAM\Desarrollo de Interfaces\013_Premio-planeta\bin\Debug\013_Premio-planeta.exe.config
+C:\Users\User\git\2DAM\Desarrollo de Interfaces\013_Premio-planeta\bin\Debug\013_Premio-planeta.exe
+C:\Users\User\git\2DAM\Desarrollo de Interfaces\013_Premio-planeta\bin\Debug\013_Premio-planeta.pdb
+C:\Users\User\git\2DAM\Desarrollo de Interfaces\013_Premio-planeta\obj\Debug\013_Premio-planeta.csprojAssemblyReference.cache
+C:\Users\User\git\2DAM\Desarrollo de Interfaces\013_Premio-planeta\obj\Debug\_013_Premio_planeta.Form1.resources
+C:\Users\User\git\2DAM\Desarrollo de Interfaces\013_Premio-planeta\obj\Debug\_013_Premio_planeta.Properties.Resources.resources
+C:\Users\User\git\2DAM\Desarrollo de Interfaces\013_Premio-planeta\obj\Debug\013_Premio-planeta.csproj.GenerateResource.cache
+C:\Users\User\git\2DAM\Desarrollo de Interfaces\013_Premio-planeta\obj\Debug\013_Premio-planeta.csproj.CoreCompileInputs.cache
+C:\Users\User\git\2DAM\Desarrollo de Interfaces\013_Premio-planeta\obj\Debug\013_Premio-planeta.exe
+C:\Users\User\git\2DAM\Desarrollo de Interfaces\013_Premio-planeta\obj\Debug\013_Premio-planeta.pdb
