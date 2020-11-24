@@ -23,6 +23,9 @@ public class MainActivity extends AppCompatActivity {
         Button substract = findViewById(R.id.btnSubstractNumbers);
 
         TextView txtResult = findViewById(R.id.txtResult);
+
+        add.setOnClickListener( new ButtonHandler(this));
+        substract.setOnClickListener( new ButtonHandler(this));
         
     }
 }
