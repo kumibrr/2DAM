@@ -7,6 +7,7 @@ import { JokeComponent } from './components/joke/joke.component';
 import { JokeListComponent } from './components/joke-list/joke-list.component';
 import { AngularFireModule } from '@angular/fire';
 import { JokeFormComponent } from './components/joke-form/joke-form.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 const firebaseConfig = {
   apiKey: "AIzaSyDPm8N6NHxR0wRqjyhb8JwocT-DbEy2edA",
@@ -29,6 +30,8 @@ const firebaseConfig = {
     BrowserModule,
     HttpClientModule,
     AngularFireModule.initializeApp(firebaseConfig),
+    ReactiveFormsModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

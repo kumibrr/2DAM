@@ -1,4 +1,5 @@
 import { Component, ElementRef, EventEmitter, OnInit, Output, ViewChild } from '@angular/core';
+import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
 import { Joke } from 'src/app/class/joke';
 
 @Component({
@@ -13,11 +14,16 @@ export class JokeFormComponent implements OnInit {
   @ViewChild('question') question: ElementRef;
   @ViewChild('punchline') punchline: ElementRef;
 
+  public myForm: FormGroup;
 
-  constructor() {}
-
-  ngOnInit(): void {
+  constructor(private fb: FormBuilder) {
+    this.myForm = this.fb.group({
+      question: fb.control('', [Validators.required, Validators.minLength(6)]),
+      punchline: fb.control('', [Validators.required, Validators.minLength(6)])
+    });
   }
+
+  ngOnInit(): void {}
 
   clearTextInputs() {
     this.question.nativeElement.value = '';

@@ -3,13 +3,31 @@
         <div class="card-body">
             <h1>Submit your own pun!</h1>
             <br>
-            <div class="form-group">
-                <input #question class="form-control" type="text" placeholder="Question...">
-            </div>
-            <div class="form-group">
-                <input #punchline class="form-control" type="text" placeholder="Punchline...">
-            </div>
-            <button class="btn btn-primary" type="button" (click)="sendSubmitJokeEv()">Add Joke</button>
+            <form name="myForm" [formGroup]="myForm">
+                <div class="form-group" >
+                    <input #question class="form-control" type="text" placeholder="Question..." formControlName="question">
+                </div>
+                <div *ngIf="myForm.get('question').touched">
+                    <div class="alert alert-danger" *ngIf="myForm.get('question').hasError('required')">
+                        You must enter a question.
+                    </div>
+                    <div class="alert alert-danger" *ngIf="myForm.get('question').hasError('minlength') && myForm.get('question').dirty">
+                        It has to be at least 6 characters long.
+                    </div>
+                </div>
+                <div class="form-group" >
+                    <input #punchline class="form-control" type="text" placeholder="Punchline..." formControlName="punchline">
+                </div>
+                <div *ngIf="myForm.get('punchline').touched">
+                    <div class="alert alert-danger" *ngIf="myForm.get('punchline').hasError('required')">
+                        You must enter a punchline.
+                    </div>
+                    <div class="alert alert-danger" *ngIf="myForm.get('punchline').hasError('minlength') && myForm.get('punchline').dirty">
+                        It has to be at least 6 characters long.
+                    </div>
+                </div>
+                <button class="btn btn-primary" [disabled]="!myForm.valid" type="button" (click)="sendSubmitJokeEv()">Add Joke</button>
+            </form>
         </div>
     </div>
 </div>
