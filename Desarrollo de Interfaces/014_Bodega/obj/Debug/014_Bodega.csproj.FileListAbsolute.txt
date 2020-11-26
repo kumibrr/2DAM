@@ -1,0 +1,12 @@
+C:\Users\User\git\2DAM\Desarrollo de Interfaces\014_Bodega\bin\Debug\014_Bodega.exe.config
+C:\Users\User\git\2DAM\Desarrollo de Interfaces\014_Bodega\bin\Debug\014_Bodega.exe
+C:\Users\User\git\2DAM\Desarrollo de Interfaces\014_Bodega\bin\Debug\014_Bodega.pdb
+C:\Users\User\git\2DAM\Desarrollo de Interfaces\014_Bodega\obj\Debug\014_Bodega.csprojAssemblyReference.cache
+C:\Users\User\git\2DAM\Desarrollo de Interfaces\014_Bodega\obj\Debug\_014_Bodega.AboutBox1.resources
+C:\Users\User\git\2DAM\Desarrollo de Interfaces\014_Bodega\obj\Debug\_014_Bodega.Form1.resources
+C:\Users\User\git\2DAM\Desarrollo de Interfaces\014_Bodega\obj\Debug\_014_Bodega.Properties.Resources.resources
+C:\Users\User\git\2DAM\Desarrollo de Interfaces\014_Bodega\obj\Debug\014_Bodega.csproj.GenerateResource.cache
+C:\Users\User\git\2DAM\Desarrollo de Interfaces\014_Bodega\obj\Debug\014_Bodega.csproj.CoreCompileInputs.cache
+C:\Users\User\git\2DAM\Desarrollo de Interfaces\014_Bodega\obj\Debug\014_Bodega.exe
+C:\Users\User\git\2DAM\Desarrollo de Interfaces\014_Bodega\obj\Debug\014_Bodega.pdb
+C:\Users\User\git\2DAM\Desarrollo de Interfaces\014_Bodega\obj\Debug\_014_Bodega.NewCustomerForm.resources
