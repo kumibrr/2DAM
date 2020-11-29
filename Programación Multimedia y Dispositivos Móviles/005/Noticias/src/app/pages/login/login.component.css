@@ -1,0 +1,10 @@
+
+.card {
+    width: 450px;
+    margin: auto;
+}
+
+.form-danger {
+    margin-left: 2px;
+    color: red;
+}
