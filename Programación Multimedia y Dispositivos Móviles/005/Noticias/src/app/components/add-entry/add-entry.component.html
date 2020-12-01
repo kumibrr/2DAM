@@ -1,1 +1,14 @@
-<p>add-entry works!</p>
+<div class="card">
+  <img class="card-img-top">
+  <div class="card-body">
+    <h4 class="card-title">Add new blog entry</h4>
+    <div class="form-group">
+      <input #title type="text"
+        class="form-control" aria-describedby="helpId" placeholder="Title">
+    </div>
+    <div class="form-group">
+      <textarea #body class="form-control" rows="5" placeholder="Body"></textarea>
+    </div>
+    <button class="submit-btn" type="submit" class="btn btn-primary" (click)="submitEntry(title.value, body.value)">Submit</button>
+  </div>
+</div>

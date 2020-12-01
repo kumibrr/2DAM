@@ -1,0 +1,14 @@
+<div class="card text-left" *ngIf="entry !== undefined">
+  <div class="card-body">
+    <button type="button" class="close" (click)="deleteEntry()">
+      <span>&times;</span>
+    </button>
+    <h4 class="card-title">{{ entry.title.toLocaleUpperCase() }}</h4>
+    <p class="card-text">{{ entry.body }}</p>
+    <p class="card-text text-muted">
+      {{ entry.date.getHours() }}:{{ entry.date.getMinutes() }}
+      {{ entry.date.getDay() }}/{{ entry.date.getMonth() }}/{{ entry.date.getFullYear() }}
+    </p>
+  </div>
+</div>
+<br>

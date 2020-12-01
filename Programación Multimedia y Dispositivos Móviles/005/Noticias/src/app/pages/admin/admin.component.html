@@ -1,2 +1,9 @@
 <app-add-entry></app-add-entry>
-<app-blog-entries></app-blog-entries>
+<br>
+<div>
+    <h1 #headline>Headlines</h1>
+    <svg>
+        <line class="line" x2="10000" />
+    </svg>
+    <app-blog-entry *ngFor="let e of newsService.entries" [entry]="e"></app-blog-entry>
+</div>

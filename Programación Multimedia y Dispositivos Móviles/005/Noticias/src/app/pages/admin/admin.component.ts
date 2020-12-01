@@ -1,3 +1,5 @@
+import { BlogEntry } from './../../class/BlogEntry';
+import { NewsService } from './../../services/news.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,9 +9,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AdminComponent implements OnInit {
 
-  constructor() { }
+  constructor(public newsService: NewsService) { }
 
-  ngOnInit(): void {
-  }
+  ngOnInit(): void {}
 
 }

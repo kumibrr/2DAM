@@ -7,7 +7,8 @@ import { LoginComponent } from './pages/login/login.component';
 import { StyleSelectorComponent } from './components/style-selector/style-selector.component';
 import { AdminComponent } from './pages/admin/admin.component';
 import { AddEntryComponent } from './components/add-entry/add-entry.component';
-import { BlogEntriesComponent } from './components/blog-entries/blog-entries.component';
+import { BlogEntryComponent } from './components/blog-entry/blog-entry.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -16,11 +17,13 @@ import { BlogEntriesComponent } from './components/blog-entries/blog-entries.com
     StyleSelectorComponent,
     AdminComponent,
     AddEntryComponent,
-    BlogEntriesComponent
+    BlogEntryComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

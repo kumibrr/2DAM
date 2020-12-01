@@ -29,7 +29,9 @@
             ],
             "styles": [
               "src/styles.css",
-              "node_modules/bootstrap/dist/css/bootstrap.min.css"
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "./node_modules/@forevolve/bootstrap-dark/dist/css/toggle-bootstrap.min.css",
+              "./node_modules/@forevolve/bootstrap-dark/dist/css/toggle-bootstrap-dark.min.css"
             ],
             "scripts": [
               "node_modules/jquery/dist/jquery.min.js",
