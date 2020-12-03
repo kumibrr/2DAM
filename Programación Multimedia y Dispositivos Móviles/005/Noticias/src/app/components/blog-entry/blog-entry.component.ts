@@ -1,6 +1,6 @@
 import { NewsService } from './../../services/news.service';
 import { BlogEntry } from './../../class/BlogEntry';
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'app-blog-entry',
@@ -10,14 +10,15 @@ import { Component, Input, OnInit } from '@angular/core';
 export class BlogEntryComponent implements OnInit {
 
   @Input() entry?: BlogEntry;
+  @Output() delete = new EventEmitter<BlogEntry>();
 
-  constructor(private newsService: NewsService) { }
+  constructor() { }
 
   ngOnInit(): void {
   }
 
   deleteEntry(): void {
-    this.newsService.deleteEntry(this.entry);
+    this.delete.emit(this.entry);
   }
 
 }

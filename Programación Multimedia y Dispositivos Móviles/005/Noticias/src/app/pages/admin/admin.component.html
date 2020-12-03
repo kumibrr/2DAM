@@ -5,5 +5,5 @@
     <svg>
         <line class="line" x2="10000" />
     </svg>
-    <app-blog-entry *ngFor="let e of newsService.entries" [entry]="e"></app-blog-entry>
+    <app-blog-entry *ngFor="let e of newsService.getEntries()" [entry]="e" (delete)="newsService.deleteEntry($event)"></app-blog-entry>
 </div>
