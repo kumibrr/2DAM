@@ -1,0 +1,10 @@
+C:\Users\User\git\2DAM\Desarrollo de Interfaces\015_Notepad--\bin\Debug\015_Notepad--.exe.config
+C:\Users\User\git\2DAM\Desarrollo de Interfaces\015_Notepad--\bin\Debug\015_Notepad--.exe
+C:\Users\User\git\2DAM\Desarrollo de Interfaces\015_Notepad--\bin\Debug\015_Notepad--.pdb
+C:\Users\User\git\2DAM\Desarrollo de Interfaces\015_Notepad--\obj\Debug\015_Notepad--.csprojAssemblyReference.cache
+C:\Users\User\git\2DAM\Desarrollo de Interfaces\015_Notepad--\obj\Debug\_015_Notepad__.Form1.resources
+C:\Users\User\git\2DAM\Desarrollo de Interfaces\015_Notepad--\obj\Debug\_015_Notepad__.Properties.Resources.resources
+C:\Users\User\git\2DAM\Desarrollo de Interfaces\015_Notepad--\obj\Debug\015_Notepad--.csproj.GenerateResource.cache
+C:\Users\User\git\2DAM\Desarrollo de Interfaces\015_Notepad--\obj\Debug\015_Notepad--.csproj.CoreCompileInputs.cache
+C:\Users\User\git\2DAM\Desarrollo de Interfaces\015_Notepad--\obj\Debug\015_Notepad--.exe
+C:\Users\User\git\2DAM\Desarrollo de Interfaces\015_Notepad--\obj\Debug\015_Notepad--.pdb

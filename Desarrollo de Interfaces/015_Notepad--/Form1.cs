@@ -16,5 +16,16 @@ namespace _015_Notepad__
         {
             InitializeComponent();
         }
+
+        private void copyToClipboard(string txt)
+        {
+            Clipboard.SetText(txt);
+        }
+
+        private string pasteFromClipboard()
+        {
+            return Clipboard.GetText();
+        }
+
     }
 }
