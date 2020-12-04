@@ -1,0 +1,10 @@
+C:\Users\User\git\2DAM\Desarrollo de Interfaces\016_Clock\bin\Debug\016_Clock.exe.config
+C:\Users\User\git\2DAM\Desarrollo de Interfaces\016_Clock\bin\Debug\016_Clock.exe
+C:\Users\User\git\2DAM\Desarrollo de Interfaces\016_Clock\bin\Debug\016_Clock.pdb
+C:\Users\User\git\2DAM\Desarrollo de Interfaces\016_Clock\obj\Debug\016_Clock.csprojAssemblyReference.cache
+C:\Users\User\git\2DAM\Desarrollo de Interfaces\016_Clock\obj\Debug\_016_Clock.Form1.resources
+C:\Users\User\git\2DAM\Desarrollo de Interfaces\016_Clock\obj\Debug\_016_Clock.Properties.Resources.resources
+C:\Users\User\git\2DAM\Desarrollo de Interfaces\016_Clock\obj\Debug\016_Clock.csproj.GenerateResource.cache
+C:\Users\User\git\2DAM\Desarrollo de Interfaces\016_Clock\obj\Debug\016_Clock.csproj.CoreCompileInputs.cache
+C:\Users\User\git\2DAM\Desarrollo de Interfaces\016_Clock\obj\Debug\016_Clock.exe
+C:\Users\User\git\2DAM\Desarrollo de Interfaces\016_Clock\obj\Debug\016_Clock.pdb
