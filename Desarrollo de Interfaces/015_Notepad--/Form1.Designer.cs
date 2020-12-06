@@ -30,24 +30,31 @@ namespace _015_Notepad__
         private void InitializeComponent()
         {
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.archivoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.ediciónToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnsFile = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsbtnExit = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnsEdit = new System.Windows.Forms.ToolStripMenuItem();
+            this.mtsbtnUndo = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.opcionesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.fuenteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.courierNewToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.arialToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.predeterminadaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.tamañoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.mtsbtnCut = new System.Windows.Forms.ToolStripMenuItem();
+            this.mtsbtnCopy = new System.Windows.Forms.ToolStripMenuItem();
+            this.mtsbtnPaste = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnsOptions = new System.Windows.Forms.ToolStripMenuItem();
+            this.mtscFont = new System.Windows.Forms.ToolStripMenuItem();
+            this.mtsbtnFontCourier = new System.Windows.Forms.ToolStripMenuItem();
+            this.mtsbtnFontArial = new System.Windows.Forms.ToolStripMenuItem();
+            this.mtsbtnFontDefault = new System.Windows.Forms.ToolStripMenuItem();
+            this.mtsbtnFontSize = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsmiEight = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsmiTen = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsmiTwelve = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsmiFourteen = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsmiEighteen = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsmiTwentyfour = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsmiThirtysix = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
-            this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
-            this.toolStripButton2 = new System.Windows.Forms.ToolStripButton();
-            this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.deshacerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.cortarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.copiarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.pegarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripButton3 = new System.Windows.Forms.ToolStripButton();
+            this.tsbtnCut = new System.Windows.Forms.ToolStripButton();
+            this.tsbtnCopy = new System.Windows.Forms.ToolStripButton();
+            this.tsbtnPaste = new System.Windows.Forms.ToolStripButton();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.menuStrip1.SuspendLayout();
             this.toolStrip1.SuspendLayout();
@@ -55,186 +62,255 @@ namespace _015_Notepad__
             // 
             // menuStrip1
             // 
+            this.menuStrip1.GripMargin = new System.Windows.Forms.Padding(2, 2, 0, 2);
+            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.archivoToolStripMenuItem,
-            this.ediciónToolStripMenuItem,
-            this.opcionesToolStripMenuItem});
+            this.mnsFile,
+            this.mnsEdit,
+            this.mnsOptions});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(374, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(561, 33);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
-            // archivoToolStripMenuItem
+            // mnsFile
             // 
-            this.archivoToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.salirToolStripMenuItem});
-            this.archivoToolStripMenuItem.Name = "archivoToolStripMenuItem";
-            this.archivoToolStripMenuItem.Size = new System.Drawing.Size(60, 20);
-            this.archivoToolStripMenuItem.Text = "Archivo";
+            this.mnsFile.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.tsbtnExit});
+            this.mnsFile.Name = "mnsFile";
+            this.mnsFile.Size = new System.Drawing.Size(88, 29);
+            this.mnsFile.Text = "Archivo";
             // 
-            // ediciónToolStripMenuItem
+            // tsbtnExit
             // 
-            this.ediciónToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.deshacerToolStripMenuItem,
+            this.tsbtnExit.Image = global::_015_Notepad__.Properties.Resources.Close_red_16x;
+            this.tsbtnExit.Name = "tsbtnExit";
+            this.tsbtnExit.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.Q)));
+            this.tsbtnExit.Size = new System.Drawing.Size(207, 34);
+            this.tsbtnExit.Text = "Salir";
+            this.tsbtnExit.Click += new System.EventHandler(this.tsbtnExit_Click);
+            // 
+            // mnsEdit
+            // 
+            this.mnsEdit.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.mtsbtnUndo,
             this.toolStripSeparator1,
-            this.cortarToolStripMenuItem,
-            this.copiarToolStripMenuItem,
-            this.pegarToolStripMenuItem});
-            this.ediciónToolStripMenuItem.Name = "ediciónToolStripMenuItem";
-            this.ediciónToolStripMenuItem.Size = new System.Drawing.Size(58, 20);
-            this.ediciónToolStripMenuItem.Text = "Edición";
+            this.mtsbtnCut,
+            this.mtsbtnCopy,
+            this.mtsbtnPaste});
+            this.mnsEdit.Name = "mnsEdit";
+            this.mnsEdit.Size = new System.Drawing.Size(85, 29);
+            this.mnsEdit.Text = "Edición";
+            // 
+            // mtsbtnUndo
+            // 
+            this.mtsbtnUndo.Image = global::_015_Notepad__.Properties.Resources.Redo_16x;
+            this.mtsbtnUndo.Name = "mtsbtnUndo";
+            this.mtsbtnUndo.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.Z)));
+            this.mtsbtnUndo.Size = new System.Drawing.Size(270, 34);
+            this.mtsbtnUndo.Text = "Deshacer";
+            this.mtsbtnUndo.Click += new System.EventHandler(this.mtsbtnUndo_Click);
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(177, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(267, 6);
             // 
-            // opcionesToolStripMenuItem
+            // mtsbtnCut
             // 
-            this.opcionesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.fuenteToolStripMenuItem,
-            this.tamañoToolStripMenuItem});
-            this.opcionesToolStripMenuItem.Name = "opcionesToolStripMenuItem";
-            this.opcionesToolStripMenuItem.Size = new System.Drawing.Size(69, 20);
-            this.opcionesToolStripMenuItem.Text = "Opciones";
+            this.mtsbtnCut.Image = global::_015_Notepad__.Properties.Resources.Cut_16x;
+            this.mtsbtnCut.Name = "mtsbtnCut";
+            this.mtsbtnCut.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.X)));
+            this.mtsbtnCut.Size = new System.Drawing.Size(270, 34);
+            this.mtsbtnCut.Text = "Cortar";
+            this.mtsbtnCut.Click += new System.EventHandler(this.mtsbtnCut_Click);
             // 
-            // fuenteToolStripMenuItem
+            // mtsbtnCopy
             // 
-            this.fuenteToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.courierNewToolStripMenuItem,
-            this.arialToolStripMenuItem,
-            this.predeterminadaToolStripMenuItem});
-            this.fuenteToolStripMenuItem.Name = "fuenteToolStripMenuItem";
-            this.fuenteToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.fuenteToolStripMenuItem.Text = "Fuente";
+            this.mtsbtnCopy.Image = global::_015_Notepad__.Properties.Resources.Copy_16x;
+            this.mtsbtnCopy.Name = "mtsbtnCopy";
+            this.mtsbtnCopy.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.C)));
+            this.mtsbtnCopy.Size = new System.Drawing.Size(270, 34);
+            this.mtsbtnCopy.Text = "Copiar";
+            this.mtsbtnCopy.Click += new System.EventHandler(this.mtsbtnCopy_Click);
             // 
-            // courierNewToolStripMenuItem
+            // mtsbtnPaste
             // 
-            this.courierNewToolStripMenuItem.Name = "courierNewToolStripMenuItem";
-            this.courierNewToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.courierNewToolStripMenuItem.Text = "Courier New";
+            this.mtsbtnPaste.Image = global::_015_Notepad__.Properties.Resources.Paste_16x;
+            this.mtsbtnPaste.Name = "mtsbtnPaste";
+            this.mtsbtnPaste.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.P)));
+            this.mtsbtnPaste.Size = new System.Drawing.Size(270, 34);
+            this.mtsbtnPaste.Text = "Pegar";
+            this.mtsbtnPaste.Click += new System.EventHandler(this.mtsbtnPaste_Click);
             // 
-            // arialToolStripMenuItem
+            // mnsOptions
             // 
-            this.arialToolStripMenuItem.Name = "arialToolStripMenuItem";
-            this.arialToolStripMenuItem.Size = new System.Drawing.Size(158, 22);
-            this.arialToolStripMenuItem.Text = "Arial";
+            this.mnsOptions.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.mtscFont,
+            this.mtsbtnFontSize});
+            this.mnsOptions.Name = "mnsOptions";
+            this.mnsOptions.Size = new System.Drawing.Size(103, 29);
+            this.mnsOptions.Text = "Opciones";
             // 
-            // predeterminadaToolStripMenuItem
+            // mtscFont
             // 
-            this.predeterminadaToolStripMenuItem.Name = "predeterminadaToolStripMenuItem";
-            this.predeterminadaToolStripMenuItem.Size = new System.Drawing.Size(158, 22);
-            this.predeterminadaToolStripMenuItem.Text = "Predeterminada";
+            this.mtscFont.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.mtsbtnFontCourier,
+            this.mtsbtnFontArial,
+            this.mtsbtnFontDefault});
+            this.mtscFont.Name = "mtscFont";
+            this.mtscFont.Size = new System.Drawing.Size(270, 34);
+            this.mtscFont.Text = "Fuente";
             // 
-            // tamañoToolStripMenuItem
+            // mtsbtnFontCourier
             // 
-            this.tamañoToolStripMenuItem.Name = "tamañoToolStripMenuItem";
-            this.tamañoToolStripMenuItem.Size = new System.Drawing.Size(116, 22);
-            this.tamañoToolStripMenuItem.Text = "Tamaño";
+            this.mtsbtnFontCourier.Name = "mtsbtnFontCourier";
+            this.mtsbtnFontCourier.Size = new System.Drawing.Size(270, 34);
+            this.mtsbtnFontCourier.Text = "Courier New";
+            this.mtsbtnFontCourier.Click += new System.EventHandler(this.mtsbtnFontCourier_Click);
+            // 
+            // mtsbtnFontArial
+            // 
+            this.mtsbtnFontArial.Name = "mtsbtnFontArial";
+            this.mtsbtnFontArial.Size = new System.Drawing.Size(270, 34);
+            this.mtsbtnFontArial.Text = "Arial";
+            this.mtsbtnFontArial.Click += new System.EventHandler(this.mtsbtnFontArial_Click);
+            // 
+            // mtsbtnFontDefault
+            // 
+            this.mtsbtnFontDefault.Name = "mtsbtnFontDefault";
+            this.mtsbtnFontDefault.Size = new System.Drawing.Size(270, 34);
+            this.mtsbtnFontDefault.Text = "Predeterminada";
+            this.mtsbtnFontDefault.Click += new System.EventHandler(this.mtsbtnFontDefault_Click);
+            // 
+            // mtsbtnFontSize
+            // 
+            this.mtsbtnFontSize.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.tsmiEight,
+            this.tsmiTen,
+            this.tsmiTwelve,
+            this.tsmiFourteen,
+            this.tsmiEighteen,
+            this.tsmiTwentyfour,
+            this.tsmiThirtysix});
+            this.mtsbtnFontSize.Name = "mtsbtnFontSize";
+            this.mtsbtnFontSize.Size = new System.Drawing.Size(270, 34);
+            this.mtsbtnFontSize.Text = "Tamaño";
+            this.mtsbtnFontSize.DropDownItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.mtscFontSize_ItemClicked);
+            // 
+            // tsmiEight
+            // 
+            this.tsmiEight.Name = "tsmiEight";
+            this.tsmiEight.Size = new System.Drawing.Size(134, 34);
+            this.tsmiEight.Text = "8";
+            // 
+            // tsmiTen
+            // 
+            this.tsmiTen.Name = "tsmiTen";
+            this.tsmiTen.Size = new System.Drawing.Size(134, 34);
+            this.tsmiTen.Text = "10";
+            // 
+            // tsmiTwelve
+            // 
+            this.tsmiTwelve.Name = "tsmiTwelve";
+            this.tsmiTwelve.Size = new System.Drawing.Size(134, 34);
+            this.tsmiTwelve.Text = "12";
+            // 
+            // tsmiFourteen
+            // 
+            this.tsmiFourteen.Name = "tsmiFourteen";
+            this.tsmiFourteen.Size = new System.Drawing.Size(134, 34);
+            this.tsmiFourteen.Text = "14";
+            // 
+            // tsmiEighteen
+            // 
+            this.tsmiEighteen.Name = "tsmiEighteen";
+            this.tsmiEighteen.Size = new System.Drawing.Size(134, 34);
+            this.tsmiEighteen.Text = "18";
+            // 
+            // tsmiTwentyfour
+            // 
+            this.tsmiTwentyfour.Name = "tsmiTwentyfour";
+            this.tsmiTwentyfour.Size = new System.Drawing.Size(134, 34);
+            this.tsmiTwentyfour.Text = "24";
+            // 
+            // tsmiThirtysix
+            // 
+            this.tsmiThirtysix.Name = "tsmiThirtysix";
+            this.tsmiThirtysix.Size = new System.Drawing.Size(134, 34);
+            this.tsmiThirtysix.Text = "36";
             // 
             // toolStrip1
             // 
+            this.toolStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripButton1,
-            this.toolStripButton2,
-            this.toolStripButton3});
-            this.toolStrip1.Location = new System.Drawing.Point(0, 24);
+            this.tsbtnCut,
+            this.tsbtnCopy,
+            this.tsbtnPaste});
+            this.toolStrip1.Location = new System.Drawing.Point(0, 33);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(374, 25);
+            this.toolStrip1.Padding = new System.Windows.Forms.Padding(0, 0, 3, 0);
+            this.toolStrip1.Size = new System.Drawing.Size(561, 33);
             this.toolStrip1.TabIndex = 1;
             this.toolStrip1.Text = "toolStrip1";
             // 
-            // toolStripButton1
+            // tsbtnCut
             // 
-            this.toolStripButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripButton1.Image = global::_015_Notepad__.Properties.Resources.Cut_16x;
-            this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton1.Name = "toolStripButton1";
-            this.toolStripButton1.Size = new System.Drawing.Size(23, 22);
-            this.toolStripButton1.Text = "toolStripButton1";
+            this.tsbtnCut.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.tsbtnCut.Image = global::_015_Notepad__.Properties.Resources.Cut_16x;
+            this.tsbtnCut.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.tsbtnCut.Name = "tsbtnCut";
+            this.tsbtnCut.Size = new System.Drawing.Size(34, 28);
+            this.tsbtnCut.Text = "toolStripButton1";
+            this.tsbtnCut.Click += new System.EventHandler(this.tsbtnCut_Click);
             // 
-            // toolStripButton2
+            // tsbtnCopy
             // 
-            this.toolStripButton2.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripButton2.Image = global::_015_Notepad__.Properties.Resources.Copy_16x;
-            this.toolStripButton2.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton2.Name = "toolStripButton2";
-            this.toolStripButton2.Size = new System.Drawing.Size(23, 22);
-            this.toolStripButton2.Text = "toolStripButton2";
+            this.tsbtnCopy.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.tsbtnCopy.Image = global::_015_Notepad__.Properties.Resources.Copy_16x;
+            this.tsbtnCopy.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.tsbtnCopy.Name = "tsbtnCopy";
+            this.tsbtnCopy.Size = new System.Drawing.Size(34, 28);
+            this.tsbtnCopy.Text = "toolStripButton2";
+            this.tsbtnCopy.Click += new System.EventHandler(this.tsbtnCopy_Click);
             // 
-            // salirToolStripMenuItem
+            // tsbtnPaste
             // 
-            this.salirToolStripMenuItem.Image = global::_015_Notepad__.Properties.Resources.Close_red_16x;
-            this.salirToolStripMenuItem.Name = "salirToolStripMenuItem";
-            this.salirToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.Q)));
-            this.salirToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.salirToolStripMenuItem.Text = "Salir";
-            // 
-            // deshacerToolStripMenuItem
-            // 
-            this.deshacerToolStripMenuItem.Image = global::_015_Notepad__.Properties.Resources.Redo_16x;
-            this.deshacerToolStripMenuItem.Name = "deshacerToolStripMenuItem";
-            this.deshacerToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.Z)));
-            this.deshacerToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.deshacerToolStripMenuItem.Text = "Deshacer";
-            // 
-            // cortarToolStripMenuItem
-            // 
-            this.cortarToolStripMenuItem.Image = global::_015_Notepad__.Properties.Resources.Cut_16x;
-            this.cortarToolStripMenuItem.Name = "cortarToolStripMenuItem";
-            this.cortarToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.X)));
-            this.cortarToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.cortarToolStripMenuItem.Text = "Cortar";
-            // 
-            // copiarToolStripMenuItem
-            // 
-            this.copiarToolStripMenuItem.Image = global::_015_Notepad__.Properties.Resources.Copy_16x;
-            this.copiarToolStripMenuItem.Name = "copiarToolStripMenuItem";
-            this.copiarToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.C)));
-            this.copiarToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.copiarToolStripMenuItem.Text = "Copiar";
-            // 
-            // pegarToolStripMenuItem
-            // 
-            this.pegarToolStripMenuItem.Image = global::_015_Notepad__.Properties.Resources.Paste_16x;
-            this.pegarToolStripMenuItem.Name = "pegarToolStripMenuItem";
-            this.pegarToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.P)));
-            this.pegarToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.pegarToolStripMenuItem.Text = "Pegar";
-            // 
-            // toolStripButton3
-            // 
-            this.toolStripButton3.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripButton3.Image = global::_015_Notepad__.Properties.Resources.Paste_16x;
-            this.toolStripButton3.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton3.Name = "toolStripButton3";
-            this.toolStripButton3.Size = new System.Drawing.Size(23, 22);
-            this.toolStripButton3.Text = "toolStripButton3";
+            this.tsbtnPaste.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.tsbtnPaste.Image = global::_015_Notepad__.Properties.Resources.Paste_16x;
+            this.tsbtnPaste.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.tsbtnPaste.Name = "tsbtnPaste";
+            this.tsbtnPaste.Size = new System.Drawing.Size(34, 28);
+            this.tsbtnPaste.Text = "toolStripButton3";
+            this.tsbtnPaste.Click += new System.EventHandler(this.tsbtnPaste_Click);
             // 
             // textBox1
             // 
             this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox1.Location = new System.Drawing.Point(12, 52);
+            this.textBox1.Location = new System.Drawing.Point(18, 80);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(350, 168);
+            this.textBox1.Size = new System.Drawing.Size(523, 256);
             this.textBox1.TabIndex = 2;
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(374, 232);
+            this.ClientSize = new System.Drawing.Size(561, 357);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
-            this.MinimumSize = new System.Drawing.Size(390, 270);
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.MinimumSize = new System.Drawing.Size(574, 385);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.toolStrip1.ResumeLayout(false);
@@ -247,25 +323,32 @@ namespace _015_Notepad__
         #endregion
 
         private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem archivoToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem ediciónToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem deshacerToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem mnsFile;
+        private System.Windows.Forms.ToolStripMenuItem mnsEdit;
+        private System.Windows.Forms.ToolStripMenuItem mtsbtnUndo;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
-        private System.Windows.Forms.ToolStripMenuItem cortarToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem copiarToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem pegarToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem opcionesToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem fuenteToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem courierNewToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem arialToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem predeterminadaToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem tamañoToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem salirToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem mtsbtnCut;
+        private System.Windows.Forms.ToolStripMenuItem mtsbtnCopy;
+        private System.Windows.Forms.ToolStripMenuItem mtsbtnPaste;
+        private System.Windows.Forms.ToolStripMenuItem mnsOptions;
+        private System.Windows.Forms.ToolStripMenuItem mtscFont;
+        private System.Windows.Forms.ToolStripMenuItem mtsbtnFontCourier;
+        private System.Windows.Forms.ToolStripMenuItem mtsbtnFontArial;
+        private System.Windows.Forms.ToolStripMenuItem mtsbtnFontDefault;
+        private System.Windows.Forms.ToolStripMenuItem mtsbtnFontSize;
+        private System.Windows.Forms.ToolStripMenuItem tsbtnExit;
         private System.Windows.Forms.ToolStrip toolStrip1;
-        private System.Windows.Forms.ToolStripButton toolStripButton1;
-        private System.Windows.Forms.ToolStripButton toolStripButton2;
-        private System.Windows.Forms.ToolStripButton toolStripButton3;
+        private System.Windows.Forms.ToolStripButton tsbtnCut;
+        private System.Windows.Forms.ToolStripButton tsbtnCopy;
+        private System.Windows.Forms.ToolStripButton tsbtnPaste;
         private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.ToolStripMenuItem tsmiEight;
+        private System.Windows.Forms.ToolStripMenuItem tsmiTen;
+        private System.Windows.Forms.ToolStripMenuItem tsmiTwelve;
+        private System.Windows.Forms.ToolStripMenuItem tsmiFourteen;
+        private System.Windows.Forms.ToolStripMenuItem tsmiEighteen;
+        private System.Windows.Forms.ToolStripMenuItem tsmiTwentyfour;
+        private System.Windows.Forms.ToolStripMenuItem tsmiThirtysix;
     }
 }
 
