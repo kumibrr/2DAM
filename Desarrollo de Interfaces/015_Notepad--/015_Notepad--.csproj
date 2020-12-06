@@ -98,5 +98,26 @@
   <ItemGroup>
     <None Include="Resources\Copy_16x.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NewFile_16x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Open_16x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OpenFile_16x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Save_16x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Font_16x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FontColor_16x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ColorPalette_16x.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
