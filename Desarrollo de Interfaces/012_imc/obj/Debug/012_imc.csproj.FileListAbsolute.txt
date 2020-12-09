@@ -1,0 +1,10 @@
+C:\Users\Israel\git\2DAM\Desarrollo de Interfaces\012_imc\bin\Debug\012_imc.exe.config
+C:\Users\Israel\git\2DAM\Desarrollo de Interfaces\012_imc\bin\Debug\012_imc.exe
+C:\Users\Israel\git\2DAM\Desarrollo de Interfaces\012_imc\bin\Debug\012_imc.pdb
+C:\Users\Israel\git\2DAM\Desarrollo de Interfaces\012_imc\obj\Debug\012_imc.csprojAssemblyReference.cache
+C:\Users\Israel\git\2DAM\Desarrollo de Interfaces\012_imc\obj\Debug\_012_imc.Form1.resources
+C:\Users\Israel\git\2DAM\Desarrollo de Interfaces\012_imc\obj\Debug\_012_imc.Properties.Resources.resources
+C:\Users\Israel\git\2DAM\Desarrollo de Interfaces\012_imc\obj\Debug\012_imc.csproj.GenerateResource.cache
+C:\Users\Israel\git\2DAM\Desarrollo de Interfaces\012_imc\obj\Debug\012_imc.csproj.CoreCompileInputs.cache
+C:\Users\Israel\git\2DAM\Desarrollo de Interfaces\012_imc\obj\Debug\012_imc.exe
+C:\Users\Israel\git\2DAM\Desarrollo de Interfaces\012_imc\obj\Debug\012_imc.pdb
