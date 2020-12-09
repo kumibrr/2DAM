@@ -13,10 +13,18 @@ namespace _011_Fútbol7
         "Ronaldo Nazario","Juanito","Zinedine Zidane","Johan Cruyff","Dani Güiza","Ronaldinho",
         "Gerd Muller","Marco van Basten","Xavi Hernández","Raul Gonzalez" };
 
+        private string[] referee = new string[] { "Pedro pepe", "paco el bola", "felipezeta Girocompleto" };
+
+        // index0 = referee, index1 = assistantreferee1, index2 = assistantreferee2
+        private string[] SelectedReferee = new string[3];
+
         public Form1()
         {
             InitializeComponent();
             lsAvailablePlayers.Items.AddRange(players);
+            cbReferee.Items.AddRange(referee);
+            cbAssistantReferee1.Items.AddRange(referee);
+            cbAssistantReferee2.Items.AddRange(referee);
         }
 
         private void IOFromLsToLs(ListBox lsInput, ListBox lsOutput)
@@ -110,6 +118,34 @@ namespace _011_Fútbol7
                 lsAvailablePlayers.Items.Add(txtPlayerName.Text);
                 txtPlayerName.Text = "";
             }
+        }
+
+        private void Generic_cbReferee_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            ComboBox cb = (ComboBox)sender;
+            switch(cb.Name)
+            {
+                case "cbReferee":
+                    SelectedReferee[0] = cb.SelectedItem.ToString();
+                    break;
+                case "cbAssistantReferee1":
+                    SelectedReferee[1] = cb.SelectedItem.ToString();
+                    break;
+                case "cbAssistantReferee2":
+                    SelectedReferee[2] = cb.SelectedItem.ToString();
+                    break;
+            }
+            lblReferees.Text = $"Trío de árbitros => Árbitro:{SelectedReferee[0]}, Linier 1: {SelectedReferee[1]}, Linier 2: {SelectedReferee[2]}";
+        }
+
+        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
+        {
+            lblTime.Text = $"{dateTimePicker1.Value.Hour}:{dateTimePicker1.Value.Minute}";
+        }
+
+        private void monthCalendar1_DateChanged(object sender, DateRangeEventArgs e)
+        {
+            lblDate.Text = $"{e.Start.DayOfWeek}, {e.Start.Day}/{e.Start.Month}/{e.Start.Year}";
         }
     }
 }
