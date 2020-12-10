@@ -1,0 +1,12 @@
+C:\Users\User\git\2DAM\Desarrollo de Interfaces\examenDeLaBarreraIsrael\bin\Debug\examenDeLaBarreraIsrael.exe.config
+C:\Users\User\git\2DAM\Desarrollo de Interfaces\examenDeLaBarreraIsrael\bin\Debug\examenDeLaBarreraIsrael.exe
+C:\Users\User\git\2DAM\Desarrollo de Interfaces\examenDeLaBarreraIsrael\bin\Debug\examenDeLaBarreraIsrael.pdb
+C:\Users\User\git\2DAM\Desarrollo de Interfaces\examenDeLaBarreraIsrael\obj\Debug\examenDeLaBarreraIsrael.csprojAssemblyReference.cache
+C:\Users\User\git\2DAM\Desarrollo de Interfaces\examenDeLaBarreraIsrael\obj\Debug\examenDeLaBarreraIsrael.AboutBox1.resources
+C:\Users\User\git\2DAM\Desarrollo de Interfaces\examenDeLaBarreraIsrael\obj\Debug\examenDeLaBarreraIsrael.Form1.resources
+C:\Users\User\git\2DAM\Desarrollo de Interfaces\examenDeLaBarreraIsrael\obj\Debug\examenDeLaBarreraIsrael.Properties.Resources.resources
+C:\Users\User\git\2DAM\Desarrollo de Interfaces\examenDeLaBarreraIsrael\obj\Debug\examenDeLaBarreraIsrael.csproj.GenerateResource.cache
+C:\Users\User\git\2DAM\Desarrollo de Interfaces\examenDeLaBarreraIsrael\obj\Debug\examenDeLaBarreraIsrael.csproj.CoreCompileInputs.cache
+C:\Users\User\git\2DAM\Desarrollo de Interfaces\examenDeLaBarreraIsrael\obj\Debug\examenDeLaBarreraIsrael.exe
+C:\Users\User\git\2DAM\Desarrollo de Interfaces\examenDeLaBarreraIsrael\obj\Debug\examenDeLaBarreraIsrael.pdb
+C:\Users\User\git\2DAM\Desarrollo de Interfaces\examenDeLaBarreraIsrael\obj\Debug\examenDeLaBarreraIsrael.InsertCodesForm.resources
