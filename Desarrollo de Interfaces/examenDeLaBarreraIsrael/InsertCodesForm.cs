@@ -97,23 +97,27 @@ namespace examenDeLaBarreraIsrael
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
-            int sIndex = listBox1.SelectedIndex;
-
-            string[] newCodes = new string[codes.Length - 1];
-
-            for (int i = 0, j = 0; i < codes.Length; i++, j++)
+            if (listBox1.SelectedIndex != -1)
             {
-                if (i != sIndex)
+                int sIndex = listBox1.SelectedIndex;
+
+                string[] newCodes = new string[codes.Length - 1];
+
+                for (int i = 0, j = 0; i < codes.Length; i++, j++)
                 {
-                    newCodes[j] = codes[i];
-                } else
-                {
-                    j--;
+                    if (i != sIndex)
+                    {
+                        newCodes[j] = codes[i];
+                    }
+                    else
+                    {
+                        j--;
+                    }
+
                 }
-                
+                codes = newCodes;
+                updateList(newCodes);
             }
-            codes = newCodes;
-            updateList(newCodes);
         }
     }
 }

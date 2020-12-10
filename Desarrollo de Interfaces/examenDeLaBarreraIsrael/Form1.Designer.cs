@@ -38,7 +38,7 @@ namespace examenDeLaBarreraIsrael
             this.mbtnAbout = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.tsbtnExit = new System.Windows.Forms.ToolStripButton();
-            this.toolStripButton2 = new System.Windows.Forms.ToolStripButton();
+            this.tsBtnPresupuesto = new System.Windows.Forms.ToolStripButton();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.menuStrip1.SuspendLayout();
             this.toolStrip1.SuspendLayout();
@@ -87,7 +87,7 @@ namespace examenDeLaBarreraIsrael
             // 
             this.mbtnCode.Image = global::examenDeLaBarreraIsrael.Properties.Resources.CodeAnalysisConsole_16x;
             this.mbtnCode.Name = "mbtnCode";
-            this.mbtnCode.Size = new System.Drawing.Size(180, 22);
+            this.mbtnCode.Size = new System.Drawing.Size(118, 22);
             this.mbtnCode.Text = "Códigos";
             this.mbtnCode.Click += new System.EventHandler(this.mbtnCode_Click);
             // 
@@ -96,6 +96,7 @@ namespace examenDeLaBarreraIsrael
             this.mbtnPresupuesto.Name = "mbtnPresupuesto";
             this.mbtnPresupuesto.Size = new System.Drawing.Size(84, 20);
             this.mbtnPresupuesto.Text = "Presupuesto";
+            this.mbtnPresupuesto.Click += new System.EventHandler(this.Presupuesto_Click);
             // 
             // mbtnAbout
             // 
@@ -108,7 +109,7 @@ namespace examenDeLaBarreraIsrael
             // 
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.tsbtnExit,
-            this.toolStripButton2});
+            this.tsBtnPresupuesto});
             this.toolStrip1.Location = new System.Drawing.Point(0, 95);
             this.toolStrip1.Name = "toolStrip1";
             this.toolStrip1.Size = new System.Drawing.Size(641, 25);
@@ -125,14 +126,16 @@ namespace examenDeLaBarreraIsrael
             this.tsbtnExit.Text = "toolStripButton1";
             this.tsbtnExit.Click += new System.EventHandler(this.exitApplication);
             // 
-            // toolStripButton2
+            // tsBtnPresupuesto
             // 
-            this.toolStripButton2.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripButton2.Image = global::examenDeLaBarreraIsrael.Properties.Resources.MoneyEditor_16x;
-            this.toolStripButton2.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton2.Name = "toolStripButton2";
-            this.toolStripButton2.Size = new System.Drawing.Size(23, 22);
-            this.toolStripButton2.Text = "toolStripButton2";
+            this.tsBtnPresupuesto.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.tsBtnPresupuesto.Image = global::examenDeLaBarreraIsrael.Properties.Resources.MoneyEditor_16x;
+            this.tsBtnPresupuesto.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.tsBtnPresupuesto.Name = "tsBtnPresupuesto";
+            this.tsBtnPresupuesto.Size = new System.Drawing.Size(23, 22);
+            this.tsBtnPresupuesto.Text = "toolStripButton2";
+            this.tsBtnPresupuesto.Click += new System.EventHandler(this.Presupuesto_Click);
+
             // 
             // pictureBox1
             // 
@@ -178,7 +181,7 @@ namespace examenDeLaBarreraIsrael
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.ToolStrip toolStrip1;
         private System.Windows.Forms.ToolStripButton tsbtnExit;
-        private System.Windows.Forms.ToolStripButton toolStripButton2;
+        private System.Windows.Forms.ToolStripButton tsBtnPresupuesto;
     }
 }
 
