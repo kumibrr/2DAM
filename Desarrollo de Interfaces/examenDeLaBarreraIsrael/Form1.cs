@@ -39,5 +39,13 @@ namespace examenDeLaBarreraIsrael
             insCodes.WindowState = FormWindowState.Maximized;
             insCodes.Show();
         }
+
+        private void Presupuesto_Click(object sender, EventArgs e)
+        {
+            Form presupuesto = new FormPresupuestos(codes, codesPrices);
+            presupuesto.MdiParent = this;
+            presupuesto.WindowState = FormWindowState.Maximized;
+            presupuesto.Show();
+        }
     }
 }

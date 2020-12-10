@@ -10,3 +10,4 @@ C:\Users\User\git\2DAM\Desarrollo de Interfaces\examenDeLaBarreraIsrael\obj\Debu
 C:\Users\User\git\2DAM\Desarrollo de Interfaces\examenDeLaBarreraIsrael\obj\Debug\examenDeLaBarreraIsrael.exe
 C:\Users\User\git\2DAM\Desarrollo de Interfaces\examenDeLaBarreraIsrael\obj\Debug\examenDeLaBarreraIsrael.pdb
 C:\Users\User\git\2DAM\Desarrollo de Interfaces\examenDeLaBarreraIsrael\obj\Debug\examenDeLaBarreraIsrael.InsertCodesForm.resources
+C:\Users\User\git\2DAM\Desarrollo de Interfaces\examenDeLaBarreraIsrael\obj\Debug\examenDeLaBarreraIsrael.FormPresupuestos.resources
