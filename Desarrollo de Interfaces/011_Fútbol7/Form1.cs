@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Windows.Forms;
 
 namespace _011_Fútbol7
@@ -25,6 +26,14 @@ namespace _011_Fútbol7
             cbReferee.Items.AddRange(referee);
             cbAssistantReferee1.Items.AddRange(referee);
             cbAssistantReferee2.Items.AddRange(referee);
+        }
+
+        private void openFile()
+        {
+            StreamReader myFile;
+            OpenFileDialog dialog = new OpenFileDialog();
+            dialog.Filter = "Archivos de Texto(.txt) | *.txt";
+            
         }
 
         private void IOFromLsToLs(ListBox lsInput, ListBox lsOutput)
@@ -146,6 +155,11 @@ namespace _011_Fútbol7
         private void monthCalendar1_DateChanged(object sender, DateRangeEventArgs e)
         {
             lblDate.Text = $"{e.Start.DayOfWeek}, {e.Start.Day}/{e.Start.Month}/{e.Start.Year}";
+        }
+
+        private void importarListaDeJugadoresToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

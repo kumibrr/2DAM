@@ -52,13 +52,17 @@
             this.cbAssistantReferee2 = new System.Windows.Forms.ComboBox();
             this.lblReferees = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.lblTime = new System.Windows.Forms.Label();
+            this.lblDate = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
-            this.lblDate = new System.Windows.Forms.Label();
-            this.lblTime = new System.Windows.Forms.Label();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.importarListaDeJugadoresToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.exportarListaDeJugadoresToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.groupBox1.SuspendLayout();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // lbl_playersAvailable
@@ -67,10 +71,9 @@
             this.lbl_playersAvailable.BackColor = System.Drawing.Color.Transparent;
             this.lbl_playersAvailable.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_playersAvailable.ForeColor = System.Drawing.Color.White;
-            this.lbl_playersAvailable.Location = new System.Drawing.Point(74, 14);
-            this.lbl_playersAvailable.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbl_playersAvailable.Location = new System.Drawing.Point(48, 44);
             this.lbl_playersAvailable.Name = "lbl_playersAvailable";
-            this.lbl_playersAvailable.Size = new System.Drawing.Size(304, 32);
+            this.lbl_playersAvailable.Size = new System.Drawing.Size(202, 24);
             this.lbl_playersAvailable.TabIndex = 0;
             this.lbl_playersAvailable.Text = "Jugadores Disponibles";
             // 
@@ -80,10 +83,9 @@
             this.lblTeamA.BackColor = System.Drawing.Color.Transparent;
             this.lblTeamA.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTeamA.ForeColor = System.Drawing.Color.White;
-            this.lblTeamA.Location = new System.Drawing.Point(470, 72);
-            this.lblTeamA.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblTeamA.Location = new System.Drawing.Point(312, 82);
             this.lblTeamA.Name = "lblTeamA";
-            this.lblTeamA.Size = new System.Drawing.Size(131, 32);
+            this.lblTeamA.Size = new System.Drawing.Size(89, 24);
             this.lblTeamA.TabIndex = 1;
             this.lblTeamA.Text = "Equipo A";
             // 
@@ -93,52 +95,44 @@
             this.lblTeamB.BackColor = System.Drawing.Color.Transparent;
             this.lblTeamB.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTeamB.ForeColor = System.Drawing.Color.White;
-            this.lblTeamB.Location = new System.Drawing.Point(470, 325);
-            this.lblTeamB.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblTeamB.Location = new System.Drawing.Point(312, 246);
             this.lblTeamB.Name = "lblTeamB";
-            this.lblTeamB.Size = new System.Drawing.Size(131, 32);
+            this.lblTeamB.Size = new System.Drawing.Size(88, 24);
             this.lblTeamB.TabIndex = 2;
             this.lblTeamB.Text = "Equipo B";
             // 
             // lsAvailablePlayers
             // 
             this.lsAvailablePlayers.FormattingEnabled = true;
-            this.lsAvailablePlayers.ItemHeight = 20;
-            this.lsAvailablePlayers.Location = new System.Drawing.Point(80, 51);
-            this.lsAvailablePlayers.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.lsAvailablePlayers.Location = new System.Drawing.Point(52, 68);
             this.lsAvailablePlayers.Name = "lsAvailablePlayers";
             this.lsAvailablePlayers.SelectionMode = System.Windows.Forms.SelectionMode.MultiSimple;
-            this.lsAvailablePlayers.Size = new System.Drawing.Size(295, 504);
+            this.lsAvailablePlayers.Size = new System.Drawing.Size(198, 329);
             this.lsAvailablePlayers.TabIndex = 3;
             // 
             // lsTeamA
             // 
             this.lsTeamA.FormattingEnabled = true;
-            this.lsTeamA.ItemHeight = 20;
-            this.lsTeamA.Location = new System.Drawing.Point(476, 114);
-            this.lsTeamA.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.lsTeamA.Location = new System.Drawing.Point(316, 109);
             this.lsTeamA.Name = "lsTeamA";
             this.lsTeamA.SelectionMode = System.Windows.Forms.SelectionMode.MultiSimple;
-            this.lsTeamA.Size = new System.Drawing.Size(259, 204);
+            this.lsTeamA.Size = new System.Drawing.Size(174, 134);
             this.lsTeamA.TabIndex = 4;
             // 
             // lsTeamB
             // 
             this.lsTeamB.FormattingEnabled = true;
-            this.lsTeamB.ItemHeight = 20;
-            this.lsTeamB.Location = new System.Drawing.Point(476, 366);
-            this.lsTeamB.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.lsTeamB.Location = new System.Drawing.Point(316, 273);
             this.lsTeamB.Name = "lsTeamB";
             this.lsTeamB.SelectionMode = System.Windows.Forms.SelectionMode.MultiSimple;
-            this.lsTeamB.Size = new System.Drawing.Size(259, 204);
+            this.lsTeamB.Size = new System.Drawing.Size(174, 134);
             this.lsTeamB.TabIndex = 5;
             // 
             // btnSubstractOneFromA
             // 
-            this.btnSubstractOneFromA.Location = new System.Drawing.Point(399, 192);
-            this.btnSubstractOneFromA.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnSubstractOneFromA.Location = new System.Drawing.Point(265, 160);
             this.btnSubstractOneFromA.Name = "btnSubstractOneFromA";
-            this.btnSubstractOneFromA.Size = new System.Drawing.Size(52, 35);
+            this.btnSubstractOneFromA.Size = new System.Drawing.Size(35, 23);
             this.btnSubstractOneFromA.TabIndex = 7;
             this.btnSubstractOneFromA.Text = "<";
             this.btnSubstractOneFromA.UseVisualStyleBackColor = true;
@@ -146,10 +140,9 @@
             // 
             // btnAddToA
             // 
-            this.btnAddToA.Location = new System.Drawing.Point(399, 148);
-            this.btnAddToA.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnAddToA.Location = new System.Drawing.Point(265, 131);
             this.btnAddToA.Name = "btnAddToA";
-            this.btnAddToA.Size = new System.Drawing.Size(52, 35);
+            this.btnAddToA.Size = new System.Drawing.Size(35, 23);
             this.btnAddToA.TabIndex = 8;
             this.btnAddToA.Text = ">";
             this.btnAddToA.UseVisualStyleBackColor = true;
@@ -157,10 +150,9 @@
             // 
             // btnSubstractAllFromA
             // 
-            this.btnSubstractAllFromA.Location = new System.Drawing.Point(399, 258);
-            this.btnSubstractAllFromA.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnSubstractAllFromA.Location = new System.Drawing.Point(265, 203);
             this.btnSubstractAllFromA.Name = "btnSubstractAllFromA";
-            this.btnSubstractAllFromA.Size = new System.Drawing.Size(52, 35);
+            this.btnSubstractAllFromA.Size = new System.Drawing.Size(35, 23);
             this.btnSubstractAllFromA.TabIndex = 9;
             this.btnSubstractAllFromA.Text = "<<";
             this.btnSubstractAllFromA.UseVisualStyleBackColor = true;
@@ -168,10 +160,9 @@
             // 
             // btnAddToB
             // 
-            this.btnAddToB.Location = new System.Drawing.Point(399, 391);
-            this.btnAddToB.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnAddToB.Location = new System.Drawing.Point(265, 289);
             this.btnAddToB.Name = "btnAddToB";
-            this.btnAddToB.Size = new System.Drawing.Size(52, 35);
+            this.btnAddToB.Size = new System.Drawing.Size(35, 23);
             this.btnAddToB.TabIndex = 10;
             this.btnAddToB.Text = ">";
             this.btnAddToB.UseVisualStyleBackColor = true;
@@ -179,10 +170,9 @@
             // 
             // btnSubstractOneFromB
             // 
-            this.btnSubstractOneFromB.Location = new System.Drawing.Point(399, 435);
-            this.btnSubstractOneFromB.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnSubstractOneFromB.Location = new System.Drawing.Point(265, 318);
             this.btnSubstractOneFromB.Name = "btnSubstractOneFromB";
-            this.btnSubstractOneFromB.Size = new System.Drawing.Size(52, 35);
+            this.btnSubstractOneFromB.Size = new System.Drawing.Size(35, 23);
             this.btnSubstractOneFromB.TabIndex = 11;
             this.btnSubstractOneFromB.Text = "<";
             this.btnSubstractOneFromB.UseVisualStyleBackColor = true;
@@ -190,10 +180,9 @@
             // 
             // btnSubstractAllFromB
             // 
-            this.btnSubstractAllFromB.Location = new System.Drawing.Point(399, 500);
-            this.btnSubstractAllFromB.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnSubstractAllFromB.Location = new System.Drawing.Point(265, 360);
             this.btnSubstractAllFromB.Name = "btnSubstractAllFromB";
-            this.btnSubstractAllFromB.Size = new System.Drawing.Size(52, 35);
+            this.btnSubstractAllFromB.Size = new System.Drawing.Size(35, 23);
             this.btnSubstractAllFromB.TabIndex = 12;
             this.btnSubstractAllFromB.Text = "<<";
             this.btnSubstractAllFromB.UseVisualStyleBackColor = true;
@@ -201,10 +190,9 @@
             // 
             // btnRemovePlayer
             // 
-            this.btnRemovePlayer.Location = new System.Drawing.Point(80, 575);
-            this.btnRemovePlayer.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnRemovePlayer.Location = new System.Drawing.Point(52, 409);
             this.btnRemovePlayer.Name = "btnRemovePlayer";
-            this.btnRemovePlayer.Size = new System.Drawing.Size(297, 35);
+            this.btnRemovePlayer.Size = new System.Drawing.Size(198, 23);
             this.btnRemovePlayer.TabIndex = 13;
             this.btnRemovePlayer.Text = "Eliminar Jugador";
             this.btnRemovePlayer.UseVisualStyleBackColor = true;
@@ -212,10 +200,9 @@
             // 
             // btnAddPlayer
             // 
-            this.btnAddPlayer.Location = new System.Drawing.Point(80, 614);
-            this.btnAddPlayer.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnAddPlayer.Location = new System.Drawing.Point(52, 434);
             this.btnAddPlayer.Name = "btnAddPlayer";
-            this.btnAddPlayer.Size = new System.Drawing.Size(297, 35);
+            this.btnAddPlayer.Size = new System.Drawing.Size(198, 23);
             this.btnAddPlayer.TabIndex = 14;
             this.btnAddPlayer.Text = "Añadir Jugador";
             this.btnAddPlayer.UseVisualStyleBackColor = true;
@@ -223,79 +210,71 @@
             // 
             // txtPlayerName
             // 
-            this.txtPlayerName.Location = new System.Drawing.Point(80, 654);
-            this.txtPlayerName.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtPlayerName.Location = new System.Drawing.Point(52, 460);
             this.txtPlayerName.Name = "txtPlayerName";
-            this.txtPlayerName.Size = new System.Drawing.Size(295, 26);
+            this.txtPlayerName.Size = new System.Drawing.Size(198, 20);
             this.txtPlayerName.TabIndex = 15;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(548, 629);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(365, 409);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(56, 20);
+            this.label1.Size = new System.Drawing.Size(37, 13);
             this.label1.TabIndex = 16;
             this.label1.Text = "Árbitro";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(548, 675);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(365, 439);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(60, 20);
+            this.label2.Size = new System.Drawing.Size(41, 13);
             this.label2.TabIndex = 17;
             this.label2.Text = "Linier 1";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(548, 711);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Location = new System.Drawing.Point(365, 462);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(60, 20);
+            this.label3.Size = new System.Drawing.Size(41, 13);
             this.label3.TabIndex = 18;
             this.label3.Text = "Linier 2";
             // 
             // cbReferee
             // 
             this.cbReferee.FormattingEnabled = true;
-            this.cbReferee.Location = new System.Drawing.Point(638, 622);
-            this.cbReferee.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.cbReferee.Location = new System.Drawing.Point(424, 439);
             this.cbReferee.Name = "cbReferee";
-            this.cbReferee.Size = new System.Drawing.Size(180, 28);
+            this.cbReferee.Size = new System.Drawing.Size(121, 21);
             this.cbReferee.TabIndex = 19;
             this.cbReferee.SelectedIndexChanged += new System.EventHandler(this.Generic_cbReferee_SelectedIndexChanged);
             // 
             // cbAssistantReferee1
             // 
             this.cbAssistantReferee1.FormattingEnabled = true;
-            this.cbAssistantReferee1.Location = new System.Drawing.Point(638, 663);
-            this.cbAssistantReferee1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.cbAssistantReferee1.Location = new System.Drawing.Point(424, 466);
             this.cbAssistantReferee1.Name = "cbAssistantReferee1";
-            this.cbAssistantReferee1.Size = new System.Drawing.Size(180, 28);
+            this.cbAssistantReferee1.Size = new System.Drawing.Size(121, 21);
             this.cbAssistantReferee1.TabIndex = 20;
             this.cbAssistantReferee1.SelectedIndexChanged += new System.EventHandler(this.Generic_cbReferee_SelectedIndexChanged);
             // 
             // cbAssistantReferee2
             // 
             this.cbAssistantReferee2.FormattingEnabled = true;
-            this.cbAssistantReferee2.Location = new System.Drawing.Point(638, 706);
-            this.cbAssistantReferee2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.cbAssistantReferee2.Location = new System.Drawing.Point(424, 494);
             this.cbAssistantReferee2.Name = "cbAssistantReferee2";
-            this.cbAssistantReferee2.Size = new System.Drawing.Size(180, 28);
+            this.cbAssistantReferee2.Size = new System.Drawing.Size(121, 21);
             this.cbAssistantReferee2.TabIndex = 21;
             this.cbAssistantReferee2.SelectedIndexChanged += new System.EventHandler(this.Generic_cbReferee_SelectedIndexChanged);
             // 
             // lblReferees
             // 
             this.lblReferees.AutoSize = true;
-            this.lblReferees.Location = new System.Drawing.Point(471, 14);
-            this.lblReferees.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblReferees.Location = new System.Drawing.Point(313, 44);
             this.lblReferees.Name = "lblReferees";
-            this.lblReferees.Size = new System.Drawing.Size(87, 20);
+            this.lblReferees.Size = new System.Drawing.Size(60, 13);
             this.lblReferees.TabIndex = 22;
             this.lblReferees.Text = "trío arbitral:";
             // 
@@ -307,76 +286,96 @@
             this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.ForeColor = System.Drawing.Color.White;
-            this.groupBox1.Location = new System.Drawing.Point(776, 72);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.groupBox1.Location = new System.Drawing.Point(516, 82);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.groupBox1.Size = new System.Drawing.Size(300, 154);
+            this.groupBox1.Size = new System.Drawing.Size(200, 100);
             this.groupBox1.TabIndex = 23;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Datos del partido";
             // 
+            // lblTime
+            // 
+            this.lblTime.AutoSize = true;
+            this.lblTime.Location = new System.Drawing.Point(43, 58);
+            this.lblTime.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblTime.Name = "lblTime";
+            this.lblTime.Size = new System.Drawing.Size(0, 13);
+            this.lblTime.TabIndex = 3;
+            // 
+            // lblDate
+            // 
+            this.lblDate.AutoSize = true;
+            this.lblDate.Location = new System.Drawing.Point(43, 27);
+            this.lblDate.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblDate.Name = "lblDate";
+            this.lblDate.Size = new System.Drawing.Size(0, 13);
+            this.lblDate.TabIndex = 2;
+            // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(19, 89);
-            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label6.Location = new System.Drawing.Point(13, 58);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(48, 20);
+            this.label6.Size = new System.Drawing.Size(33, 13);
             this.label6.TabIndex = 1;
             this.label6.Text = "Hora:";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(9, 42);
-            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label5.Location = new System.Drawing.Point(6, 27);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(58, 20);
+            this.label5.Size = new System.Drawing.Size(40, 13);
             this.label5.TabIndex = 0;
             this.label5.Text = "Fecha:";
             // 
             // dateTimePicker1
             // 
             this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Time;
-            this.dateTimePicker1.Location = new System.Drawing.Point(776, 289);
-            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.dateTimePicker1.Location = new System.Drawing.Point(516, 223);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(298, 26);
+            this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
             this.dateTimePicker1.TabIndex = 24;
             this.dateTimePicker1.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
             // 
             // monthCalendar1
             // 
-            this.monthCalendar1.Location = new System.Drawing.Point(776, 338);
-            this.monthCalendar1.Margin = new System.Windows.Forms.Padding(14);
+            this.monthCalendar1.Location = new System.Drawing.Point(516, 255);
             this.monthCalendar1.Name = "monthCalendar1";
             this.monthCalendar1.TabIndex = 25;
             this.monthCalendar1.DateChanged += new System.Windows.Forms.DateRangeEventHandler(this.monthCalendar1_DateChanged);
             // 
-            // lblDate
+            // menuStrip1
             // 
-            this.lblDate.AutoSize = true;
-            this.lblDate.Location = new System.Drawing.Point(64, 42);
-            this.lblDate.Name = "lblDate";
-            this.lblDate.Size = new System.Drawing.Size(0, 20);
-            this.lblDate.TabIndex = 2;
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.importarListaDeJugadoresToolStripMenuItem,
+            this.exportarListaDeJugadoresToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(817, 24);
+            this.menuStrip1.TabIndex = 26;
+            this.menuStrip1.Text = "menuStrip1";
             // 
-            // lblTime
+            // importarListaDeJugadoresToolStripMenuItem
             // 
-            this.lblTime.AutoSize = true;
-            this.lblTime.Location = new System.Drawing.Point(65, 89);
-            this.lblTime.Name = "lblTime";
-            this.lblTime.Size = new System.Drawing.Size(0, 20);
-            this.lblTime.TabIndex = 3;
+            this.importarListaDeJugadoresToolStripMenuItem.Name = "importarListaDeJugadoresToolStripMenuItem";
+            this.importarListaDeJugadoresToolStripMenuItem.Size = new System.Drawing.Size(160, 20);
+            this.importarListaDeJugadoresToolStripMenuItem.Text = "Importar lista de jugadores";
+            this.importarListaDeJugadoresToolStripMenuItem.Click += new System.EventHandler(this.importarListaDeJugadoresToolStripMenuItem_Click);
+            // 
+            // exportarListaDeJugadoresToolStripMenuItem
+            // 
+            this.exportarListaDeJugadoresToolStripMenuItem.Name = "exportarListaDeJugadoresToolStripMenuItem";
+            this.exportarListaDeJugadoresToolStripMenuItem.Size = new System.Drawing.Size(158, 20);
+            this.exportarListaDeJugadoresToolStripMenuItem.Text = "Exportar lista de jugadores";
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1226, 828);
+            this.ClientSize = new System.Drawing.Size(817, 523);
             this.Controls.Add(this.monthCalendar1);
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.groupBox1);
@@ -402,12 +401,15 @@
             this.Controls.Add(this.lblTeamB);
             this.Controls.Add(this.lblTeamA);
             this.Controls.Add(this.lbl_playersAvailable);
+            this.Controls.Add(this.menuStrip1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
             this.Text = "Form1";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -444,6 +446,9 @@
         private System.Windows.Forms.MonthCalendar monthCalendar1;
         private System.Windows.Forms.Label lblTime;
         private System.Windows.Forms.Label lblDate;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem importarListaDeJugadoresToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem exportarListaDeJugadoresToolStripMenuItem;
     }
 }
 
