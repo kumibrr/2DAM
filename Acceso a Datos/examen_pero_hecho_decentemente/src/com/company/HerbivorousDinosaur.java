@@ -9,4 +9,14 @@ public class HerbivorousDinosaur extends Dinosaur {
         super(species, period, dateFound);
         this.placeFound = placeFound;
     }
+
+    @Override
+    public String toString() {
+        return "HerbivorousDinosaur{" +
+                "placeFound='" + placeFound + '\'' +
+                ", species='" + species + '\'' +
+                ", period=" + period +
+                ", dateFound=" + dateFound +
+                '}';
+    }
 }

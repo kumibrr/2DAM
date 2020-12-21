@@ -12,5 +12,15 @@ public class CarnivorousDinosaur extends Dinosaur {
             this.favouritePrey.add(prey);
         }
     }
+
+    @Override
+    public String toString() {
+        return "CarnivorousDinosaur{" +
+                "favouritePrey=" + favouritePrey +
+                ", species='" + species + '\'' +
+                ", period=" + period +
+                ", dateFound=" + dateFound +
+                '}';
+    }
 }
 

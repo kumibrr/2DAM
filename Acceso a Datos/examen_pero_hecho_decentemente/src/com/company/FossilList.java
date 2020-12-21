@@ -5,7 +5,7 @@ import java.util.HashMap;
 public class FossilList extends HashMap<Dinosaur, Dinosaur> {
 
     public void insertDinosaur(Dinosaur dinosaur) throws DinoRepeException {
-        if (this.get(dinosaur) == dinosaur) {
+        if (this.containsKey(dinosaur)) {
             throw new DinoRepeException();
         } else {
             this.put(dinosaur, dinosaur);
@@ -25,4 +25,5 @@ public class FossilList extends HashMap<Dinosaur, Dinosaur> {
             Warehouse.getInstance().fossils.add(dinosaur);
         }
     }
+
 }
