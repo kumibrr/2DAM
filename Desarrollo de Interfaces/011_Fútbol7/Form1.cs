@@ -7,12 +7,11 @@ namespace _011_Fútbol7
 {
     public partial class Form1 : Form
     {
-        private string emptyList = "No hay ningún jugador.";
+        private OpenFileDialog fbmodal = new OpenFileDialog();
 
-        private string[] players = new string[] {
-        "Casillas","Bufon","Pelé","Maradona","Messi","Cristiano Ronaldo","Alfredo di Stéfano","Beckenbauer",
-        "Ronaldo Nazario","Juanito","Zinedine Zidane","Johan Cruyff","Dani Güiza","Ronaldinho",
-        "Gerd Muller","Marco van Basten","Xavi Hernández","Raul Gonzalez" };
+        private String[] players;
+
+        private string emptyList = "No hay ningún jugador.";
 
         private string[] referee = new string[] { "Pedro pepe", "paco el bola", "felipezeta Girocompleto" };
 
@@ -22,7 +21,7 @@ namespace _011_Fútbol7
         public Form1()
         {
             InitializeComponent();
-            lsAvailablePlayers.Items.AddRange(players);
+
             cbReferee.Items.AddRange(referee);
             cbAssistantReferee1.Items.AddRange(referee);
             cbAssistantReferee2.Items.AddRange(referee);
@@ -157,9 +156,26 @@ namespace _011_Fútbol7
             lblDate.Text = $"{e.Start.DayOfWeek}, {e.Start.Day}/{e.Start.Month}/{e.Start.Year}";
         }
 
-        private void importarListaDeJugadoresToolStripMenuItem_Click(object sender, EventArgs e)
+        private void tsbtnImport_Click(object sender, EventArgs e)
         {
+            fbmodal.Filter = "Ficheros de Texto (*.txt) | *.txt";
+            fbmodal.Title = "Cargar jugadores";
 
+            if (fbmodal.ShowDialog() == DialogResult.OK)
+            {
+                lsAvailablePlayers.Items.AddRange(players = File.ReadAllLines(fbmodal.FileName));
+            }
+            
+        }
+
+        private void tsbtnExportMatchData_Click(object sender, EventArgs e)
+        {
+            fbmodal.Filter = "Ficheros de Texto (*.txt) | *.txt";
+            fbmodal.Title = "Guardar Partido";
+            if (fbmodal.ShowDialog() == DialogResult.OK)
+            {
+                
+            }
         }
     }
 }

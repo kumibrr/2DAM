@@ -59,8 +59,8 @@
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.importarListaDeJugadoresToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.exportarListaDeJugadoresToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsbtnImport = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsbtnExportMatchData = new System.Windows.Forms.ToolStripMenuItem();
             this.groupBox1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -218,7 +218,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(365, 409);
+            this.label1.Location = new System.Drawing.Point(364, 442);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(37, 13);
             this.label1.TabIndex = 16;
@@ -227,7 +227,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(365, 439);
+            this.label2.Location = new System.Drawing.Point(364, 472);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(41, 13);
             this.label2.TabIndex = 17;
@@ -236,7 +236,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(365, 462);
+            this.label3.Location = new System.Drawing.Point(364, 495);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(41, 13);
             this.label3.TabIndex = 18;
@@ -348,26 +348,27 @@
             // menuStrip1
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.importarListaDeJugadoresToolStripMenuItem,
-            this.exportarListaDeJugadoresToolStripMenuItem});
+            this.tsbtnImport,
+            this.tsbtnExportMatchData});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(817, 24);
             this.menuStrip1.TabIndex = 26;
             this.menuStrip1.Text = "menuStrip1";
             // 
-            // importarListaDeJugadoresToolStripMenuItem
+            // tsbtnImport
             // 
-            this.importarListaDeJugadoresToolStripMenuItem.Name = "importarListaDeJugadoresToolStripMenuItem";
-            this.importarListaDeJugadoresToolStripMenuItem.Size = new System.Drawing.Size(160, 20);
-            this.importarListaDeJugadoresToolStripMenuItem.Text = "Importar lista de jugadores";
-            this.importarListaDeJugadoresToolStripMenuItem.Click += new System.EventHandler(this.importarListaDeJugadoresToolStripMenuItem_Click);
+            this.tsbtnImport.Name = "tsbtnImport";
+            this.tsbtnImport.Size = new System.Drawing.Size(160, 20);
+            this.tsbtnImport.Text = "Importar lista de jugadores";
+            this.tsbtnImport.Click += new System.EventHandler(this.tsbtnImport_Click);
             // 
-            // exportarListaDeJugadoresToolStripMenuItem
+            // tsbtnExportMatchData
             // 
-            this.exportarListaDeJugadoresToolStripMenuItem.Name = "exportarListaDeJugadoresToolStripMenuItem";
-            this.exportarListaDeJugadoresToolStripMenuItem.Size = new System.Drawing.Size(158, 20);
-            this.exportarListaDeJugadoresToolStripMenuItem.Text = "Exportar lista de jugadores";
+            this.tsbtnExportMatchData.Name = "tsbtnExportMatchData";
+            this.tsbtnExportMatchData.Size = new System.Drawing.Size(189, 20);
+            this.tsbtnExportMatchData.Text = "Exportar datos previos al partido";
+            this.tsbtnExportMatchData.Click += new System.EventHandler(this.tsbtnExportMatchData_Click);
             // 
             // Form1
             // 
@@ -447,8 +448,8 @@
         private System.Windows.Forms.Label lblTime;
         private System.Windows.Forms.Label lblDate;
         private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem importarListaDeJugadoresToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem exportarListaDeJugadoresToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem tsbtnImport;
+        private System.Windows.Forms.ToolStripMenuItem tsbtnExportMatchData;
     }
 }
 
