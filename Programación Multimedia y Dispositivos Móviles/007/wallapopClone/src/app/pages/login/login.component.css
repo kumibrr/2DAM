@@ -1,0 +1,19 @@
+.container {
+    display: flex;
+    height: 50%;
+}
+.login-card{
+    width: 300px;
+    margin: auto auto;
+    text-align: center;
+}
+
+.login-button {
+    position: absolute;
+    right: 1.2%;
+    top: 49%;
+}
+
+.warn {
+    color: red;
+}

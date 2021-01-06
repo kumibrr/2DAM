@@ -16,7 +16,7 @@ export class OnlyLoggedUserGuardGuard implements CanActivate {
     if (this.sessionService.isLogged()) {
       return true;
     } else {
-      console.log('😔');
+      this.router.navigate(['login']);
       return false;
     }
   }

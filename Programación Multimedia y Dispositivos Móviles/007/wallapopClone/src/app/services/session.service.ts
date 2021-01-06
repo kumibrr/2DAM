@@ -21,4 +21,11 @@ export class SessionService {
     this.token = '';
   }
 
+  logIn(): Promise<string> {
+    return new Promise((resolve, reject) => {
+      this.token = 'asd';
+      resolve('user authentication ok');
+    });
+  }
+
 }

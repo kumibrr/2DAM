@@ -1,0 +1,31 @@
+<nav>
+    <mat-toolbar color="primary">
+        <button mat-button disableRipple (click)="goMain()" color="accent" class="title">
+            <mat-icon [inline]="true">store</mat-icon>
+            <label>Wallaclone</label>
+        </button>
+        <div class="flex-spacer"></div>
+
+        <button mat-button disabled *ngIf="isLogged">
+            <mat-icon>search</mat-icon>
+            Buscar
+        </button>
+
+        <button mat-button *ngIf="isLogged" [matMenuTriggerFor]="menu">
+            <mat-icon>account_circle</mat-icon>
+            Username
+            <mat-icon>keyboard_arrow_down</mat-icon>
+        </button>
+        <mat-menu #menu>
+            <button mat-menu-item disabled>
+                <mat-icon>settings</mat-icon>
+                Preferencias
+            </button>
+            <button mat-menu-item (click)="goMain()">
+                <b>Cerrar sesión</b>
+            </button>
+        </mat-menu>
+
+        <button mat-button class="loginbtn" *ngIf="!isLogged">Iniciar Sesión</button>
+    </mat-toolbar>
+<nav>

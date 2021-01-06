@@ -1,1 +1,27 @@
-<p>login works!</p>
+<div class="container">
+    <mat-card class="login-card">
+        <mat-card-title class="title">Iniciar sesión</mat-card-title>
+        <form [formGroup]="loginForm">
+            <mat-form-field appearance="outline">
+                <mat-label>Nombre de Usuario</mat-label>
+                <input [formControlName]="'username'" matInput>
+                <mat-hint class="warn" *ngIf="this.loginForm.controls.username.touched && this.loginForm.controls.username.invalid">
+                    Introduzca un nombre de usuario
+                </mat-hint>
+            </mat-form-field>
+            <mat-form-field appearance="outline">
+                <mat-label>Contraseña</mat-label>
+                <input matInput type="password" [formControlName]="'password'">
+                <mat-hint class="warn" *ngIf="this.loginForm.controls.password.touched && this.loginForm.controls.password.invalid">
+                    Introduzca una contraseña
+                </mat-hint>
+            </mat-form-field>
+        </form>
+        <mat-card-actions>
+            <button mat-button color="accent" disabled>Crear cuenta</button>
+            <button mat-fab color="accent" class="login-button" (click)="checkvalid()">
+                <mat-icon>login</mat-icon>
+            </button>
+        </mat-card-actions>
+    </mat-card>
+</div>
