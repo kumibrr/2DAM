@@ -8,17 +8,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ToolbarComponent implements OnInit {
 
-  public isLogged: boolean;
-
-  constructor(private sessionService: SessionService) {
-    this.isLogged = sessionService.isLogged();
-  }
+  constructor(public sessionService: SessionService) {}
 
   ngOnInit(): void {
   }
 
   goMain(): void {
     console.log('ey');
+  }
+
+  logOut(): void {
+    this.sessionService.logOut()
+    .then((r) => {
+      console.log(r);
+      window.location.reload();
+    });
   }
 
 }

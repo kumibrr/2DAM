@@ -6,14 +6,14 @@
         </button>
         <div class="flex-spacer"></div>
 
-        <button mat-button disabled *ngIf="isLogged">
+        <button mat-button disabled *ngIf="sessionService.isLogged()">
             <mat-icon>search</mat-icon>
             Buscar
         </button>
 
-        <button mat-button *ngIf="isLogged" [matMenuTriggerFor]="menu">
+        <button mat-button *ngIf="sessionService.isLogged()" [matMenuTriggerFor]="menu">
             <mat-icon>account_circle</mat-icon>
-            Username
+            {{ sessionService.getUserInfo().username }}
             <mat-icon>keyboard_arrow_down</mat-icon>
         </button>
         <mat-menu #menu>
@@ -21,11 +21,11 @@
                 <mat-icon>settings</mat-icon>
                 Preferencias
             </button>
-            <button mat-menu-item (click)="goMain()">
+            <button mat-menu-item (click)="logOut()">
                 <b>Cerrar sesión</b>
             </button>
         </mat-menu>
 
-        <button mat-button class="loginbtn" *ngIf="!isLogged">Iniciar Sesión</button>
+        <button mat-button class="loginbtn" *ngIf="!sessionService.isLogged()">Iniciar Sesión</button>
     </mat-toolbar>
 <nav>
