@@ -1,5 +1,6 @@
 import { SessionService } from './../../services/session.service';
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-toolbar',
@@ -8,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ToolbarComponent implements OnInit {
 
-  constructor(public sessionService: SessionService) {}
+  constructor(public sessionService: SessionService, private router: Router) {}
 
   ngOnInit(): void {
   }
@@ -23,6 +24,10 @@ export class ToolbarComponent implements OnInit {
       console.log(r);
       window.location.reload();
     });
+  }
+
+  goToLoginPage(): void {
+    this.router.navigate(['login']);
   }
 
 }

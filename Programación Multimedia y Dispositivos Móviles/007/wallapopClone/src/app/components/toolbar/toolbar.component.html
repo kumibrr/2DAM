@@ -1,4 +1,4 @@
-<nav>
+<nav class="toolbar">
     <mat-toolbar color="primary">
         <button mat-button disableRipple (click)="goMain()" color="accent" class="title">
             <mat-icon [inline]="true">store</mat-icon>
@@ -26,6 +26,6 @@
             </button>
         </mat-menu>
 
-        <button mat-button class="loginbtn" *ngIf="!sessionService.isLogged()">Iniciar Sesión</button>
+        <button mat-button class="loginbtn" *ngIf="!sessionService.isLogged()" (click)="goToLoginPage()">Iniciar Sesión</button>
     </mat-toolbar>
 <nav>
