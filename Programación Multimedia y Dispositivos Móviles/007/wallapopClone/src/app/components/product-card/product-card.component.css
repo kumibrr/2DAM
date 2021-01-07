@@ -1,0 +1,31 @@
+.card {
+    overflow: hidden;
+    width: 260px;
+    padding: 0px;
+    border-radius: 10px;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    padding-bottom: 8px;
+}
+
+img {
+    width: 260px;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+    background-color: lightgray;
+}
+
+.img-container {
+    height: 100%;
+    width: 100%;
+}
+
+.pad {
+    padding-top: 5px;
+    padding-left: 16px;
+}
+
+.product-name {
+    color: rgb(139, 139, 139);
+}
