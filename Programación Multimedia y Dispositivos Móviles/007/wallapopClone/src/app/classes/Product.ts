@@ -11,6 +11,7 @@ export class Product {
     public user: UserInfo;
     public location: string;
     public hasBeenSold: boolean;
+    public imageUrl: string;
 
     constructor(
         name: string,
@@ -21,7 +22,8 @@ export class Product {
         dateUpdated: Date,
         user: UserInfo,
         location: string,
-        hasBeenSold: boolean
+        hasBeenSold: boolean,
+        imageUrl: string
     ) {
         this.name = name;
         this.description = description;
@@ -32,5 +34,6 @@ export class Product {
         this.user = user;
         this.location = location;
         this.hasBeenSold = hasBeenSold;
+        this.imageUrl = imageUrl;
     }
 }

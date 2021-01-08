@@ -4,6 +4,6 @@
             <img [src]="this.imgSrc">
         </div>
     </mat-card-content>
-    <mat-card-title class="pad">{{ this.price }}€</mat-card-title>
+    <mat-card-title class="pad">{{ this.price | roundprice:this.currency }}</mat-card-title>
     <mat-card-content class="pad product-name">{{ this.productName }}</mat-card-content>
 </mat-card>

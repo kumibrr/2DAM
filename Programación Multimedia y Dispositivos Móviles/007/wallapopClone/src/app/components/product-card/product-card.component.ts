@@ -10,6 +10,7 @@ export class ProductCardComponent implements OnInit {
   @Input() imgSrc = './assets/placeholder-image.png';
   @Input() productName = '';
   @Input() price = 0.0;
+  @Input() currency = 'EUR';
 
   constructor() { }
 

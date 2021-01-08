@@ -1,3 +1,6 @@
+import { Observable } from 'rxjs';
+import { Product } from './../../classes/Product';
+import { ProductService } from './../../services/product.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,9 +10,24 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MainPageComponent implements OnInit {
 
-  constructor() { }
+  public products: Product[] = [];
+
+  constructor(private productService: ProductService) {
+    this.getData();
+  }
 
   ngOnInit(): void {
+  }
+
+  async getData(): Promise<void> {
+    await this.productService.getMainPageItems()
+    .subscribe(r => {
+      this.products = r;
+    });
+  }
+
+  onClick(index: number): void {
+    console.log(this.products[index]);
   }
 
 }

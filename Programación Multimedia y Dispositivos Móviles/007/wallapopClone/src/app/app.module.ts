@@ -13,18 +13,23 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './pages/login/login.component';
 import { MainPageComponent } from './pages/main/main.component';
-import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ToolbarComponent } from './components/toolbar/toolbar.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { ProductCardComponent } from './components/product-card/product-card.component';
+import { HttpClientModule } from '@angular/common/http';
+import { ProductComponent } from './pages/product/product.component';
+import { RoundpricePipe } from './pipes/roundprice.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     MainPageComponent,
-    PageNotFoundComponent,
-    ToolbarComponent
+    ToolbarComponent,
+    ProductCardComponent,
+    ProductComponent,
+    RoundpricePipe
   ],
   imports: [
     BrowserModule,
@@ -38,7 +43,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     MatFormFieldModule,
     MatInputModule,
     ReactiveFormsModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
