@@ -1,9 +1,9 @@
 <mat-card class="card">
     <mat-card-content>
         <div class="img-container">
-            <img [src]="this.imgSrc">
+            <img [src]="product.imageUrl">
         </div>
     </mat-card-content>
-    <mat-card-title class="pad">{{ this.price | roundprice:this.currency }}</mat-card-title>
-    <mat-card-content class="pad product-name">{{ this.productName }}</mat-card-content>
+    <mat-card-title class="pad">{{ product.price | roundprice:product.currency }}</mat-card-title>
+    <mat-card-content class="pad product-name">{{ product.name }}</mat-card-content>
 </mat-card>

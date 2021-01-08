@@ -1,5 +1,5 @@
 <div class="container">
     <div *ngFor="let product of products; let i = index">
-        <app-product-card class="card" [productName]="product.name" [price]="product.price" [imgSrc]="product.imageUrl" [currency]="product.currency" (click)="onClick(i)"></app-product-card>
+        <app-product-card class="card" [product]="products[i]" (click)="onClick(i)"></app-product-card>
     </div>
 </div>

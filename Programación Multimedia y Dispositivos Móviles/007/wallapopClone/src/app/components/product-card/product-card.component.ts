@@ -1,4 +1,6 @@
+import { Product } from './../../classes/Product';
 import { Component, Input, OnInit } from '@angular/core';
+import { UserInfo } from 'src/app/classes/UserInfo';
 
 @Component({
   selector: 'app-product-card',
@@ -7,10 +9,7 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class ProductCardComponent implements OnInit {
 
-  @Input() imgSrc = './assets/placeholder-image.png';
-  @Input() productName = '';
-  @Input() price = 0.0;
-  @Input() currency = 'EUR';
+  @Input() product: Product = new Product('unknown', '', 0, 'EUR', new Date(), new Date(), new UserInfo('unknown', 'unknown'), 'none', true, './assets/placeholder-image.png');
 
   constructor() { }
 
