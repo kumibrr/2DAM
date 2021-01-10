@@ -1,7 +1,7 @@
 <mat-card class="card">
     <mat-card-content>
         <div class="img-container">
-            <img [src]="product.imageUrl">
+            <img [src]="product.imageUrl[0]">
         </div>
     </mat-card-content>
     <mat-card-title class="pad">{{ product.price | roundprice:product.currency }}</mat-card-title>

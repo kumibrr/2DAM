@@ -1,3 +1,4 @@
+import { ProductComponent } from './pages/product/product.component';
 import { NonLoggedUserGuard } from './guards/non-logged-user.guard';
 import { OnlyLoggedUserGuardGuard } from './guards/only-logged-user-guard.guard';
 import { MainPageComponent } from './pages/main/main.component';
@@ -19,6 +20,7 @@ const routes: Routes = [
     canActivate: [OnlyLoggedUserGuardGuard],
     children: [
       { path: 'main', component: MainPageComponent},
+      { path: 'product', component: ProductComponent}
     ]
   },
   { path: '**', redirectTo: 'main', pathMatch: 'full' }

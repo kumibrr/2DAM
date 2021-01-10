@@ -1,3 +1,4 @@
+import { Router } from '@angular/router';
 import { Observable } from 'rxjs';
 import { Product } from './../../classes/Product';
 import { ProductService } from './../../services/product.service';
@@ -12,7 +13,7 @@ export class MainPageComponent implements OnInit {
 
   public products: Product[] = [];
 
-  constructor(private productService: ProductService) {
+  constructor(private productService: ProductService, private router: Router) {
     this.getData();
   }
 
@@ -26,8 +27,8 @@ export class MainPageComponent implements OnInit {
     });
   }
 
-  onClick(index: number): void {
-    console.log(this.products[index]);
+  goToProductPage(index: number): void {
+    this.router.navigate(['product', this.products[index]]);
   }
 
 }

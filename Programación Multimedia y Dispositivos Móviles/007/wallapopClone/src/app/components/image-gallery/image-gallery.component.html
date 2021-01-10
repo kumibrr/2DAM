@@ -1,0 +1,14 @@
+<div class="product-image" (mouseover)="mouseOverGallery()" (mouseleave)="mouseLeaveGallery()">
+    <div class="outer-border">
+        <div class="gallery-controls">
+            <button #prevBtn mat-fab [disabled]="" class="gallery-button prev no-visibility">
+                <mat-icon class="prev-icon">play_arrow</mat-icon>
+            </button>
+            <button #nextBtn mat-fab [disabled]="" class="gallery-button next no-visibility">
+                <mat-icon>play_arrow</mat-icon>
+            </button>
+            <p #galleryPosition class="gallery-indicator no-visibility">{{ galleryIndex + 1 }}/ {{ galleryLength }}</p>
+        </div>
+        <img [src]="imageArray" class="image-box">
+    </div>
+</div>

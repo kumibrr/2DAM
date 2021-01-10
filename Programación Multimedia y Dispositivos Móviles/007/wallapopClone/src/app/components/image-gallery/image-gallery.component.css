@@ -1,0 +1,58 @@
+.product-image {
+    max-width: 39em;
+    margin-right: 0px;
+}
+
+.image-box {
+    display: block;
+    width: 37.3em;
+    object-fit: contain;
+    border-radius: 10px;
+    min-height: 10em;
+}
+
+.outer-border {
+    position: relative;
+    border: 12px solid whitesmoke;
+    border-radius: 20px;
+    background-color: whitesmoke;
+    overflow: hidden;
+    height: 100%;
+}
+
+.gallery-controls {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.gallery-button {
+    position: absolute;
+    opacity: 65%;
+    top: 50%;
+}
+
+.prev {
+    left: 4%;
+}
+
+.next {
+    right: 4%;
+}
+
+.prev-icon {
+    transform: scaleX(-1);
+}
+
+.no-visibility {
+    visibility: hidden;
+}
+
+.gallery-indicator {
+    position: absolute;
+    color: rgb(0, 0, 0);
+    opacity: 35%;
+    font-size: x-large;
+    margin-left: 247px;
+    bottom: 5%;
+}

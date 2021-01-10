@@ -6,7 +6,7 @@ import { Injectable } from '@angular/core';
 })
 export class SessionService {
 
-  private token = '';
+  private token = 'add';
   private userInfo: UserInfo = new UserInfo('unknown', 'unknown');
 
   constructor() { }

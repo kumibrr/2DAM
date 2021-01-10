@@ -1,0 +1,12 @@
+<app-image-gallery [imageArray]="product.imageUrl" class="product-gallery"></app-image-gallery>
+<div class="product-info">
+    <div class="title" color="accent">
+        <p class="name">{{ product.name }}</p>
+        <p class="price"> {{ product.price | roundprice:product.currency }} </p>
+    </div>
+    <p class="description"> {{ product.description }}</p>
+    <div class="dates">
+        <p class="creation-date"> Publicado el {{ product.datePublished }} </p>
+        <p class="update-date"> Ultima actualización el {{ product.dateUpdated }} </p>
+    </div>
+</div>

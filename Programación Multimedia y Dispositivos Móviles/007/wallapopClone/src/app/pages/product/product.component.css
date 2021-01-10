@@ -1,0 +1,62 @@
+.product-gallery {
+    float: left;
+    position: relative;
+    padding-top: 2%;
+    left: 5%;
+}
+
+.product-info {
+    float: right;
+    margin-right: 10%;
+    max-width: 550px;
+    width: 40%;
+    height: 20%;
+    background-color: whitesmoke;
+    margin-top: 2%;
+    right: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+.title {
+    margin-top: 3%;
+    margin-left: 5%;
+    margin-right: 5%;
+    font-size: x-large;
+    color: grey;
+    overflow: hidden;
+}
+
+.name {
+    float: left;
+}
+
+.price {
+    float: right;
+    width: 50px;
+    margin-right: 10%;
+    font-size: x-large;
+    color: rgb(255, 64, 129);
+}
+
+.description {
+    margin-top: 3%;
+    margin-left: 5%;
+    margin-right: 5%;
+    font-size: larger;
+    color: rgb(0, 0, 0);
+}
+
+.dates {
+    margin-top: auto;
+    overflow: hidden;
+    padding: 70px;
+}
+
+.creation-date {
+    float: left;
+}
+
+.update-date {
+    float: right;
+}

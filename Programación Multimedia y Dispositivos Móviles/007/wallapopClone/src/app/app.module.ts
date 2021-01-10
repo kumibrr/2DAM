@@ -6,6 +6,8 @@ import { MatCardModule } from '@angular/material/card';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 
+import { AgmCoreModule } from '@agm/core';
+
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -20,6 +22,8 @@ import { ProductCardComponent } from './components/product-card/product-card.com
 import { HttpClientModule } from '@angular/common/http';
 import { ProductComponent } from './pages/product/product.component';
 import { RoundpricePipe } from './pipes/roundprice.pipe';
+import { ImageGalleryComponent } from './components/image-gallery/image-gallery.component';
+import { PaypalCheckoutButtonComponent } from './components/paypal-checkout-button/paypal-checkout-button.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +33,9 @@ import { RoundpricePipe } from './pipes/roundprice.pipe';
     ToolbarComponent,
     ProductCardComponent,
     ProductComponent,
-    RoundpricePipe
+    RoundpricePipe,
+    ImageGalleryComponent,
+    PaypalCheckoutButtonComponent
   ],
   imports: [
     BrowserModule,
@@ -45,6 +51,9 @@ import { RoundpricePipe } from './pipes/roundprice.pipe';
     ReactiveFormsModule,
     FormsModule,
     HttpClientModule,
+    AgmCoreModule.forRoot({
+      apiKey: ''
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]

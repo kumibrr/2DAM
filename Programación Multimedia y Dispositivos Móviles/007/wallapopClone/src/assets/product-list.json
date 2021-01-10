@@ -8,7 +8,94 @@
         "dateUpdated": "01-01-2021",
         "user": "Pedropaco69HD",
         "location": "UUID",
-        "hasBeenSold": false
+        "hasBeenSold": false,
+        "imageUrl": [
+            "./assets/sky.jpg"
+        ]
+    },
+    {
+        "name": "Algo",
+        "description": "La compre para los niños pero ha sido un 'paná en fin que se le va a hacer.",
+        "price": "100.00",
+        "currency": "EUR",
+        "datePublished": "12-01-2020",
+        "dateUpdated": "01-01-2021",
+        "user": "Pedropaco69HD",
+        "location": "UUID",
+        "hasBeenSold": false,
+        "imageUrl": [
+            "./assets/snow.jpg"
+        ]
+    },
+    {
+        "name": "Algo",
+        "description": "La compre para los niños pero ha sido un 'paná en fin que se le va a hacer.",
+        "price": "100.00",
+        "currency": "EUR",
+        "datePublished": "12-01-2020",
+        "dateUpdated": "01-01-2021",
+        "user": "Pedropaco69HD",
+        "location": "UUID",
+        "hasBeenSold": false,
+        "imageUrl": [
+            "./assets/snow.jpg"
+        ]
+    },
+    {
+        "name": "Algo",
+        "description": "La compre para los niños pero ha sido un 'paná en fin que se le va a hacer.",
+        "price": "100.00",
+        "currency": "USD",
+        "datePublished": "12-01-2020",
+        "dateUpdated": "01-01-2021",
+        "user": "Pedropaco69HD",
+        "location": "UUID",
+        "hasBeenSold": false,
+        "imageUrl": [
+            "./assets/snow.jpg"
+        ]
+    },
+    {
+        "name": "Algo",
+        "description": "La compre para los niños pero ha sido un 'paná en fin que se le va a hacer.",
+        "price": "100.00",
+        "currency": "AUD",
+        "datePublished": "12-01-2020",
+        "dateUpdated": "01-01-2021",
+        "user": "Pedropaco69HD",
+        "location": "UUID",
+        "hasBeenSold": false,
+        "imageUrl": [
+            "./assets/snow.jpg"
+        ]
+    },
+    {
+        "name": "Algo",
+        "description": "La compre para los niños pero ha sido un 'paná en fin que se le va a hacer.",
+        "price": "100.23",
+        "currency": "EUR",
+        "datePublished": "12-01-2020",
+        "dateUpdated": "01-01-2021",
+        "user": "Pedropaco69HD",
+        "location": "UUID",
+        "hasBeenSold": false,
+        "imageUrl": [
+            "./assets/snow.jpg"
+        ]
+    },
+    {
+        "name": "Algo",
+        "description": "La compre para los niños pero ha sido un 'paná en fin que se le va a hacer.",
+        "price": "100.45",
+        "currency": "AUD",
+        "datePublished": "12-01-2020",
+        "dateUpdated": "01-01-2021",
+        "user": "Pedropaco69HD",
+        "location": "UUID",
+        "hasBeenSold": false,
+        "imageUrl": [
+            "./assets/snow.jpg"
+        ]
     }
 
 ]
