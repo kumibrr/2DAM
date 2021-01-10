@@ -23,7 +23,6 @@ import { HttpClientModule } from '@angular/common/http';
 import { ProductComponent } from './pages/product/product.component';
 import { RoundpricePipe } from './pipes/roundprice.pipe';
 import { ImageGalleryComponent } from './components/image-gallery/image-gallery.component';
-import { PaypalCheckoutButtonComponent } from './components/paypal-checkout-button/paypal-checkout-button.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +34,6 @@ import { PaypalCheckoutButtonComponent } from './components/paypal-checkout-butt
     ProductComponent,
     RoundpricePipe,
     ImageGalleryComponent,
-    PaypalCheckoutButtonComponent
   ],
   imports: [
     BrowserModule,

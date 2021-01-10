@@ -10,7 +10,7 @@ import { UserInfo } from 'src/app/classes/UserInfo';
 export class ProductCardComponent implements OnInit {
 
   @Input() product: Product = new Product(
-    'unknown', '', 0, 'EUR', new Date(), new Date(), new UserInfo('unknown', 'unknown'), 'none', true, ['./assets/placeholder-image.png']
+    'unknown', '', 0, 'EUR', new Date(), new Date(), new UserInfo('unknown', 'unknown'), -6.099025, -6.099025, true, ['./assets/placeholder-image.png']
   );
 
   constructor() { }

@@ -9,4 +9,7 @@
         <p class="creation-date"> Publicado el {{ product.datePublished }} </p>
         <p class="update-date"> Ultima actualización el {{ product.dateUpdated }} </p>
     </div>
+    <agm-map [latitude]="+product.latitude" [zoom]="15" [longitude]="+product.longitude">
+        <agm-marker  [latitude]="+product.latitude" [longitude]="+product.longitude"></agm-marker>
+      </agm-map>
 </div>

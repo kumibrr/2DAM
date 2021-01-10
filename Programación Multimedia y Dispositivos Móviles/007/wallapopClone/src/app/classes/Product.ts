@@ -9,7 +9,8 @@ export class Product {
     public datePublished: Date;
     public dateUpdated: Date;
     public user: UserInfo;
-    public location: string;
+    public latitude: number;
+    public longitude: number;
     public hasBeenSold: boolean;
     public imageUrl: string[];
 
@@ -21,7 +22,8 @@ export class Product {
         datePublished: Date,
         dateUpdated: Date,
         user: UserInfo,
-        location: string,
+        latitude: number,
+        longitude: number,
         hasBeenSold: boolean,
         imageUrl: string[]
     ) {
@@ -32,7 +34,8 @@ export class Product {
         this.datePublished = datePublished;
         this.dateUpdated = dateUpdated;
         this.user = user;
-        this.location = location;
+        this.latitude = latitude;
+        this.longitude = longitude;
         this.hasBeenSold = hasBeenSold;
         this.imageUrl = imageUrl;
     }
