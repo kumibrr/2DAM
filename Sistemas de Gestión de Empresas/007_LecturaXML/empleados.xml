@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<empleados>
+	<empleado>
+		<idEmpleado>1</idEmpleado>
+		<nombre>Pedro</nombre>
+		<apellidos>Martinez Segura</apellidos>
+		<numeroSS>111-111-111-111</numeroSS>
+		<domicilio>calle pantufla, 5</domicilio>
+		<telefonos>
+			<fijo>913847913</fijo>
+			<movil>680432874</movil>
+		</telefonos>
+	</empleado>
+	<empleado>
+		<idEmpleado>2</idEmpleado>
+		<nombre>Amalia</nombre>
+		<apellidos>García Pedrueza</apellidos>
+		<numeroSS>222-222-222-222</numeroSS>
+		<domicilio>Avenida Mollier, 56</domicilio>
+		<telefonos>
+			<fijo>947895433</fijo>
+			<movil>678343221</movil>
+		</telefonos>
+	</empleado>
+	<empleado>
+		<idEmpleado>3</idEmpleado>
+		<nombre>Luis</nombre>
+		<apellidos>Gómez Luta</apellidos>
+		<numeroSS>333-333-333-333</numeroSS>
+		<domicilio>calle Sacapuntas, 22</domicilio>
+		<telefonos>
+			<fijo>968454907</fijo>
+			<movil>678453248</movil>
+		</telefonos>
+	</empleado>		
+	<empleado>
+		<idEmpleado>4</idEmpleado>
+		<nombre>Juan</nombre>
+		<apellidos>Sanchez Lopez</apellidos>
+		<numeroSS>123-321-987-7893</numeroSS>
+		<domicilio>Avd Europa, 45</domicilio>
+		<telefonos>
+			<fijo>952952952</fijo>
+			<movil>645645645</movil>
+		</telefonos>
+	</empleado>
+	<empleado>
+		<idEmpleado>5</idEmpleado>
+		<nombre>Maria</nombre>
+		<apellidos>Gutierrez Aragon</apellidos>
+		<numeroSS>333-321-666-7893</numeroSS>
+		<domicilio>Plaza Corchera sn</domicilio>
+		<telefonos>
+			<fijo>991199966669</fijo>
+			<movil>636989656588</movil>
+		</telefonos>
+	</empleado>	
+</empleados>
