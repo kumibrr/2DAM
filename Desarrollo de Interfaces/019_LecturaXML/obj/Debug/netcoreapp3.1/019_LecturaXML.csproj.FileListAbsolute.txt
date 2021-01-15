@@ -1,0 +1,13 @@
+C:\Users\User\git\2DAM\Desarrollo de Interfaces\019_LecturaXML\bin\Debug\netcoreapp3.1\019_LecturaXML.exe
+C:\Users\User\git\2DAM\Desarrollo de Interfaces\019_LecturaXML\bin\Debug\netcoreapp3.1\019_LecturaXML.deps.json
+C:\Users\User\git\2DAM\Desarrollo de Interfaces\019_LecturaXML\bin\Debug\netcoreapp3.1\019_LecturaXML.runtimeconfig.json
+C:\Users\User\git\2DAM\Desarrollo de Interfaces\019_LecturaXML\bin\Debug\netcoreapp3.1\019_LecturaXML.runtimeconfig.dev.json
+C:\Users\User\git\2DAM\Desarrollo de Interfaces\019_LecturaXML\bin\Debug\netcoreapp3.1\019_LecturaXML.dll
+C:\Users\User\git\2DAM\Desarrollo de Interfaces\019_LecturaXML\bin\Debug\netcoreapp3.1\019_LecturaXML.pdb
+C:\Users\User\git\2DAM\Desarrollo de Interfaces\019_LecturaXML\obj\Debug\netcoreapp3.1\019_LecturaXML.csprojAssemblyReference.cache
+C:\Users\User\git\2DAM\Desarrollo de Interfaces\019_LecturaXML\obj\Debug\netcoreapp3.1\019_LecturaXML.AssemblyInfoInputs.cache
+C:\Users\User\git\2DAM\Desarrollo de Interfaces\019_LecturaXML\obj\Debug\netcoreapp3.1\019_LecturaXML.AssemblyInfo.cs
+C:\Users\User\git\2DAM\Desarrollo de Interfaces\019_LecturaXML\obj\Debug\netcoreapp3.1\019_LecturaXML.csproj.CoreCompileInputs.cache
+C:\Users\User\git\2DAM\Desarrollo de Interfaces\019_LecturaXML\obj\Debug\netcoreapp3.1\019_LecturaXML.dll
+C:\Users\User\git\2DAM\Desarrollo de Interfaces\019_LecturaXML\obj\Debug\netcoreapp3.1\019_LecturaXML.pdb
+C:\Users\User\git\2DAM\Desarrollo de Interfaces\019_LecturaXML\obj\Debug\netcoreapp3.1\019_LecturaXML.genruntimeconfig.cache
