@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<biblioteca>
+  <libro genero="novela" fechadepublicacion="1981" ISBN="1-871783-11-9">
+    <titulo>El Quijote</titulo>
+    <autor>
+      <nombre>Miguel</nombre>
+      <apellido>de Cervantes</apellido>
+    </autor>
+    <precio>11</precio>
+  </libro>
+  <libro genero="novela" fechadepublicacion="1751" ISBN="1-80153391-11-9">
+    <titulo>Cien Años de soledad</titulo>
+    <autor>
+      <nombre>Gabriel</nombre>
+      <apellido>Garcia Marquez</apellido>
+    </autor>
+    <precio>12.25</precio>
+  </libro>
+  <libro genero="poesia" fechadepublicacion="1881" ISBN="1-871773-11-0">
+    <titulo>Rimas y leyenda</titulo>
+    <autor>
+      <nombre>Gustavo Adolfo</nombre>
+      <apellido>Becquer</apellido>
+    </autor>
+    <precio>19</precio>
+  </libro>
+  <libro genero="novela" fechadepublicacion="7 enero 2021" ISBN="9788499429649">
+    <titulo>Decálogo del buen ciudadano</titulo>
+    <autor>
+      <nombre>Victor</nombre>
+      <apellido>LaPuente</apellido>
+    </autor>
+    <precio>17.95</precio>
+  </libro>
+</biblioteca>
