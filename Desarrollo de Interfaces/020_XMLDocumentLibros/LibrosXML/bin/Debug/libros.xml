@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <biblioteca>
-  <libro genero="novela" fechadepublicacion="1981" ISBN="1-871783-11-9">
-    <titulo>El Quijote</titulo>
+  <libro genero="novelassssss" fechadepublicacion="1981" ISBN="1-871783-11-9">
+    <title>El Quijote</title>
     <autor>
       <nombre>Miguel</nombre>
       <apellido>de Cervantes</apellido>

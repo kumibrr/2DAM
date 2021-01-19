@@ -39,6 +39,41 @@ namespace LibrosXML
             return new Libro(genre, publicationDate, isbn, title, author, price);
         }
 
+        public void PushToXML(XmlDocument docxml, int index = -1)
+        {
+
+            XmlNode libro = docxml.CreateElement("libro");
+            XmlAttribute genre = docxml.CreateAttribute("genero");
+            XmlAttribute publicationDate = docxml.CreateAttribute("fechadepublicacion");
+            XmlAttribute isbn = docxml.CreateAttribute("ISBN");
+            XmlNode title = docxml.CreateElement("title");
+            XmlNode author = docxml.CreateElement("autor");
+            XmlNode name = docxml.CreateElement("nombre");
+            XmlNode lastname = docxml.CreateElement("apellido");
+            XmlNode price = docxml.CreateElement("precio");
+
+            genre.Value = this.genre;
+            publicationDate.Value = this.publicationDate;
+            isbn.Value = this.isbn;
+            title.InnerText = this.title;
+            name.InnerText = this.author.name;
+            lastname.InnerText = this.author.lastName;
+            price.InnerText = this.price.ToString();
+
+            author.AppendChild(name);
+            author.AppendChild(lastname);
+            libro.AppendChild(title);
+            libro.AppendChild(author);
+            libro.AppendChild(price);
+            libro.Attributes.Append(genre);
+            libro.Attributes.Append(publicationDate);
+            libro.Attributes.Append(isbn);
+
+            XmlNodeList nodes = docxml.GetElementsByTagName("libro");
+            nodes[index].ParentNode.ReplaceChild(libro, nodes[index]);
+            docxml.Save(@"libros.xml");
+        }
+
         public string toString()
         {
             string str = $"" +

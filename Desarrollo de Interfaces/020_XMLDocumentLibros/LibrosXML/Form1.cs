@@ -22,6 +22,14 @@ namespace LibrosXML
         {
             InitializeComponent();
             docxml.Load(@"libros.xml");
+
+            updateLibros();
+            listBox1.SelectedIndex = 0;
+            fillLibroToUI(libros[listBox1.SelectedIndex]);
+        }
+
+        private void updateLibros()
+        {
             XmlNodeList nodes = docxml.GetElementsByTagName("libro");
             libros = new Libro[nodes.Count];
             librosTitles = new string[nodes.Count];
@@ -35,8 +43,6 @@ namespace LibrosXML
             }
 
             listBox1.Items.AddRange(librosTitles);
-            listBox1.SelectedIndex = 0;
-            fillLibroToUI(libros[listBox1.SelectedIndex]);
         }
 
         private void fillLibroToUI(Libro libro)
@@ -53,6 +59,31 @@ namespace LibrosXML
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
             fillLibroToUI(libros[listBox1.SelectedIndex]);
+        }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void UpdateLibros(object sender, EventArgs e)
+        {
+            Libro libro = libros[listBox1.SelectedIndex];
+
+            libro.genre = textBox1.Text;
+            libro.publicationDate = textBox2.Text;
+            libro.isbn = textBox3.Text;
+            libro.title = textBox4.Text;
+            libro.author.name = textBox5.Text;
+            libro.author.lastName = textBox6.Text;
+            libro.price = Double.Parse(textBox7.Text);
+
+            libro.PushToXML(docxml, listBox1.SelectedIndex);
+        }
+
+        private void btnActualizar_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

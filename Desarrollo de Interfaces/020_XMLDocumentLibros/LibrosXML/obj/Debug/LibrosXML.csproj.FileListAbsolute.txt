@@ -38,3 +38,13 @@ C:\Users\Israel\git\2DAM\Desarrollo de Interfaces\020_XMLDocumentLibros\LibrosXM
 C:\Users\Israel\git\2DAM\Desarrollo de Interfaces\020_XMLDocumentLibros\LibrosXML\obj\Debug\LibrosXML.csproj.CoreCompileInputs.cache
 C:\Users\Israel\git\2DAM\Desarrollo de Interfaces\020_XMLDocumentLibros\LibrosXML\obj\Debug\LibrosXML.exe
 C:\Users\Israel\git\2DAM\Desarrollo de Interfaces\020_XMLDocumentLibros\LibrosXML\obj\Debug\LibrosXML.pdb
+C:\Users\User\git\2DAM\Desarrollo de Interfaces\020_XMLDocumentLibros\LibrosXML\bin\Debug\LibrosXML.exe.config
+C:\Users\User\git\2DAM\Desarrollo de Interfaces\020_XMLDocumentLibros\LibrosXML\bin\Debug\LibrosXML.exe
+C:\Users\User\git\2DAM\Desarrollo de Interfaces\020_XMLDocumentLibros\LibrosXML\bin\Debug\LibrosXML.pdb
+C:\Users\User\git\2DAM\Desarrollo de Interfaces\020_XMLDocumentLibros\LibrosXML\obj\Debug\LibrosXML.csprojAssemblyReference.cache
+C:\Users\User\git\2DAM\Desarrollo de Interfaces\020_XMLDocumentLibros\LibrosXML\obj\Debug\LibrosXML.Form1.resources
+C:\Users\User\git\2DAM\Desarrollo de Interfaces\020_XMLDocumentLibros\LibrosXML\obj\Debug\LibrosXML.Properties.Resources.resources
+C:\Users\User\git\2DAM\Desarrollo de Interfaces\020_XMLDocumentLibros\LibrosXML\obj\Debug\LibrosXML.csproj.GenerateResource.cache
+C:\Users\User\git\2DAM\Desarrollo de Interfaces\020_XMLDocumentLibros\LibrosXML\obj\Debug\LibrosXML.csproj.CoreCompileInputs.cache
+C:\Users\User\git\2DAM\Desarrollo de Interfaces\020_XMLDocumentLibros\LibrosXML\obj\Debug\LibrosXML.exe
+C:\Users\User\git\2DAM\Desarrollo de Interfaces\020_XMLDocumentLibros\LibrosXML\obj\Debug\LibrosXML.pdb
