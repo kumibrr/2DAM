@@ -4,17 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background_sl"
     tools:context=".SettingsActivity">
-
-    <Button
-        android:id="@+id/button10"
-        android:layout_width="313dp"
-        android:layout_height="56dp"
-        android:text="@string/enable_favourite"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
@@ -24,5 +15,14 @@
         android:minHeight="?attr/actionBarSize"
         android:theme="?attr/actionBarTheme"
         tools:layout_editor_absoluteY="2dp" />
+
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="379dp"
+        android:layout_height="55dp"
+        android:text="@string/enable_favourite"
+        android:textSize="18sp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="86dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
