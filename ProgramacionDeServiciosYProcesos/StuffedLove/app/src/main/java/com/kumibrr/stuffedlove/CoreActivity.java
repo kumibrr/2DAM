@@ -18,7 +18,4 @@ public abstract class CoreActivity extends AppCompatActivity {
         this.layout = layout;
     }
 
-    public void changeBackground() {
-
-    }
 }

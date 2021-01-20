@@ -11,9 +11,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.StuffedLove">
-        <activity android:name=".CustomizedOrderActivity"></activity>
+        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".ThankyouActivity"></activity>
+        <activity android:name=".BasketActivity" />
+        <activity android:name=".PredeterminedOrderActivity" /> <!-- <activity android:name=".CustomizedOrderActivity"></activity> -->
         <activity android:name=".OrderActivity" />
         <activity android:name=".SettingsActivity" />
+        <activity android:name=".CustomizedOrderActivity" />
         <activity
             android:name=".LoginActivity"
             android:label="@string/title_activity_main"

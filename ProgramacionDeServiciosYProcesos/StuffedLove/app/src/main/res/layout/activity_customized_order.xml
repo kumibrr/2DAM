@@ -7,27 +7,263 @@
     android:background="@drawable/background_sl"
     tools:context=".CustomizedOrderActivity">
 
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar2"
+    <ScrollView
+        android:id="@+id/scrollView2"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="?attr/colorPrimary"
-        android:minHeight="?attr/actionBarSize"
-        android:theme="?attr/actionBarTheme"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="-123dp"
+        tools:layout_editor_absoluteY="16dp">
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:layout_width="410dp"
-        android:layout_height="677dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/toolbar2"
-        app:layout_constraintVertical_bias="1.0" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
+            <Button
+                android:id="@+id/btnSize"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#12FFFFFF"
+                android:text="@string/size"
+                android:textAlignment="viewStart"
+                android:textColor="#000000" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rbtnSmall"
+                        android:layout_width="100dp"
+                        android:layout_height="match_parent"
+                        android:text="@string/small"
+                        android:textColor="#000000" />
+
+                    <RadioButton
+                        android:id="@+id/rbtnBig"
+                        android:layout_width="105dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Big"
+                        android:textColor="#000000" />
+
+                    <RadioButton
+                        android:id="@+id/rbtnMedium"
+                        android:layout_width="98dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/middleSized"
+                        android:textColor="#000000" />
+
+                    <RadioButton
+                        android:id="@+id/rbtnGiant"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Huge"
+                        android:textColor="#000000" />
+                </LinearLayout>
+
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/button11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#12FFFFFF"
+                android:text="@string/animal"
+                android:textAlignment="viewStart"
+                android:textColor="#000000" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imgBear"
+                        android:layout_width="wrap_content"
+                        android:layout_height="203dp"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/teddy" />
+
+                    <ImageView
+                        android:id="@+id/imgGiraffe"
+                        android:layout_width="wrap_content"
+                        android:layout_height="203dp"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/giraffe" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rbtnBear"
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/bear"
+                        android:textColor="#000000" />
+
+                    <RadioButton
+                        android:id="@+id/rbtnGiraffe"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/giraffe"
+                        android:textColor="#000000" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    >
+
+                    <ImageView
+                        android:id="@+id/imgPanda"
+                        android:layout_width="match_parent"
+                        android:layout_height="203dp"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/panda" />
+
+                    <ImageView
+                        android:id="@+id/imgCat"
+                        android:layout_width="wrap_content"
+                        android:layout_height="203dp"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/cat" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    >
+
+                    <RadioButton
+                        android:id="@+id/rbtnPanda"
+                        android:layout_width="62dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/panda"
+                        android:textColor="#000000" />
+
+                    <RadioButton
+                        android:id="@+id/rbtnCat"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/cat"
+                        android:textColor="#000000" />
+                </LinearLayout>
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/button12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#12FFFFFF"
+                android:text="@string/accessories"
+                android:textAlignment="viewStart"
+                android:textColor="#000000" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+
+                <ImageView
+                    android:id="@+id/imgDress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="203dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/dress" />
+
+                <ImageView
+                    android:id="@+id/imgSuit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="203dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/suit" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <CheckBox
+                    android:id="@+id/chkDress"
+                    android:layout_width="64dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/dress"
+                    android:textColor="#000000" />
+
+                <CheckBox
+                    android:id="@+id/chkSuit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/suit"
+                    android:textColor="#000000" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+
+                <ImageView
+                    android:id="@+id/imgSuitcase"
+                    android:layout_width="wrap_content"
+                    android:layout_height="203dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/suitcase" />
+
+                <ImageView
+                    android:id="@+id/imgBag"
+                    android:layout_width="wrap_content"
+                    android:layout_height="203dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/bag" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="70dp">
+                >
+
+                <CheckBox
+                    android:id="@+id/chkSuitcase"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/suitcase"
+                    android:textColor="#000000" />
+
+                <CheckBox
+                    android:id="@+id/chkBag"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/bag"
+                    android:textColor="#000000" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btnMakeOrder"
+        android:layout_width="284dp"
+        android:layout_height="62dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/make_order"
+        app:layout_constraintBottom_toBottomOf="@+id/scrollView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

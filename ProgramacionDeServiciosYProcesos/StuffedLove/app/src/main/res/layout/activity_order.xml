@@ -8,7 +8,7 @@
     tools:context=".OrderActivity">
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/btnCustom"
         android:layout_width="249dp"
         android:layout_height="50dp"
         android:text="@string/order_personalized"
@@ -18,7 +18,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button6"
+        android:id="@+id/btnFavourite"
         android:layout_width="249dp"
         android:layout_height="50dp"
         android:text="@string/order_favourite"
@@ -44,7 +44,7 @@
         app:layout_constraintVertical_bias="0.345" />
 
     <Button
-        android:id="@+id/button9"
+        android:id="@+id/btnPrefab"
         android:layout_width="249dp"
         android:layout_height="50dp"
         android:text="@string/order_predetermined"

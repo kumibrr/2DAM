@@ -17,6 +17,31 @@
     <string name="order_personalized">Peluche personalizado</string>
     <string name="order_predetermined">Peluche prefabricado</string>
     <string name="what_to_order">¿Qué desea encargar?</string>
+    <string name="size">Tamaño</string>
+    <string name="small">Pequeño</string>
+    <string name="middleSized">Mediano</string>
+    <string name="Big">Grande</string>
+    <string name="Huge">Gigante</string>
+    <string name="animal">Animal</string>
+    <string name="bear">Oso</string>
+    <string name="giraffe">Girafa</string>
+    <string name="panda">Oso panda</string>
+    <string name="cat">Gato</string>
+    <string name="accessories">Accesorios</string>
+    <string name="dress">Vestido</string>
+    <string name="suit">Traje</string>
+    <string name="bag">Mochila</string>
+    <string name="suitcase">Maletín</string>
+    <string name="thankyou">Gracias por comprar en nuestra tienda ♥</string>
+    <string name="backtostart">Volver al inicio</string>
+    <string name="chopper">Chopper</string>
+    <string name="revali">Revali</string>
+    <string name="bokoblin">Bokoblin</string>
+    <string name="koda">Koda</string>
+    <string name="ori">Ori</string>
+    <string name="docbear">Oso doctor</string>
+
+
     <!--
     This string is used for square devices and overridden by hello_world in
     values-round/strings.xml for round devices.
