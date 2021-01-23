@@ -1,0 +1,55 @@
+<ion-header color="primary" [translucent]="false">
+  <ion-toolbar color="primary">
+    <ion-title>
+      My Courses
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="false">
+  <ion-grid fixed>
+    <form [formGroup]="this.courseForm">
+      <ion-row>
+        <ion-col size="12">
+          <ion-item>
+            <ion-label position="floating">Course name</ion-label>
+            <ion-input #title type="text" [formControlName]="'title'"></ion-input>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col size="12">
+          <ion-col size="12">
+            <ion-item>
+              <ion-label position="floating">Course Rating(1 - 5)</ion-label>
+              <ion-input #score type="text" type="number" [formControlName]="'score'"></ion-input>
+            </ion-item>
+          </ion-col>
+        </ion-col>
+      </ion-row>
+    </form>
+    <ion-row>
+      <ion-col size="4">
+        <ion-button (click)="addCourse(title.value, score.value)" fill="solid">
+          Add
+        </ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <ion-list>
+    <ion-list>
+      <ion-item-sliding *ngFor="let course of this.courses">
+        <ion-item>
+          <ion-text>
+            <p><b>{{ course.title }}</b> - {{ course.score | score }}</p>
+          </ion-text>
+        </ion-item>
+        <ion-item-options side="end">
+          <ion-item-option (click)="remove()" color="danger">
+            <ion-icon size="large" slot="start" name="trash-outline"></ion-icon>
+          </ion-item-option>
+        </ion-item-options>
+      </ion-item-sliding>
+    </ion-list>
+  </ion-list>
+</ion-content>
