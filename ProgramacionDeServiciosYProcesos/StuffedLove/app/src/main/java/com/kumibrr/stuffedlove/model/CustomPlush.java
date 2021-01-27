@@ -8,8 +8,8 @@ public class CustomPlush extends Plush {
     private Animal animal;
     private List<Accessory> accessories;
 
-    public CustomPlush(PlushSize size, Drawable image, Animal animal, Accessory... accessories) {
-        super(size, image);
+    public CustomPlush(PlushSize size, Animal animal, Accessory... accessories) {
+        super(size, animal.getImage());
         this.animal = animal;
         for (Accessory accesory: accessories) {
             this.accessories.add(accesory);
