@@ -20,6 +20,8 @@ public class DinosaurController {
     @Override
     public String toString() {
 
+        //TODO: USAR STRINGBUILDER
+
         String r = "DinosaurController{\n" +
                 "museums=";
 
