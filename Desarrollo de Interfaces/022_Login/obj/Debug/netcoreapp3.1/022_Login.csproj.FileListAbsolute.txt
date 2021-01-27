@@ -1,0 +1,16 @@
+C:\Users\User\git\2DAM\Desarrollo de Interfaces\022_Login\bin\Debug\netcoreapp3.1\022_Login.exe
+C:\Users\User\git\2DAM\Desarrollo de Interfaces\022_Login\bin\Debug\netcoreapp3.1\022_Login.deps.json
+C:\Users\User\git\2DAM\Desarrollo de Interfaces\022_Login\bin\Debug\netcoreapp3.1\022_Login.runtimeconfig.json
+C:\Users\User\git\2DAM\Desarrollo de Interfaces\022_Login\bin\Debug\netcoreapp3.1\022_Login.runtimeconfig.dev.json
+C:\Users\User\git\2DAM\Desarrollo de Interfaces\022_Login\bin\Debug\netcoreapp3.1\022_Login.dll
+C:\Users\User\git\2DAM\Desarrollo de Interfaces\022_Login\bin\Debug\netcoreapp3.1\022_Login.pdb
+C:\Users\User\git\2DAM\Desarrollo de Interfaces\022_Login\obj\Debug\netcoreapp3.1\022_Login.csprojAssemblyReference.cache
+C:\Users\User\git\2DAM\Desarrollo de Interfaces\022_Login\obj\Debug\netcoreapp3.1\_022_Login.Form1.resources
+C:\Users\User\git\2DAM\Desarrollo de Interfaces\022_Login\obj\Debug\netcoreapp3.1\_022_Login.Properties.Resources.resources
+C:\Users\User\git\2DAM\Desarrollo de Interfaces\022_Login\obj\Debug\netcoreapp3.1\022_Login.csproj.GenerateResource.cache
+C:\Users\User\git\2DAM\Desarrollo de Interfaces\022_Login\obj\Debug\netcoreapp3.1\022_Login.AssemblyInfoInputs.cache
+C:\Users\User\git\2DAM\Desarrollo de Interfaces\022_Login\obj\Debug\netcoreapp3.1\022_Login.AssemblyInfo.cs
+C:\Users\User\git\2DAM\Desarrollo de Interfaces\022_Login\obj\Debug\netcoreapp3.1\022_Login.csproj.CoreCompileInputs.cache
+C:\Users\User\git\2DAM\Desarrollo de Interfaces\022_Login\obj\Debug\netcoreapp3.1\022_Login.dll
+C:\Users\User\git\2DAM\Desarrollo de Interfaces\022_Login\obj\Debug\netcoreapp3.1\022_Login.pdb
+C:\Users\User\git\2DAM\Desarrollo de Interfaces\022_Login\obj\Debug\netcoreapp3.1\022_Login.genruntimeconfig.cache
