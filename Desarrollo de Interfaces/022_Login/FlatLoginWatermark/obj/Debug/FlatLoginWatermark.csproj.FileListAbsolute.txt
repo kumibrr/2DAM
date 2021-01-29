@@ -1,0 +1,23 @@
+D:\RJ Code Advance\Source Code C#\2019\FlatLoginWatermark\FlatLoginWatermark\obj\Debug\FlatLoginWatermark.csprojResolveAssemblyReference.cache
+D:\RJ Code Advance\Source Code C#\2019\FlatLoginWatermark\FlatLoginWatermark\obj\Debug\FlatLoginWatermark.Properties.Resources.resources
+D:\RJ Code Advance\Source Code C#\2019\FlatLoginWatermark\FlatLoginWatermark\obj\Debug\FlatLoginWatermark.csproj.GenerateResource.Cache
+D:\RJ Code Advance\Source Code C#\2019\FlatLoginWatermark\FlatLoginWatermark\bin\Debug\FlatLoginWatermark.exe.config
+D:\RJ Code Advance\Source Code C#\2019\FlatLoginWatermark\FlatLoginWatermark\bin\Debug\FlatLoginWatermark.exe
+D:\RJ Code Advance\Source Code C#\2019\FlatLoginWatermark\FlatLoginWatermark\bin\Debug\FlatLoginWatermark.pdb
+D:\RJ Code Advance\Source Code C#\2019\FlatLoginWatermark\FlatLoginWatermark\obj\Debug\FlatLoginWatermark.exe
+D:\RJ Code Advance\Source Code C#\2019\FlatLoginWatermark\FlatLoginWatermark\obj\Debug\FlatLoginWatermark.pdb
+D:\RJ Code Advance\Source Code C#\2019\FlatLoginWatermark\FlatLoginWatermark\bin\Debug\Microsoft.VisualBasic.PowerPacks.dll
+D:\RJ Code Advance\Source Code C#\2019\FlatLoginWatermark\FlatLoginWatermark\bin\Debug\Microsoft.VisualBasic.PowerPacks.xml
+D:\RJ Code Advance\Source Code C#\2019\FlatLoginWatermark\FlatLoginWatermark\obj\Debug\FlatLoginWatermark.FormLogin.resources
+C:\Users\User\git\2DAM\Desarrollo de Interfaces\022_Login\FlatLoginWatermark\bin\Debug\FlatLoginWatermark.exe.config
+C:\Users\User\git\2DAM\Desarrollo de Interfaces\022_Login\FlatLoginWatermark\bin\Debug\FlatLoginWatermark.exe
+C:\Users\User\git\2DAM\Desarrollo de Interfaces\022_Login\FlatLoginWatermark\bin\Debug\FlatLoginWatermark.pdb
+C:\Users\User\git\2DAM\Desarrollo de Interfaces\022_Login\FlatLoginWatermark\bin\Debug\Microsoft.VisualBasic.PowerPacks.xml
+C:\Users\User\git\2DAM\Desarrollo de Interfaces\022_Login\FlatLoginWatermark\obj\Debug\FlatLoginWatermark.csprojAssemblyReference.cache
+C:\Users\User\git\2DAM\Desarrollo de Interfaces\022_Login\FlatLoginWatermark\obj\Debug\FlatLoginWatermark.FormLogin.resources
+C:\Users\User\git\2DAM\Desarrollo de Interfaces\022_Login\FlatLoginWatermark\obj\Debug\FlatLoginWatermark.Properties.Resources.resources
+C:\Users\User\git\2DAM\Desarrollo de Interfaces\022_Login\FlatLoginWatermark\obj\Debug\FlatLoginWatermark.csproj.GenerateResource.cache
+C:\Users\User\git\2DAM\Desarrollo de Interfaces\022_Login\FlatLoginWatermark\obj\Debug\FlatLoginWatermark.csproj.CoreCompileInputs.cache
+C:\Users\User\git\2DAM\Desarrollo de Interfaces\022_Login\FlatLoginWatermark\obj\Debug\FlatLoginWatermark.csproj.CopyComplete
+C:\Users\User\git\2DAM\Desarrollo de Interfaces\022_Login\FlatLoginWatermark\obj\Debug\FlatLoginWatermark.exe
+C:\Users\User\git\2DAM\Desarrollo de Interfaces\022_Login\FlatLoginWatermark\obj\Debug\FlatLoginWatermark.pdb
