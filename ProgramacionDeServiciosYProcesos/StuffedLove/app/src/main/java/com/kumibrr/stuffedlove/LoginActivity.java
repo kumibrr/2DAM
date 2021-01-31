@@ -9,13 +9,12 @@ import android.widget.Button;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
-public class LoginActivity extends CoreActivity {
+public class LoginActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        super.setLayout(R.layout.activity_login);
         setContentView(R.layout.activity_login);
 
         FloatingActionButton loginBtn = (FloatingActionButton) findViewById(R.id.btnLogin);

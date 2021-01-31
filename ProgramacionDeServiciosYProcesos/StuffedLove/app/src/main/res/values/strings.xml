@@ -1,13 +1,12 @@
 <resources>
     <string name="app_name">Stuffed Love</string>
-    <string name="title_activity_core">CoreActivity</string>
     <!--
     This string is used for square devices and overridden by hello_world in
     values-round/strings.xml for round devices.
     -->
     <string name="username">Usuario</string>
     <string name="password">Contraseña</string>
-    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_main">Stuffed Love</string>
     <string name="go_web">Ir a página web</string>
     <string name="make_order">Hacer pedido</string>
     <string name="go_settings">Ir a configuración</string>

@@ -27,7 +27,7 @@ import com.kumibrr.stuffedlove.model.PlushSize;
 import java.util.ArrayList;
 import java.util.List;
 
-public class CustomizedOrderActivity extends CoreActivity {
+public class CustomizedOrderActivity extends AppCompatActivity {
 
     private PlushSize size;
     private Animal animal;
