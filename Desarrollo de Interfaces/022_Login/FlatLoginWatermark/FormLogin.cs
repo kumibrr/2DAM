@@ -8,13 +8,16 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Runtime.InteropServices;
+using System.Data.SqlClient;
 
 namespace FlatLoginWatermark
 {
     public partial class FormLogin : Form
     {
+        private SqlConnection connection;
         public FormLogin()
         {
+            setConnection();
             InitializeComponent();
         }
 
@@ -39,7 +42,7 @@ namespace FlatLoginWatermark
         #region Placeholder or WaterMark
         private void txtuser_Enter(object sender, EventArgs e)
         {
-            if (txtuser.Text == "Usuario")
+            if (txtuser.Text == "Email")
             {
                 txtuser.Text = "";
                 txtuser.ForeColor = Color.LightGray;
@@ -50,7 +53,7 @@ namespace FlatLoginWatermark
         {
             if (txtuser.Text == "")
             {
-                txtuser.Text = "Usuario";
+                txtuser.Text = "Email";
                 txtuser.ForeColor = Color.Silver;
             }
         }
@@ -75,7 +78,19 @@ namespace FlatLoginWatermark
             }
         }
 
-        #endregion 
+        #endregion
+        private async void setConnection()
+        {
+            try
+            {
+                this.connection = new SqlConnection(@"Server=DESKTOP-99GH4P6;Database=BDPasaje;Integrated Security=true;");
+                await connection.OpenAsync();
+            }
+            catch (SqlException e)
+            {
+                MessageBox.Show(e.Message, "Error de conexión", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
 
         private void btncerrar_Click(object sender, EventArgs e)
         {
@@ -91,12 +106,50 @@ namespace FlatLoginWatermark
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            
         }
 
         private void btnlogin_Click(object sender, EventArgs e)
         {
+            String[] userData = new String[9];
+            String email = txtuser.Text;
+            String password = txtpass.Text;
 
+            SqlCommand query = new SqlCommand($"SELECT * From Usuario WHERE '{email}' = EMAIL and '{password}' = CONTRA", connection);
+            SqlDataReader data = query.ExecuteReader();
+
+            int i = 0;
+            while (data.Read())
+            {
+                i++;
+                for (int j = 0; j < 9; j++)
+                {
+                    userData[j] = (String)data[j].ToString();
+                }
+
+            }
+            if (i > 1 || i == 0)
+            {
+                picError.Visible = true;
+                lblError.Visible = true;
+            } else
+            {
+                LoggedInForm loggedInForm = new LoggedInForm(userData);
+                loggedInForm.Show();
+            }
+            data.Close();
+        }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            CreateAccountForm form = new CreateAccountForm(connection);
+            form.Show();
+        }
+
+        private void linkpass_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            ForgottenPasswordForm form = new ForgottenPasswordForm(connection);
+            form.Show();
         }
     }
 }

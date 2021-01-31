@@ -89,5 +89,25 @@ namespace FlatLoginWatermark.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ErrorSquiggleCriticalActive_16x {
+            get {
+                object obj = ResourceManager.GetObject("ErrorSquiggleCriticalActive_16x", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ExclamationPoint_16x {
+            get {
+                object obj = ResourceManager.GetObject("ExclamationPoint_16x", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }
