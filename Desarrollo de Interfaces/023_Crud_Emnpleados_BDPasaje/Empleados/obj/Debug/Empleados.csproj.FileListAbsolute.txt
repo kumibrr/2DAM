@@ -1,0 +1,26 @@
+C:\Users\Alvaro\Dropbox\IES Almunia\DESARROLLO INTERFACE\Unidad_4_Bases de datos\Ejercicios\Crud_Emnpleados_BDPasaje\Empleados\Empleados\obj\Debug\Empleados.csprojAssemblyReference.cache
+C:\Users\Alvaro\Dropbox\IES Almunia\DESARROLLO INTERFACE\Unidad_4_Bases de datos\Ejercicios\Crud_Emnpleados_BDPasaje\Empleados\Empleados\obj\Debug\Empleados.frmEmpleados.resources
+C:\Users\Alvaro\Dropbox\IES Almunia\DESARROLLO INTERFACE\Unidad_4_Bases de datos\Ejercicios\Crud_Emnpleados_BDPasaje\Empleados\Empleados\obj\Debug\Empleados.Properties.Resources.resources
+C:\Users\Alvaro\Dropbox\IES Almunia\DESARROLLO INTERFACE\Unidad_4_Bases de datos\Ejercicios\Crud_Emnpleados_BDPasaje\Empleados\Empleados\obj\Debug\Empleados.csproj.GenerateResource.cache
+C:\Users\Alvaro\Dropbox\IES Almunia\DESARROLLO INTERFACE\Unidad_4_Bases de datos\Ejercicios\Crud_Emnpleados_BDPasaje\Empleados\Empleados\obj\Debug\Empleados.csproj.CoreCompileInputs.cache
+C:\Users\Alvaro\Dropbox\IES Almunia\DESARROLLO INTERFACE\Unidad_4_Bases de datos\Ejercicios\Crud_Emnpleados_BDPasaje\Empleados\Empleados\bin\Debug\Empleados.exe.config
+C:\Users\Alvaro\Dropbox\IES Almunia\DESARROLLO INTERFACE\Unidad_4_Bases de datos\Ejercicios\Crud_Emnpleados_BDPasaje\Empleados\Empleados\bin\Debug\Empleados.exe
+C:\Users\Alvaro\Dropbox\IES Almunia\DESARROLLO INTERFACE\Unidad_4_Bases de datos\Ejercicios\Crud_Emnpleados_BDPasaje\Empleados\Empleados\bin\Debug\Empleados.pdb
+C:\Users\Alvaro\Dropbox\IES Almunia\DESARROLLO INTERFACE\Unidad_4_Bases de datos\Ejercicios\Crud_Emnpleados_BDPasaje\Empleados\Empleados\bin\Debug\System.Data.SqlClient.dll
+C:\Users\Alvaro\Dropbox\IES Almunia\DESARROLLO INTERFACE\Unidad_4_Bases de datos\Ejercicios\Crud_Emnpleados_BDPasaje\Empleados\Empleados\bin\Debug\System.Data.SqlClient.xml
+C:\Users\Alvaro\Dropbox\IES Almunia\DESARROLLO INTERFACE\Unidad_4_Bases de datos\Ejercicios\Crud_Emnpleados_BDPasaje\Empleados\Empleados\obj\Debug\Empleados.csproj.CopyComplete
+C:\Users\Alvaro\Dropbox\IES Almunia\DESARROLLO INTERFACE\Unidad_4_Bases de datos\Ejercicios\Crud_Emnpleados_BDPasaje\Empleados\Empleados\obj\Debug\Empleados.exe
+C:\Users\Alvaro\Dropbox\IES Almunia\DESARROLLO INTERFACE\Unidad_4_Bases de datos\Ejercicios\Crud_Emnpleados_BDPasaje\Empleados\Empleados\obj\Debug\Empleados.pdb
+C:\Users\Israel\git\2DAM\Desarrollo de Interfaces\023_Crud_Emnpleados_BDPasaje\Empleados\bin\Debug\Empleados.exe.config
+C:\Users\Israel\git\2DAM\Desarrollo de Interfaces\023_Crud_Emnpleados_BDPasaje\Empleados\bin\Debug\Empleados.exe
+C:\Users\Israel\git\2DAM\Desarrollo de Interfaces\023_Crud_Emnpleados_BDPasaje\Empleados\bin\Debug\Empleados.pdb
+C:\Users\Israel\git\2DAM\Desarrollo de Interfaces\023_Crud_Emnpleados_BDPasaje\Empleados\bin\Debug\System.Data.SqlClient.dll
+C:\Users\Israel\git\2DAM\Desarrollo de Interfaces\023_Crud_Emnpleados_BDPasaje\Empleados\bin\Debug\System.Data.SqlClient.xml
+C:\Users\Israel\git\2DAM\Desarrollo de Interfaces\023_Crud_Emnpleados_BDPasaje\Empleados\obj\Debug\Empleados.csprojAssemblyReference.cache
+C:\Users\Israel\git\2DAM\Desarrollo de Interfaces\023_Crud_Emnpleados_BDPasaje\Empleados\obj\Debug\Empleado.frmEmpleados.resources
+C:\Users\Israel\git\2DAM\Desarrollo de Interfaces\023_Crud_Emnpleados_BDPasaje\Empleados\obj\Debug\Empleados.Properties.Resources.resources
+C:\Users\Israel\git\2DAM\Desarrollo de Interfaces\023_Crud_Emnpleados_BDPasaje\Empleados\obj\Debug\Empleados.csproj.GenerateResource.cache
+C:\Users\Israel\git\2DAM\Desarrollo de Interfaces\023_Crud_Emnpleados_BDPasaje\Empleados\obj\Debug\Empleados.csproj.CoreCompileInputs.cache
+C:\Users\Israel\git\2DAM\Desarrollo de Interfaces\023_Crud_Emnpleados_BDPasaje\Empleados\obj\Debug\Empleados.csproj.CopyComplete
+C:\Users\Israel\git\2DAM\Desarrollo de Interfaces\023_Crud_Emnpleados_BDPasaje\Empleados\obj\Debug\Empleados.exe
+C:\Users\Israel\git\2DAM\Desarrollo de Interfaces\023_Crud_Emnpleados_BDPasaje\Empleados\obj\Debug\Empleados.pdb
