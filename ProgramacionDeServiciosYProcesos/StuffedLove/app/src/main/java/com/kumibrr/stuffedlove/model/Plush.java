@@ -10,4 +10,20 @@ public abstract class Plush {
         this.size = size;
         this.image = image;
     }
+
+    public PlushSize getSize() {
+        return size;
+    }
+
+    public void setSize(PlushSize size) {
+        this.size = size;
+    }
+
+    public Drawable getImage() {
+        return image;
+    }
+
+    public void setImage(Drawable image) {
+        this.image = image;
+    }
 }

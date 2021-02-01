@@ -6,139 +6,11 @@
     android:layout_height="match_parent"
     tools:context=".PredeterminedOrderActivity">
 
-    <ScrollView
-        android:id="@+id/scrollView3"
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/RecyclerPredeterminedPlushies"
+        android:orientation="horizontal"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:orientation="vertical"
-            android:layout_height="match_parent">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal" >
-
-                <ImageView
-                    android:id="@+id/imgChopper"
-                    android:layout_width="wrap_content"
-                    android:layout_height="203dp"
-                    android:layout_weight="1"
-                    app:srcCompat="@drawable/chopper" />
-
-                <ImageView
-                    android:id="@+id/imgKoda"
-                    android:layout_width="wrap_content"
-                    android:layout_height="203dp"
-                    android:layout_weight="1"
-                    app:srcCompat="@drawable/koda" />
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal" >
-
-                <CheckBox
-                    android:id="@+id/chkChopper"
-                    android:layout_width="64dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="@string/chopper"
-                    android:textColor="#000000" />
-
-                <CheckBox
-                    android:id="@+id/chkKoda"
-                    android:layout_width="64dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="@string/koda"
-                    android:textColor="#000000" />
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal" >
-
-                <ImageView
-                    android:id="@+id/imgOri"
-                    android:layout_width="wrap_content"
-                    android:layout_height="203dp"
-                    android:layout_weight="1"
-                    app:srcCompat="@drawable/ori" />
-
-                <ImageView
-                    android:id="@+id/imgRevali"
-                    android:layout_width="wrap_content"
-                    android:layout_height="203dp"
-                    android:layout_weight="1"
-                    app:srcCompat="@drawable/revali" />
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal" >
-
-                <CheckBox
-                    android:id="@+id/chkOri"
-                    android:layout_width="64dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="@string/ori"
-                    android:textColor="#000000" />
-
-                <CheckBox
-                    android:id="@+id/chkRevali"
-                    android:layout_width="64dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="@string/revali"
-                    android:textColor="#000000" />
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal" >
-
-                <ImageView
-                    android:id="@+id/imgBokoblin"
-                    android:layout_width="wrap_content"
-                    android:layout_height="203dp"
-                    android:layout_weight="1"
-                    app:srcCompat="@drawable/bokoblin" />
-
-                <ImageView
-                    android:id="@+id/imgDoctorBear"
-                    android:layout_width="wrap_content"
-                    android:layout_height="203dp"
-                    android:layout_weight="1"
-                    app:srcCompat="@drawable/doctorbear" />
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="70dp"
-                android:orientation="horizontal" >
-
-                <CheckBox
-                    android:id="@+id/chkBokoblin"
-                    android:layout_width="64dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="@string/bokoblin"
-                    android:textColor="#000000" />
-
-                <CheckBox
-                    android:id="@+id/chkDoctor"
-                    android:layout_width="64dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="@string/docbear"
-                    android:textColor="#000000" />
-            </LinearLayout>
-        </LinearLayout>
-    </ScrollView>
+        android:layout_height="match_parent" />
 
     <Button
         android:id="@+id/btnMakeOrder2"
@@ -146,7 +18,7 @@
         android:layout_height="62dp"
         android:layout_marginBottom="8dp"
         android:text="@string/make_order"
-        app:layout_constraintBottom_toBottomOf="@+id/scrollView3"
+        app:layout_constraintBottom_toBottomOf="@+id/RecyclerPredeterminedPlushies"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 

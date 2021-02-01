@@ -1,51 +1,56 @@
 package com.kumibrr.stuffedlove;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
+import android.graphics.drawable.Drawable;
+import android.net.Uri;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
+import android.widget.Adapter;
 import android.widget.Button;
-import android.widget.CheckBox;
 import android.widget.CompoundButton;
-import android.widget.ImageView;
 
-import com.kumibrr.stuffedlove.model.Accessory;
-import com.kumibrr.stuffedlove.model.Plush;
+import com.kumibrr.stuffedlove.model.PlushSize;
 import com.kumibrr.stuffedlove.model.StandardPlush;
 
 import java.util.ArrayList;
 
 public class PredeterminedOrderActivity extends AppCompatActivity {
 
-//    private ArrayList<StandardPlush> plushies = new ArrayList<>();
+    private ArrayList<StandardPlush> plushies = new ArrayList<>();
+
     private ArrayList<CompoundButton> selectedPlushies = new ArrayList<>();
 
-    private CheckBox chopper;
-    private CheckBox koda;
-    private CheckBox ori;
-    private CheckBox revali;
-    private CheckBox bokoblin;
-    private CheckBox doctorBear;
+//    private CheckBox chopper;
+//    private CheckBox koda;
+//    private CheckBox ori;
+//    private CheckBox revali;
+//    private CheckBox bokoblin;
+//    private CheckBox doctorBear;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_predetermined_order);
+        plushies.add(new StandardPlush(PlushSize.GIANT, Drawable.createFromPath(Uri.parse("android.resource:com.kumibrr.stuffedlove/R.drawable.chopper").toString()), "Chopper"));
+        plushies.add(new StandardPlush(PlushSize.GIANT, Drawable.createFromPath(Uri.parse("android.resource:com.kumibrr.stuffedlove/R.drawable.chopper").toString()), "Chopper"));
+        initRecycler();
 
-        chopper = findViewById(R.id.chkChopper);
-        koda = findViewById(R.id.chkKoda);
-        ori = findViewById(R.id.chkOri);
-        revali = findViewById(R.id.chkRevali);
-        bokoblin = findViewById(R.id.chkBokoblin);
-        doctorBear = findViewById(R.id.chkDoctor);
-        ImageView imgChopper = findViewById(R.id.imgChopper);
-        ImageView imgKoda = findViewById(R.id.imgKoda);
-        ImageView imgOri = findViewById(R.id.imgOri);
-        ImageView imgRevali = findViewById(R.id.imgRevali);
-        ImageView imgBokoblin = findViewById(R.id.imgBokoblin);
-        ImageView imgDoctorBear = findViewById(R.id.imgDoctorBear);
+//        chopper = findViewById(R.id.chkChopper);
+//        koda = findViewById(R.id.chkKoda);
+//        ori = findViewById(R.id.chkOri);
+//        revali = findViewById(R.id.chkRevali);
+//        bokoblin = findViewById(R.id.chkBokoblin);
+//        doctorBear = findViewById(R.id.chkDoctor);
+//        ImageView imgChopper = findViewById(R.id.imgChopper);
+//        ImageView imgKoda = findViewById(R.id.imgKoda);
+//        ImageView imgOri = findViewById(R.id.imgOri);
+//        ImageView imgRevali = findViewById(R.id.imgRevali);
+//        ImageView imgBokoblin = findViewById(R.id.imgBokoblin);
+//        ImageView imgDoctorBear = findViewById(R.id.imgDoctorBear);
 
 
         Button orderBtn = (Button) findViewById(R.id.btnMakeOrder2);
@@ -60,13 +65,20 @@ public class PredeterminedOrderActivity extends AppCompatActivity {
         });
 
 
-        imgChopper.setOnClickListener(imageViewOnClickListener);
-        imgKoda.setOnClickListener(imageViewOnClickListener);
-        imgOri.setOnClickListener(imageViewOnClickListener);
-        imgRevali.setOnClickListener(imageViewOnClickListener);
-        imgBokoblin.setOnClickListener(imageViewOnClickListener);
-        imgDoctorBear.setOnClickListener(imageViewOnClickListener);
+//        imgChopper.setOnClickListener(imageViewOnClickListener);
+//        imgKoda.setOnClickListener(imageViewOnClickListener);
+//        imgOri.setOnClickListener(imageViewOnClickListener);
+//        imgRevali.setOnClickListener(imageViewOnClickListener);
+//        imgBokoblin.setOnClickListener(imageViewOnClickListener);
+//        imgDoctorBear.setOnClickListener(imageViewOnClickListener);
 
+    }
+
+    private void initRecycler() {
+        RecyclerView v = findViewById(R.id.RecyclerPredeterminedPlushies);
+        v.setLayoutManager(new LinearLayoutManager(this));
+        PredeterminedOrderAdapter adapter = new PredeterminedOrderAdapter(plushies);
+        v.setAdapter(adapter);
     }
 
 //    CompoundButton.OnCheckedChangeListener OnCheckBoxCheckedChangeListener = (buttonView, isChecked) -> {
@@ -115,20 +127,20 @@ public class PredeterminedOrderActivity extends AppCompatActivity {
 //        }
 //    };
 
-    View.OnClickListener imageViewOnClickListener = v -> {
-        if (v.equals(findViewById(R.id.imgChopper))) {
-            chopper.toggle();
-        } else if (v.equals(findViewById(R.id.imgKoda))) {
-            koda.toggle();
-        } else if ((v.equals(findViewById(R.id.imgOri)))) {
-            ori.toggle();
-        } else if ((v.equals(findViewById(R.id.imgRevali)))) {
-            revali.toggle();
-        } else if ((v.equals(findViewById(R.id.imgBokoblin)))) {
-            bokoblin.toggle();
-        } else if ((v.equals(findViewById(R.id.imgDoctorBear)))) {
-            doctorBear.toggle();
-        }
-    };
+//    View.OnClickListener imageViewOnClickListener = v -> {
+//        if (v.equals(findViewById(R.id.imgChopper))) {
+//            chopper.toggle();
+//        } else if (v.equals(findViewById(R.id.imgKoda))) {
+//            koda.toggle();
+//        } else if ((v.equals(findViewById(R.id.imgOri)))) {
+//            ori.toggle();
+//        } else if ((v.equals(findViewById(R.id.imgRevali)))) {
+//            revali.toggle();
+//        } else if ((v.equals(findViewById(R.id.imgBokoblin)))) {
+//            bokoblin.toggle();
+//        } else if ((v.equals(findViewById(R.id.imgDoctorBear)))) {
+//            doctorBear.toggle();
+//        }
+//    };
 
 }
