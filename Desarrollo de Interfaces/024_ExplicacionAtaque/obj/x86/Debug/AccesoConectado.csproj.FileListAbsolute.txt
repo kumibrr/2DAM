@@ -1,0 +1,9 @@
+E:\Dropbox\IES Almunia\DESARROLLO INTERFACE\Unidad_4_Bases de datos\Ejercicios\Ejemplos_BD\Inyección\bin\Debug\AccesoConectado.exe
+E:\Dropbox\IES Almunia\DESARROLLO INTERFACE\Unidad_4_Bases de datos\Ejercicios\Ejemplos_BD\Inyección\bin\Debug\AccesoConectado.pdb
+E:\Dropbox\IES Almunia\DESARROLLO INTERFACE\Unidad_4_Bases de datos\Ejercicios\Ejemplos_BD\Inyección\obj\x86\Debug\AccesoConectado.csprojAssemblyReference.cache
+E:\Dropbox\IES Almunia\DESARROLLO INTERFACE\Unidad_4_Bases de datos\Ejercicios\Ejemplos_BD\Inyección\obj\x86\Debug\AccesoConectado.Form1.resources
+E:\Dropbox\IES Almunia\DESARROLLO INTERFACE\Unidad_4_Bases de datos\Ejercicios\Ejemplos_BD\Inyección\obj\x86\Debug\AccesoConectado.Properties.Resources.resources
+E:\Dropbox\IES Almunia\DESARROLLO INTERFACE\Unidad_4_Bases de datos\Ejercicios\Ejemplos_BD\Inyección\obj\x86\Debug\AccesoConectado.csproj.GenerateResource.cache
+E:\Dropbox\IES Almunia\DESARROLLO INTERFACE\Unidad_4_Bases de datos\Ejercicios\Ejemplos_BD\Inyección\obj\x86\Debug\AccesoConectado.csproj.CoreCompileInputs.cache
+E:\Dropbox\IES Almunia\DESARROLLO INTERFACE\Unidad_4_Bases de datos\Ejercicios\Ejemplos_BD\Inyección\obj\x86\Debug\AccesoConectado.exe
+E:\Dropbox\IES Almunia\DESARROLLO INTERFACE\Unidad_4_Bases de datos\Ejercicios\Ejemplos_BD\Inyección\obj\x86\Debug\AccesoConectado.pdb

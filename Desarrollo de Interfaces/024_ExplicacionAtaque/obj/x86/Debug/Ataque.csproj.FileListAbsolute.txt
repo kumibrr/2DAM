@@ -1,0 +1,9 @@
+C:\Users\Israel\git\2DAM\Desarrollo de Interfaces\024_ExplicacionAtaque\bin\Debug\AccesoConectado.exe
+C:\Users\Israel\git\2DAM\Desarrollo de Interfaces\024_ExplicacionAtaque\bin\Debug\AccesoConectado.pdb
+C:\Users\Israel\git\2DAM\Desarrollo de Interfaces\024_ExplicacionAtaque\obj\x86\Debug\Ataque.csprojAssemblyReference.cache
+C:\Users\Israel\git\2DAM\Desarrollo de Interfaces\024_ExplicacionAtaque\obj\x86\Debug\AccesoConectado.Form1.resources
+C:\Users\Israel\git\2DAM\Desarrollo de Interfaces\024_ExplicacionAtaque\obj\x86\Debug\AccesoConectado.Properties.Resources.resources
+C:\Users\Israel\git\2DAM\Desarrollo de Interfaces\024_ExplicacionAtaque\obj\x86\Debug\Ataque.csproj.GenerateResource.cache
+C:\Users\Israel\git\2DAM\Desarrollo de Interfaces\024_ExplicacionAtaque\obj\x86\Debug\Ataque.csproj.CoreCompileInputs.cache
+C:\Users\Israel\git\2DAM\Desarrollo de Interfaces\024_ExplicacionAtaque\obj\x86\Debug\AccesoConectado.exe
+C:\Users\Israel\git\2DAM\Desarrollo de Interfaces\024_ExplicacionAtaque\obj\x86\Debug\AccesoConectado.pdb
