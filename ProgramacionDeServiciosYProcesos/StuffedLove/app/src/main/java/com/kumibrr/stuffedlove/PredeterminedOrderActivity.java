@@ -35,8 +35,8 @@ public class PredeterminedOrderActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_predetermined_order);
-        plushies.add(new StandardPlush(PlushSize.GIANT, Drawable.createFromPath(Uri.parse("android.resource:com.kumibrr.stuffedlove/R.drawable.chopper").toString()), "Chopper"));
-        plushies.add(new StandardPlush(PlushSize.GIANT, Drawable.createFromPath(Uri.parse("android.resource:com.kumibrr.stuffedlove/R.drawable.chopper").toString()), "Chopper"));
+        plushies.add(new StandardPlush(PlushSize.GIANT, getDrawable(R.drawable.chopper), "Chopper"));
+        plushies.add(new StandardPlush(PlushSize.GIANT, getDrawable(R.drawable.koda), "Koda"));
         initRecycler();
 
 //        chopper = findViewById(R.id.chkChopper);
@@ -142,5 +142,6 @@ public class PredeterminedOrderActivity extends AppCompatActivity {
 //            doctorBear.toggle();
 //        }
 //    };
+
 
 }
