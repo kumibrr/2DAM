@@ -24,14 +24,15 @@ namespace AccesoConectado
     private void Form1_Load(object sender, EventArgs e)
     {
             // Crear la cadena de conexión
-            ConexionConBD = new SqlConnection(@"Server=DESKTOP-99GH4P6;Database=bd_telefonos; Integrated Security=true;");
+            ConexionConBD = new SqlConnection(@"Server=DESKTOP-SGN3LO3;Database=bd_telefonos; Integrated Security=true;");
             ConexionConBD.Open();
     }
 
     private void BtMostrarDatos_Click(object sender, EventArgs e)
     {
-
-        OrdenSql = new SqlCommand($"SELECT nombre FROM telefonos WHERE telefono = {ctSql.Text}", ConexionConBD);
+            SqlParameter phoneNumb = new SqlParameter("@phoneNumber", ctSql.Text);
+        OrdenSql = new SqlCommand($"SELECT nombre FROM telefonos WHERE telefono=@phoneNumber;", ConexionConBD);
+            OrdenSql.Parameters.Add(phoneNumb);
         Lector = OrdenSql.ExecuteReader();
         while (Lector.Read())
         {
