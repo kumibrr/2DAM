@@ -4,11 +4,11 @@ import android.graphics.drawable.Drawable;
 
 public abstract class Plush {
     private PlushSize size;
-    private Drawable image;
+    private int imageID;
 
-    public Plush(PlushSize size, Drawable image) {
+    public Plush(PlushSize size, int imageID) {
         this.size = size;
-        this.image = image;
+        this.imageID = imageID;
     }
 
     public PlushSize getSize() {
@@ -19,11 +19,11 @@ public abstract class Plush {
         this.size = size;
     }
 
-    public Drawable getImage() {
-        return image;
+    public int getImageID() {
+        return imageID;
     }
 
-    public void setImage(Drawable image) {
-        this.image = image;
+    public void setImageID(int image) {
+        this.imageID = image;
     }
 }

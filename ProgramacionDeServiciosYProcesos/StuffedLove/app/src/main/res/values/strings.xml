@@ -9,6 +9,7 @@
     <string name="title_activity_main">Stuffed Love</string>
     <string name="go_web">Ir a página web</string>
     <string name="make_order">Hacer pedido</string>
+    <string name="add_to_shopping_bag">Añadir al carrito</string>
     <string name="go_settings">Ir a configuración</string>
     <string name="enable_favourite">Activar Favorito</string>
 

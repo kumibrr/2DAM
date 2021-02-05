@@ -5,7 +5,7 @@ import android.graphics.drawable.Drawable;
 public class StandardPlush extends Plush {
     private String name;
 
-    public StandardPlush(PlushSize size, Drawable image, String name) {
+    public StandardPlush(PlushSize size, int image, String name) {
         super(size, image);
         this.name = name;
     }

@@ -10,6 +10,7 @@
         android:id="@+id/RecyclerPredeterminedPlushies"
         android:orientation="horizontal"
         android:layout_width="match_parent"
+        android:paddingBottom="70dp"
         android:layout_height="match_parent" />
 
     <Button
@@ -17,7 +18,7 @@
         android:layout_width="284dp"
         android:layout_height="62dp"
         android:layout_marginBottom="8dp"
-        android:text="@string/make_order"
+        android:text="@string/add_to_shopping_bag"
         app:layout_constraintBottom_toBottomOf="@+id/RecyclerPredeterminedPlushies"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />

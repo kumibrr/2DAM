@@ -11,13 +11,13 @@ public enum Animal {
     PANDA(R.drawable.panda),
     CAT(R.drawable.cat);
 
-    private final Drawable image;
+    private final int image;
 
     private Animal(int resource) {
-        this.image = Drawable.createFromPath(Uri.parse("android.resource:com.kumibrr.stuffedlove/" + resource).toString());
+        this.image = resource;
     }
 
-    public Drawable getImage() {
+    public int getImage() {
         return image;
     }
 }

@@ -11,6 +11,7 @@ import android.widget.ListView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
+import androidx.core.content.ContextCompat;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.kumibrr.stuffedlove.model.StandardPlush;
@@ -56,7 +57,7 @@ public class PredeterminedOrderAdapter extends RecyclerView.Adapter<Predetermine
             ImageView img = itemView.findViewById(R.id.itemImage);
             TextView txt = itemView.findViewById(R.id.itemSize);
             chk.setText(plush.getName());
-            img.setImageDrawable(plush.getImage());
+            img.setImageDrawable(ContextCompat.getDrawable(itemView.getContext(), plush.getImageID()));
             txt.setText(plush.getSize().toString());
             chk.setOnCheckedChangeListener(checkedChangeListener);
         }

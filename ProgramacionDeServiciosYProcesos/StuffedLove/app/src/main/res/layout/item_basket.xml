@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="120dp">
+
+    <ImageView
+        android:id="@+id/basketImage"
+        android:layout_width="130dp"
+        android:layout_height="match_parent">
+    </ImageView>
+    <LinearLayout
+        android:layout_width="200dp"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/basketItemName"
+            android:layout_width="150dp"
+            android:layout_height="30dp">
+        </TextView>
+
+        <LinearLayout
+            android:layout_width="150dp"
+            android:layout_height="50dp">
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/basketMinusQuantity"
+                android:layout_width="32dp"
+                android:layout_height="match_parent"
+                app:chipIcon="?attr/editTextBackground"></com.google.android.material.chip.Chip>
+
+            <TextView
+                android:id="@+id/basketQuantity"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:textAlignment="center"
+                android:textSize="36sp"></TextView>
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/basketAddQuantity"
+                android:layout_width="32dp"
+                android:layout_height="match_parent"
+                app:chipIcon="@android:drawable/ic_input_add"></com.google.android.material.chip.Chip>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <com.google.android.material.chip.Chip
+        android:id="@+id/basketRemoveItem"
+        android:layout_marginTop="35dp"
+        android:layout_width="32dp"
+        android:layout_height="50dp"
+        app:chipIcon="@android:drawable/ic_delete"></com.google.android.material.chip.Chip>
+
+</LinearLayout>

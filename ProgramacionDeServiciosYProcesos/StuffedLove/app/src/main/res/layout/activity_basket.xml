@@ -6,10 +6,19 @@
     android:layout_height="match_parent"
     tools:context=".BasketActivity">
 
-    <ListView
-        android:id="@+id/basket_list"
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/RecyclerBasket"
+        android:orientation="horizontal"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:layout_editor_absoluteX="8dp"
-        tools:layout_editor_absoluteY="138dp" />
+        android:layout_height="match_parent" />
+
+    <Button
+        android:id="@+id/btnMakeOrder3"
+        android:layout_width="284dp"
+        android:layout_height="62dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/make_order"
+        app:layout_constraintBottom_toBottomOf="@+id/RecyclerBasket"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -8,6 +8,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.service.controls.Control;
 import android.util.Log;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
@@ -67,14 +69,13 @@ public class CustomizedOrderActivity extends AppCompatActivity {
         ImageView imgBag = findViewById(R.id.imgBag);
         ImageView imgSuitcase = findViewById(R.id.imgSuitcase);
 
-        makeOrder.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
+        makeOrder.setOnClickListener(v -> {
+            BasketActivity.items.add(new CustomPlush(size, animal, accessories));
+            BasketActivity.quantity.add(1);
 
-                Intent intent = new Intent(CustomizedOrderActivity.this, ThankyouActivity.class);
-                intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
-                startActivity(intent);
-            }
+            Intent intent = new Intent(CustomizedOrderActivity.this, BasketActivity.class);
+            intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+            startActivity(intent);
         });
 
         sizeGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
@@ -201,6 +202,17 @@ public class CustomizedOrderActivity extends AppCompatActivity {
         }
     };
 
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu; this adds items to the action bar if it is present.
+        getMenuInflater().inflate(R.menu.toolbar, menu);
+        return true;
+    }
 
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        startActivity(new Intent(CustomizedOrderActivity.this, BasketActivity.class));
+        return super.onOptionsItemSelected(item);
+    }
 
 }
