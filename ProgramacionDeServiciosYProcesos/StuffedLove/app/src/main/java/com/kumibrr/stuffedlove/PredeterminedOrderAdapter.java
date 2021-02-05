@@ -1,10 +1,13 @@
 package com.kumibrr.stuffedlove;
 
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.CheckBox;
+import android.widget.CompoundButton;
 import android.widget.ImageView;
+import android.widget.ListView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -39,19 +42,39 @@ public class PredeterminedOrderAdapter extends RecyclerView.Adapter<Predetermine
         return plushes.size();
     }
 
-    class PlushHolder extends RecyclerView.ViewHolder {
+    class PlushHolder extends RecyclerView.ViewHolder implements View.OnClickListener{
 
         public PlushHolder(@NonNull View itemView) {
             super(itemView);
+            itemView.setOnClickListener(this::onClick);
         }
 
+        private CheckBox chk;
+
         public void render(StandardPlush plush) {
-            CheckBox chk = itemView.findViewById(R.id.itemCheck);
+            chk = itemView.findViewById(R.id.itemCheck);
             ImageView img = itemView.findViewById(R.id.itemImage);
             TextView txt = itemView.findViewById(R.id.itemSize);
             chk.setText(plush.getName());
             img.setImageDrawable(plush.getImage());
             txt.setText(plush.getSize().toString());
+            chk.setOnCheckedChangeListener(checkedChangeListener);
+        }
+
+        CompoundButton.OnCheckedChangeListener checkedChangeListener = (buttonView, isChecked) -> {
+            List l = PredeterminedOrderActivity.selectedPlushies;
+            if (!isChecked) {
+                l.remove(plushes.get(getLayoutPosition()));
+            } else {
+                l.add(plushes.get(getLayoutPosition()));
+            }
+            Log.d("SELECTED PLUSH", l.toString());
+        };
+
+        @Override
+        public void onClick(View v) {
+            chk.toggle();
         }
     }
+
 }
