@@ -51,6 +51,7 @@ namespace FlatLoginWatermark
 
         private void button2_Click(object sender, EventArgs e)
         {
+            String dir = txtMail.Text;
             MessageBox.Show("Correo enviado, compruebe su bandeja de entrada.");
             this.Close();
         }
