@@ -4,12 +4,14 @@ public class Match {
     private int id;
     private Team teamA;
     private Team teamB;
+    private Team winner;
     private Player mvp;
 
-    public Match(int id, Team teamA, Team teamB, Player mvp) {
+    public Match(int id, Team teamA, Team teamB, Team winner, Player mvp) {
         this.id = id;
         this.teamA = teamA;
         this.teamB = teamB;
+        this.winner = winner;
         this.mvp = mvp;
     }
 
@@ -43,5 +45,13 @@ public class Match {
 
     public void setMvp(Player mvp) {
         this.mvp = mvp;
+    }
+
+    public void setWinner(Team winner) {
+        this.winner = winner;
+    }
+
+    public Team getWinner() {
+        return winner;
     }
 }

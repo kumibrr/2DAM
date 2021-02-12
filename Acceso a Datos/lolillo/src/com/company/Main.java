@@ -13,7 +13,7 @@ public class Main {
     public static void main(String[] args) {
 	// write your code here
         JFrame frame = new MainWindow();
-        frame.setSize(430, 340);
+        frame.setSize(500, 340);
         frame.setVisible(true);
 
     }

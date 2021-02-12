@@ -6,7 +6,7 @@ import java.util.List;
 public class DAOTeam {
     private static DAOTeam instance;
     private Connection connection;
-    private ArrayList<Team> teams = new ArrayList<>();
+    private ArrayList<Team> teams;
 
     private DAOTeam() {
         this.connection = DBConnection.getInstance().getConnection();
@@ -88,19 +88,42 @@ public class DAOTeam {
         return null;
     }
 
+    public Team getTeam(String name) {
+        for (Team t: teams) {
+            if (t.getName() == name) {
+                return t;
+            }
+        }
+        return null;
+    }
+
     public List<Team> getTeams() {
+        if (teams == null) {
+            teams = new ArrayList<>();
+            try {
+                Statement statement = connection.createStatement();
+                ResultSet r = statement.executeQuery("SELECT * FROM teams");
+                while (r.next()) {
+                    Team team = new Team(r.getInt("id"), r.getString("name"), r.getString("region"), r.getInt("championships"));
+                    teams.add(team);
+                }
+            } catch (SQLException throwables) {
+                throwables.printStackTrace();
+            }
+        }
+        return teams;
+    }
+
+    //TODO: UpdateTeam
+    public boolean updateTeam(Team team) {
+        boolean r = false;
         try {
             Statement statement = connection.createStatement();
-            ResultSet r = statement.executeQuery("SELECT * FROM teams");
-
-            while (r.next()) {
-                Team team = new Team(r.getInt("id"), r.getString("name"), r.getString("region"), r.getInt("championships"));
-                teams.add(team);
-            }
+            r = statement.execute("UPDATE teams SET name = '" + team.getName() + "', region = '" + team.getRegion().getStr() + "', championships = '" + team.getChampionships() + "' WHERE id=" + team.getId());
         } catch (SQLException throwables) {
             throwables.printStackTrace();
         }
-        return teams;
+        return r;
     }
 
     public static DAOTeam getInstance() {

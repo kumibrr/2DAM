@@ -7,12 +7,11 @@ import java.util.List;
 public class DAOPlayer {
     private static DAOPlayer instance;
     private Connection connection;
-    private ArrayList<Player> players = new ArrayList<>();
+    private ArrayList<Player> players;
 
     private DAOPlayer() { this.connection = DBConnection.getInstance().getConnection(); }
 
-    public boolean insertPlayer(Player player) {
-        boolean r = false;
+    public Player insertPlayer(Player player) {
         try {
             Statement statement = connection.createStatement();
             ResultSet rs = statement.executeQuery("INSERT INTO players (firstname, lastname, nickname, position, team) VALUES ('"+ player.getFirstName() + "', '"+ player.getLastName() + "', '"+ player.getNickName() + "', '"+ player.getPosition().getStr() + "'," + player.getTeam().getId() + ")");
@@ -23,7 +22,7 @@ public class DAOPlayer {
         } catch (SQLException throwables) {
             throwables.printStackTrace();
         }
-        return r;
+        return player;
     }
 
     public boolean deletePlayer(Player player) {
@@ -55,27 +54,50 @@ public class DAOPlayer {
     }
 
     public List<Player> getPlayers() {
-        try {
-            Statement statement = connection.createStatement();
-            ResultSet r = statement.executeQuery("SELECT * FROM players");
-
-            while (r.next()) {
-                Player player = player = new Player(r.getInt("id"), r.getString("firstName"), r.getString("lastName"), r.getString("nickName"), r.getString("position"), DAOTeam.getInstance().getTeam(r.getInt("team")));
-                players.add(player);
+        if (players == null) {
+            players = new ArrayList<>();
+            try {
+                Statement statement = connection.createStatement();
+                ResultSet r = statement.executeQuery("SELECT * FROM players");
+                players.clear();
+                while (r.next()) {
+                    Player player = new Player(r.getInt("id"), r.getString("firstName"), r.getString("lastName"), r.getString("nickName"), r.getString("position"), DAOTeam.getInstance().getTeam(r.getInt("team")));
+                    players.add(player);
+                }
+            } catch (SQLException throwables) {
+                throwables.printStackTrace();
             }
-        } catch (SQLException throwables) {
-            throwables.printStackTrace();
         }
         return players;
     }
 
     public Player getPlayer(String nickName) {
         for (Player p: players) {
-            if (p.getNickName() == nickName) {
+            if (p.getNickName().equals(nickName)) {
                 return p;
             }
         }
         return null;
+    }
+
+    public Player getPlayer(int id) {
+        for (Player p: players) {
+            if (p.getId() == id) {
+                return p;
+            }
+        }
+        return null;
+    }
+
+    public boolean updatePlayer(Player player) {
+        boolean r = false;
+        try{
+            Statement statement = connection.createStatement();
+            r = statement.execute("UPDATE players SET firstname='" + player.getFirstName() + "', lastname='" + player.getLastName() + "', nickname='" + player.getNickName() + "', position='" + player.getPosition().getStr() + "', team=" + player.getTeam().getId() + " WHERE id=" + player.getId());
+        } catch (SQLException throwables) {
+            throwables.printStackTrace();
+        }
+        return r;
     }
 
     public static DAOPlayer getInstance() {

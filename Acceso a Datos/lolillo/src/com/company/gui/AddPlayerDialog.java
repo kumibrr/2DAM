@@ -1,5 +1,7 @@
 package com.company.gui;
 
+import com.company.controllers.InsertionController;
+
 import javax.swing.*;
 import java.awt.event.*;
 
@@ -7,16 +9,20 @@ public class AddPlayerDialog extends JDialog {
     private JPanel contentPane;
     private JButton buttonOK;
     private JButton buttonCancel;
-    private JTextField textField1;
-    private JTextField textField2;
-    private JTextField textField3;
+    private JTextField nametxt;
+    private JTextField lastnameTxt;
+    private JTextField nickTxt;
     private JComboBox comboBox1;
     private JComboBox comboBox2;
+    private InsertionController insertionController = new InsertionController();
 
     public AddPlayerDialog() {
+        setTitle("Añadir jugador");
         setContentPane(contentPane);
         setModal(true);
         getRootPane().setDefaultButton(buttonOK);
+        insertionController.inflatePositionCombo(comboBox1);
+        insertionController.inflateTeamCombo(comboBox2);
 
         buttonOK.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
@@ -48,6 +54,7 @@ public class AddPlayerDialog extends JDialog {
 
     private void onOK() {
         // add your code here
+        insertionController.insertPlayer(nametxt.getText(), lastnameTxt.getText(), nickTxt.getText(), comboBox1.getSelectedItem().toString(), comboBox2.getSelectedItem().toString());
         dispose();
     }
 

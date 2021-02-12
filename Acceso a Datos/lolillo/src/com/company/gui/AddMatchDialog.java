@@ -1,5 +1,7 @@
 package com.company.gui;
 
+import com.company.controllers.InsertionController;
+
 import javax.swing.*;
 import java.awt.event.*;
 
@@ -7,14 +9,16 @@ public class AddMatchDialog extends JDialog {
     private JPanel contentPane;
     private JButton buttonOK;
     private JButton buttonCancel;
-    private JComboBox comboBox1;
-    private JComboBox comboBox2;
-    private JComboBox comboBox3;
-    private JComboBox comboBox4;
+    private JComboBox cmbTeamA;
+    private JComboBox cmbTeamB;
+    private InsertionController insertionController = new InsertionController();
 
     public AddMatchDialog() {
+        setTitle("Añadir partido");
         setContentPane(contentPane);
         setModal(true);
+        insertionController.inflateTeamCombo(cmbTeamA);
+        insertionController.inflateTeamCombo(cmbTeamB);
         getRootPane().setDefaultButton(buttonOK);
 
         buttonOK.addActionListener(new ActionListener() {
@@ -46,8 +50,14 @@ public class AddMatchDialog extends JDialog {
     }
 
     private void onOK() {
-        // add your code here
-        dispose();
+        String teamA = cmbTeamA.getSelectedItem().toString();
+        String teamB = cmbTeamB.getSelectedItem().toString();
+        if (!teamA.equals(teamB)) {
+            insertionController.insertMatch(teamA, teamB);
+            dispose();
+        } else {
+            JOptionPane.showMessageDialog(this, "Un equipo no puede jugar contra él mismo, no?", "Equipos iguales", JOptionPane.ERROR_MESSAGE);
+        }
     }
 
     private void onCancel() {

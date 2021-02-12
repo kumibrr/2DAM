@@ -1,5 +1,8 @@
 package com.company.gui;
 
+import com.company.controllers.InsertionController;
+import javafx.scene.control.ComboBox;
+
 import javax.swing.*;
 import java.awt.event.*;
 
@@ -9,11 +12,16 @@ public class AddTeamDialog extends JDialog {
     private JButton buttonCancel;
     private JTextField textField1;
     private JComboBox comboBox1;
+    private InsertionController insertionController = new InsertionController();
 
     public AddTeamDialog() {
         setContentPane(contentPane);
         setModal(true);
         getRootPane().setDefaultButton(buttonOK);
+        insertionController.inflateRegionJComboBox(comboBox1);
+        this.setTitle("Añadir equipo");
+
+        setSize(350, 200);
 
         buttonOK.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
@@ -45,6 +53,7 @@ public class AddTeamDialog extends JDialog {
 
     private void onOK() {
         // add your code here
+        insertionController.insertTeam(textField1, comboBox1);
         dispose();
     }
 

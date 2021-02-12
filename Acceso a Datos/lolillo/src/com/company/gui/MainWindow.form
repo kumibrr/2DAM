@@ -8,7 +8,7 @@
     <properties/>
     <border type="none"/>
     <children>
-      <component id="c01d6" class="javax.swing.JButton" binding="añadirButton" default-binding="true">
+      <component id="c01d6" class="javax.swing.JButton" binding="addButton" default-binding="true">
         <constraints>
           <grid row="1" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
         </constraints>
@@ -96,23 +96,12 @@
           </grid>
         </children>
       </tabbedpane>
-      <component id="afafa" class="javax.swing.JButton" binding="eliminarButton" default-binding="true">
+      <component id="afafa" class="javax.swing.JButton" binding="deleteButton" default-binding="true">
         <constraints>
           <grid row="1" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
           <text value="Eliminar"/>
-        </properties>
-      </component>
-      <component id="668e6" class="javax.swing.JComboBox" binding="comboBox1" default-binding="true">
-        <constraints>
-          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false">
-            <minimum-size width="60" height="-1"/>
-            <preferred-size width="225" height="30"/>
-          </grid>
-        </constraints>
-        <properties>
-          <toolTipText value=""/>
         </properties>
       </component>
       <hspacer id="1ac76">
