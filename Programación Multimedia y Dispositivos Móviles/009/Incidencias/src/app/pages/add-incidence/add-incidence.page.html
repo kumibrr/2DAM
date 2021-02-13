@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button onclick="dismissModal()">
+        <ion-icon slot="start" name="close"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Nueva Incidencia</ion-title>
+    <ion-buttons slot="end">
+      <ion-button onclick="dismissModal()">
+        <ion-icon slot="end" name="send"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <form>
+    <ion-item>
+      <ion-label>Nivel</ion-label>
+      <ion-note>{{ levelLabel }}</ion-note>
+      <ion-checkbox *ngFor="let chk of level" [value]="chk.value" [class]="chk.class" [checked]="chk.isChecked" (ionFocus)="checkChange(chk)"></ion-checkbox>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Título</ion-label>
+      <ion-input></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Descripción</ion-label>
+      <ion-textarea></ion-textarea>
+    </ion-item>
+  </form>
+</ion-content>

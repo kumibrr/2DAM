@@ -1,0 +1,28 @@
+.low {
+    --border-color-checked: var(--ion-color-secondary);
+    --border-color: var(--ion-color-secondary);
+    --background-checked: var(--ion-color-secondary);
+}
+
+.medium {
+    --border-color-checked: var(--ion-color-warning);
+    --border-color: var(--ion-color-warning);
+    --background-checked: var(--ion-color-warning);
+}
+
+.high {
+    --border-color-checked: var(--ion-color-danger);
+    --border-color: var(--ion-color-danger);
+    --background-checked: var(--ion-color-danger);
+}
+
+.extreme {
+    --border-color-checked: var(--ion-color-dark);
+    --border-color: var(--ion-color-dark);
+    --background-checked: var(--ion-color-dark);
+}
+
+.container {
+    display: flex;
+   flex-direction: row;
+}

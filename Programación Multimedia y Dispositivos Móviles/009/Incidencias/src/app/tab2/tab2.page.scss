@@ -1,0 +1,41 @@
+.shadow-border {
+    box-shadow: 0 2px 2px -2px gray;
+}
+
+ion-item {
+    --detail-icon-color: white;
+    --detail-icon-opacity: 1;
+    --color: white;
+}
+
+.lowS {
+    --background: #3dc2ffa9;
+}
+
+.mediumS {
+    --background: #ffc609a9;
+}
+
+.highS {
+    --background: #eb445aa9;
+}
+
+.extremeS {
+    --background: #222428a9;
+}
+
+.low {
+    --background: #3dc2ff;
+}
+
+.medium {
+    --background: #ffc609;
+}
+
+.high {
+    --background: #eb445a;
+}
+
+.extreme {
+    --background: #222428;
+}

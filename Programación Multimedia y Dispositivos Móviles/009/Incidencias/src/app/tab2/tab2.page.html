@@ -1,0 +1,52 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Incidencias
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense" class="ion-no-border">
+    <ion-toolbar>
+      <ion-title size="large">Incidencias</ion-title>
+    </ion-toolbar>
+    <ion-toolbar>
+      <ion-segment class="shadow-border" mode="md" value="current" (ionChange)="toggle()" [color]="segmentColor">
+        <ion-segment-button value="current">
+          <ion-label>Activas</ion-label>
+        </ion-segment-button>
+        <ion-segment-button value="solved">
+          <ion-label>Resueltas</ion-label>
+        </ion-segment-button>
+      </ion-segment>
+    </ion-toolbar>
+  </ion-header>
+
+  <div *ngIf="segment === 'current'">
+    <ion-list class="list">
+      <div *ngFor="let incident of this.incidentService.incidences">
+        <ion-item *ngIf="incident.hasBeenSolved === false" [class]="getClass(incident)" lines="none" detail="true">
+          <ion-label>{{ incident.title }}</ion-label>
+        </ion-item>
+      </div>
+    </ion-list>
+  </div>
+
+  <div *ngIf="segment === 'solved'">
+    <ion-list class="list">
+      <div *ngFor="let incident of this.incidentService.incidences">
+        <ion-item *ngIf="incident.hasBeenSolved === true" [class]="getClass(incident)" lines="none" detail="true">
+          <ion-label>{{ incident.title }}</ion-label>
+        </ion-item>
+      </div>
+    </ion-list>
+  </div>
+
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+    <ion-fab-button [color]="segmentColor" (click)="addIncidence()">
+      <ion-icon name="add"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+
+</ion-content>

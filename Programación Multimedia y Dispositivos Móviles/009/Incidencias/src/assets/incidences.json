@@ -1,0 +1,74 @@
+[
+    {
+        "id":1,
+        "title":"El ordenador 23 de 1SMR no funciona",
+        "hasBeenSolved": true,
+        "description": "Al parecer ha explotado, literalmente, casi provoca un incendio y todo.",
+        "dateSubmitted": "2020-03-09T22:18:26.625Z",
+        "dateSolved": "2020-03-09T22:18:26.625Z",
+        "level": 2
+    },
+    {
+        "id":2,
+        "title":"Explosión en la cafetería",
+        "hasBeenSolved": true,
+        "description":"El niño que explota cosas de harry potter está por aquí liándola, que cabrón jaja",
+        "dateSubmitted":"2020-03-09T22:18:26.625Z",
+        "dateSolved": "2020-03-09T22:18:26.625Z",
+        "level": 3
+    },
+    {
+        "id":3,
+        "title": "Jabonero roto en el baño",
+        "hasBeenSolved": true,
+        "description": "Algún niño de los cojones se ha cargado el cacharro del jabón y ahora no puedo lavarme las manos después de mear joder >:(",
+        "dateSubmitted": "2020-03-09T22:18:26.625Z",
+        "dateSolved": "2020-03-09T22:18:26.625Z",
+        "level": 0
+    },
+    {
+        "id":4,
+        "title": "Una rata.",
+        "hasBeenSolved": true,
+        "description": "Eso. una rata.",
+        "dateSubmitted": "2020-03-09T22:18:26.625Z",
+        "dateSolved": "2020-03-09T22:18:26.625Z",
+        "level": 1
+    },
+    {
+        "id":1,
+        "title":"a",
+        "hasBeenSolved": false,
+        "description": "Al parecer ha explotado, literalmente, casi provoca un incendio y todo.",
+        "dateSubmitted": "2020-03-09T22:18:26.625Z",
+        "dateSolved": null,
+        "level": 2
+    },
+    {
+        "id":2,
+        "title":"b",
+        "hasBeenSolved": false,
+        "description":"El niño que explota cosas de harry potter está por aquí liándola, que cabrón jaja",
+        "dateSubmitted":"2020-03-09T22:18:26.625Z",
+        "dateSolved": null,
+        "level": 3
+    },
+    {
+        "id":3,
+        "title": "c",
+        "hasBeenSolved": false,
+        "description": "Algún niño de los cojones se ha cargado el cacharro del jabón y ahora no puedo lavarme las manos después de mear joder >:(",
+        "dateSubmitted": "2020-03-09T22:18:26.625Z",
+        "dateSolved": null,
+        "level": 0
+    },
+    {
+        "id":4,
+        "title": "d",
+        "hasBeenSolved": false,
+        "description": "Eso. una rata.",
+        "dateSubmitted": "2020-03-09T22:18:26.625Z",
+        "dateSolved": null,
+        "level": 1
+    }
+]
