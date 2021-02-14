@@ -5,6 +5,8 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
+using System.Net;
+using System.Net.Mail;
 using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
@@ -15,6 +17,7 @@ namespace FlatLoginWatermark
     public partial class ForgottenPasswordForm : Form
     {
         private SqlConnection connection;
+        private SmtpClient smtpClient = new SmtpClient();
         public ForgottenPasswordForm(SqlConnection connection)
         {
             InitializeComponent();
@@ -41,7 +44,10 @@ namespace FlatLoginWatermark
 
         private void ForgottenPasswordForm_Load(object sender, EventArgs e)
         {
-
+            smtpClient.Host = "smtp.gmail.com";
+            smtpClient.Port = 587;
+            smtpClient.Credentials = new NetworkCredential("*******@gmail.com", "*****************");
+            smtpClient.EnableSsl = true;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -51,7 +57,32 @@ namespace FlatLoginWatermark
 
         private void button2_Click(object sender, EventArgs e)
         {
-            String dir = txtMail.Text;
+            String password = "";
+            try
+            {
+                SqlCommand cmd = new SqlCommand($"SELECT TOP 1 CONTRA FROM Usuario WHERE EMAIL='{txtMail.Text}'", connection);
+                SqlDataReader rd = cmd.ExecuteReader();
+                while (rd.Read())
+                {
+                    password = rd["CONTRA"].ToString();
+                }
+            }
+            catch
+            {
+                MessageBox.Show("Error.Noséqué.");
+            }
+
+            MailMessage message = new MailMessage
+            {
+                From = new MailAddress("*******@gmail.com"),
+                Subject = "Recuperación de contraseña",
+                Body = $"aaah tu contraseña es {password}",
+                IsBodyHtml = false,
+            };
+
+            message.To.Add(txtMail.Text);
+            smtpClient.Send(message);
+            
             MessageBox.Show("Correo enviado, compruebe su bandeja de entrada.");
             this.Close();
         }
