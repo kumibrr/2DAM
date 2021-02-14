@@ -15,19 +15,22 @@
 </ion-header>
 
 <ion-content>
-  <form>
+  <form [formGroup]="form">
     <ion-item>
       <ion-label>Nivel</ion-label>
       <ion-note>{{ levelLabel }}</ion-note>
-      <ion-checkbox *ngFor="let chk of level" [value]="chk.value" [class]="chk.class" [checked]="chk.isChecked" (ionFocus)="checkChange(chk)"></ion-checkbox>
+      <ion-checkbox formControlName="low" class="low" (click)="checkChange(0)"></ion-checkbox>
+      <ion-checkbox formControlName="medium" class="medium" (click)="checkChange(1)"></ion-checkbox>
+      <ion-checkbox formControlName="high" class="high" (click)="checkChange(2)"></ion-checkbox>
+      <ion-checkbox formControlName="extreme" class="extreme" (click)="checkChange(3)"></ion-checkbox>
     </ion-item>
     <ion-item>
       <ion-label position="floating">Título</ion-label>
-      <ion-input></ion-input>
+      <ion-input formControlName="title"></ion-input>
     </ion-item>
     <ion-item>
       <ion-label position="floating">Descripción</ion-label>
-      <ion-textarea></ion-textarea>
+      <ion-textarea formControlName="description"></ion-textarea>
     </ion-item>
   </form>
 </ion-content>
