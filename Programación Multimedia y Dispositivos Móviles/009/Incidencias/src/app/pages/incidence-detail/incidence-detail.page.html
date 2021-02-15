@@ -1,9 +1,49 @@
-<ion-header>
+<ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>incidence-detail</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Incidencia {{ incident.id }}</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense" class="ion-no-border">
+    <ion-toolbar>
+      <ion-title size="large">Incidencia {{ incident.id }}</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-item lines="none">
+    <ion-label color="medium">{{ incident.dateSubmitted | date: 'EEEE dd/MM/yyyy, h:mm' | titlecase }}</ion-label>
+    <ion-buttons slot="end">
+      <ion-button *ngIf="incident.hasBeenSolved" (click)="toggleSolved()" fill="solid" color="success">
+        <ion-icon slot="start" name="checkmark"></ion-icon>
+        Resuelta
+      </ion-button>
+      <ion-button *ngIf="!incident.hasBeenSolved" (click)="toggleSolved()" fill="solid" color="danger">
+        <ion-icon slot="start" name="alert"></ion-icon>
+        En proceso
+      </ion-button>
+    </ion-buttons>
+  </ion-item>
+  <ion-item lines="none" *ngIf="incident.dateSolved">
+    <ion-label color="medium">Resuelto el {{ incident.dateSolved | date: 'EEEE dd/MM/yyyy, h:mm' | titlecase }}</ion-label>
+  </ion-item>
+
+  <ion-list-header>
+    <ion-label>{{ incident.title }}</ion-label>
+  </ion-list-header>
+
+  <ion-item>
+    <ion-badge *ngIf="incident.level === 0" slot="end" color="secondary" mode="md">Gravedad Leve</ion-badge>
+    <ion-badge *ngIf="incident.level === 1" slot="end" color="warning" class="mid" mode="md">Gravedad Media</ion-badge>
+    <ion-badge *ngIf="incident.level === 2" slot="end" color="danger" mode="md">Gravedad Alta</ion-badge>
+    <ion-badge *ngIf="incident.level === 3" slot="end" color="dark" mode="md">Gravedad Extrema</ion-badge>
+  </ion-item>
+
+  <ion-item lines="none">
+    <ion-text><p>{{ incident.description }}</p></ion-text>
+  </ion-item>
 
 </ion-content>

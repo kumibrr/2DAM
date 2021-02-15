@@ -3,6 +3,7 @@ import { AddIncidencePage } from './../pages/add-incidence/add-incidence.page';
 import { Component } from '@angular/core';
 import { IonRouterOutlet, ModalController } from '@ionic/angular';
 import { Incident } from '../interfaces/interfaces';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-tab2',
@@ -17,7 +18,8 @@ export class Tab2Page {
   constructor(
     private modalController: ModalController,
     private routerOutlet: IonRouterOutlet,
-    public incidentService: IncidentService)
+    public incidentService: IncidentService,
+    private router: Router)
     { }
 
   toggle(): void {
@@ -36,10 +38,19 @@ export class Tab2Page {
       swipeToClose: true,
       presentingElement: this.routerOutlet.nativeEl,
     });
+    modal.onDidDismiss()
+      .then(data => {
+        this.incidentService.addIncidence(data.data.level, data.data.title, data.data.description);
+      });
+
     return await modal.present();
   }
 
-  getClass(incident: Incident): string {
+  goToDetails(id: number) {
+    this.router.navigate(['incidence-detail', {id}]);
+  }
+
+  setClass(incident: Incident): string {
     let r = '';
     if (incident.hasBeenSolved === true) {
       r += ' solved';

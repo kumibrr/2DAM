@@ -1,6 +1,9 @@
-import { NgModule } from '@angular/core';
+import { LOCALE_ID, NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
+import localeEs from '@angular/common/locales/es';
+import { registerLocaleData } from '@angular/common';
+registerLocaleData(localeEs, 'es');
 
 import { IonicModule } from '@ionic/angular';
 
@@ -15,6 +18,7 @@ import { IncidenceDetailPage } from './incidence-detail.page';
     IonicModule,
     IncidenceDetailPageRoutingModule
   ],
-  declarations: [IncidenceDetailPage]
+  declarations: [IncidenceDetailPage],
+  providers: [{provide: LOCALE_ID, useValue: 'es'}]
 })
 export class IncidenceDetailPageModule {}

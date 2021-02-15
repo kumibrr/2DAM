@@ -36,7 +36,7 @@
         "level": 1
     },
     {
-        "id":1,
+        "id":5,
         "title":"a",
         "hasBeenSolved": false,
         "description": "Al parecer ha explotado, literalmente, casi provoca un incendio y todo.",
@@ -45,7 +45,7 @@
         "level": 2
     },
     {
-        "id":2,
+        "id":6,
         "title":"b",
         "hasBeenSolved": false,
         "description":"El niño que explota cosas de harry potter está por aquí liándola, que cabrón jaja",
@@ -54,7 +54,7 @@
         "level": 3
     },
     {
-        "id":3,
+        "id":7,
         "title": "c",
         "hasBeenSolved": false,
         "description": "Algún niño de los cojones se ha cargado el cacharro del jabón y ahora no puedo lavarme las manos después de mear joder >:(",
@@ -63,7 +63,7 @@
         "level": 0
     },
     {
-        "id":4,
+        "id":8,
         "title": "d",
         "hasBeenSolved": false,
         "description": "Eso. una rata.",

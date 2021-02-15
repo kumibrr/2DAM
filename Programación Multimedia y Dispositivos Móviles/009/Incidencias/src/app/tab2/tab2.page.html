@@ -26,7 +26,7 @@
   <div *ngIf="segment === 'current'">
     <ion-list class="list">
       <div *ngFor="let incident of this.incidentService.incidences">
-        <ion-item *ngIf="incident.hasBeenSolved === false" [class]="getClass(incident)" lines="none" detail="true">
+        <ion-item *ngIf="incident.hasBeenSolved === false" [class]="setClass(incident)" lines="none" detail="true" (click)="goToDetails(incident.id)">
           <ion-label>{{ incident.title }}</ion-label>
         </ion-item>
       </div>
@@ -36,7 +36,7 @@
   <div *ngIf="segment === 'solved'">
     <ion-list class="list">
       <div *ngFor="let incident of this.incidentService.incidences">
-        <ion-item *ngIf="incident.hasBeenSolved === true" [class]="getClass(incident)" lines="none" detail="true">
+        <ion-item *ngIf="incident.hasBeenSolved === true" [class]="setClass(incident)" lines="none" detail="true" (click)="goToDetails(incident.id)">
           <ion-label>{{ incident.title }}</ion-label>
         </ion-item>
       </div>
