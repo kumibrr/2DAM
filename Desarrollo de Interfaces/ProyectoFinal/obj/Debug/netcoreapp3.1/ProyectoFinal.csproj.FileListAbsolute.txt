@@ -1,0 +1,15 @@
+C:\Users\User\git\2DAM\Desarrollo de Interfaces\ProyectoFinal\bin\Debug\netcoreapp3.1\ProyectoFinal.exe
+C:\Users\User\git\2DAM\Desarrollo de Interfaces\ProyectoFinal\bin\Debug\netcoreapp3.1\ProyectoFinal.deps.json
+C:\Users\User\git\2DAM\Desarrollo de Interfaces\ProyectoFinal\bin\Debug\netcoreapp3.1\ProyectoFinal.runtimeconfig.json
+C:\Users\User\git\2DAM\Desarrollo de Interfaces\ProyectoFinal\bin\Debug\netcoreapp3.1\ProyectoFinal.runtimeconfig.dev.json
+C:\Users\User\git\2DAM\Desarrollo de Interfaces\ProyectoFinal\bin\Debug\netcoreapp3.1\ProyectoFinal.dll
+C:\Users\User\git\2DAM\Desarrollo de Interfaces\ProyectoFinal\bin\Debug\netcoreapp3.1\ProyectoFinal.pdb
+C:\Users\User\git\2DAM\Desarrollo de Interfaces\ProyectoFinal\obj\Debug\netcoreapp3.1\ProyectoFinal.csprojAssemblyReference.cache
+C:\Users\User\git\2DAM\Desarrollo de Interfaces\ProyectoFinal\obj\Debug\netcoreapp3.1\ProyectoFinal.Form1.resources
+C:\Users\User\git\2DAM\Desarrollo de Interfaces\ProyectoFinal\obj\Debug\netcoreapp3.1\ProyectoFinal.csproj.GenerateResource.cache
+C:\Users\User\git\2DAM\Desarrollo de Interfaces\ProyectoFinal\obj\Debug\netcoreapp3.1\ProyectoFinal.AssemblyInfoInputs.cache
+C:\Users\User\git\2DAM\Desarrollo de Interfaces\ProyectoFinal\obj\Debug\netcoreapp3.1\ProyectoFinal.AssemblyInfo.cs
+C:\Users\User\git\2DAM\Desarrollo de Interfaces\ProyectoFinal\obj\Debug\netcoreapp3.1\ProyectoFinal.csproj.CoreCompileInputs.cache
+C:\Users\User\git\2DAM\Desarrollo de Interfaces\ProyectoFinal\obj\Debug\netcoreapp3.1\ProyectoFinal.dll
+C:\Users\User\git\2DAM\Desarrollo de Interfaces\ProyectoFinal\obj\Debug\netcoreapp3.1\ProyectoFinal.pdb
+C:\Users\User\git\2DAM\Desarrollo de Interfaces\ProyectoFinal\obj\Debug\netcoreapp3.1\ProyectoFinal.genruntimeconfig.cache
