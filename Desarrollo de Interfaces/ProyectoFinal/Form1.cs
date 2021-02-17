@@ -3,10 +3,12 @@ using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.IO;
 using System.Linq;
 using System.Text;
+using System.Text.Json;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Xml;
@@ -17,9 +19,18 @@ namespace ProyectoFinal
     {
         private Dictionary<String, Order> orders = new Dictionary<string, Order>();
         private SortedList ordersKeyList = new SortedList();
+        private SqlConnection connection = new SqlConnection(@"Server=localhost;Database=OkiSpain; Integrated Security=true");
         public Form1()
         {
             InitializeComponent();
+            try
+            {
+                connection.Open();
+            } catch
+            {
+                MessageBox.Show("No se ha podido conectar a la base de datos. Inténtelo de nuevo más tarde.", "Error de conexión", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                this.Close();
+            }
         }
 
         private void btnImport_Click(object sender, EventArgs e)
@@ -31,39 +42,73 @@ namespace ProyectoFinal
         {
             string path = @"C:\XMLs";
             DirectoryInfo dir = new DirectoryInfo(path);
-            
-            // TODO: Guardar importaciones en local.
 
             foreach (FileInfo file in dir.GetFiles("*.xml"))
             {
-                try
+                SqlCommand cmd = new SqlCommand($"SELECT * FROM importadosOki WHERE fichero='{file.Name}'", connection);
+                SqlDataReader rd = cmd.ExecuteReader();
+                var canRead = true;
+                while (rd.Read())
                 {
-                    XmlDocument doc = new XmlDocument();
-                    doc.Load(file.FullName);
-                    Order order = Order.ParseFromNode(doc);
-                    orders.Add(order.ticket, order);
-                    listImported.Items.Add(order.ticket);
-                    //Directory.Move(file.FullName, file.DirectoryName + @"\importado\" + file.Name);
-                } 
-                catch (Exception e)
+                    if (rd.GetString(0) != "")
+                    {
+                        canRead = false;
+                        Directory.Move(file.FullName, file.DirectoryName + @"\errores\" + file.Name);
+                        try
+                        {
+                            using (StreamWriter sw = File.CreateText(file.DirectoryName + @"\errores\" + file.Name + " - ERRORLOG.txt"))
+                            {
+                                sw.WriteLine("El archivo ya ha sido importado anteriormente.");
+                            }
+                        }
+                        catch
+                        {
+                            MessageBox.Show("Error de escritura", "No se puede escribir en la carpeta de log");
+                        }
+                    }
+                }
+                rd.Close();
+                if (canRead)
                 {
-                    Directory.Move(file.FullName, file.DirectoryName + @"\errores\" + file.Name);
                     try
                     {
-                        using (StreamWriter sw = File.CreateText(file.DirectoryName + @"\errores\" + file.Name + " - ERRORLOG.txt"))
-                        {
-                            sw.WriteLine(e.Message + "\n");
-                        }
-                    } catch
+                        XmlDocument doc = new XmlDocument();
+                        doc.Load(file.FullName);
+                        Order order = Order.ParseFromNode(doc);
+                        orders.Add(order.ticket, order);
+                        listImported.Items.Add(order.ticket);
+                        SqlCommand command = new SqlCommand($"INSERT INTO importadosOki (fichero) VALUES ('{file.Name}')", connection);
+                        command.ExecuteNonQuery();
+                        //Directory.Move(file.FullName, file.DirectoryName + @"\importado\" + file.Name);
+                    }
+                    catch (Exception e)
                     {
-                        MessageBox.Show("Error de escritura", "No se puede escribir en la carpeta de log");
+                        Directory.Move(file.FullName, file.DirectoryName + @"\errores\" + file.Name);
+                        try
+                        {
+                            using (StreamWriter sw = File.CreateText(file.DirectoryName + @"\errores\" + file.Name + " - ERRORLOG.txt"))
+                            {
+                                sw.WriteLine(e.Message + "\n");
+                            }
+                        }
+                        catch
+                        {
+                            MessageBox.Show("Error de escritura", "No se puede escribir en la carpeta de log");
+                        }
                     }
                 }
             }
-
-            Console.WriteLine(orders);
             
-            // Usar sortedset con lista
+        }
+
+        private void btnOrder_Click(object sender, EventArgs e)
+        {
+            makeOrder(orders[listImported.SelectedItem.ToString()]);
+        }
+
+        private void makeOrder(Order order)
+        {
+            Console.WriteLine(order);
         }
     }
 }

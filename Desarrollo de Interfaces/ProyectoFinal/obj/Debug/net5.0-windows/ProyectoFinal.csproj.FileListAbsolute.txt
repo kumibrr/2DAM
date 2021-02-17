@@ -34,3 +34,10 @@ C:\Users\Israel\git\2DAM\Desarrollo de Interfaces\ProyectoFinal\obj\Debug\net5.0
 C:\Users\Israel\git\2DAM\Desarrollo de Interfaces\ProyectoFinal\obj\Debug\net5.0-windows\ref\ProyectoFinal.dll
 C:\Users\Israel\git\2DAM\Desarrollo de Interfaces\ProyectoFinal\obj\Debug\net5.0-windows\ProyectoFinal.pdb
 C:\Users\Israel\git\2DAM\Desarrollo de Interfaces\ProyectoFinal\obj\Debug\net5.0-windows\ProyectoFinal.genruntimeconfig.cache
+C:\Users\Israel\git\2DAM\Desarrollo de Interfaces\ProyectoFinal\bin\Debug\net5.0-windows\System.Data.SqlClient.dll
+C:\Users\Israel\git\2DAM\Desarrollo de Interfaces\ProyectoFinal\bin\Debug\net5.0-windows\runtimes\win-arm64\native\sni.dll
+C:\Users\Israel\git\2DAM\Desarrollo de Interfaces\ProyectoFinal\bin\Debug\net5.0-windows\runtimes\win-x64\native\sni.dll
+C:\Users\Israel\git\2DAM\Desarrollo de Interfaces\ProyectoFinal\bin\Debug\net5.0-windows\runtimes\win-x86\native\sni.dll
+C:\Users\Israel\git\2DAM\Desarrollo de Interfaces\ProyectoFinal\bin\Debug\net5.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\Israel\git\2DAM\Desarrollo de Interfaces\ProyectoFinal\bin\Debug\net5.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\Israel\git\2DAM\Desarrollo de Interfaces\ProyectoFinal\obj\Debug\net5.0-windows\ProyectoFinal.csproj.CopyComplete

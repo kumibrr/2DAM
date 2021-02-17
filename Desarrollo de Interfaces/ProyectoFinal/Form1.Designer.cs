@@ -40,18 +40,20 @@ namespace ProyectoFinal
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.listImported.FormattingEnabled = true;
-            this.listImported.ItemHeight = 15;
-            this.listImported.Location = new System.Drawing.Point(12, 12);
+            this.listImported.ItemHeight = 25;
+            this.listImported.Location = new System.Drawing.Point(17, 20);
+            this.listImported.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.listImported.Name = "listImported";
-            this.listImported.Size = new System.Drawing.Size(260, 304);
+            this.listImported.Size = new System.Drawing.Size(370, 504);
             this.listImported.TabIndex = 0;
             // 
             // btnImport
             // 
             this.btnImport.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.btnImport.Location = new System.Drawing.Point(12, 332);
+            this.btnImport.Location = new System.Drawing.Point(17, 553);
+            this.btnImport.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnImport.Name = "btnImport";
-            this.btnImport.Size = new System.Drawing.Size(125, 23);
+            this.btnImport.Size = new System.Drawing.Size(179, 38);
             this.btnImport.TabIndex = 1;
             this.btnImport.Text = "Importar pedidos";
             this.btnImport.UseVisualStyleBackColor = true;
@@ -60,22 +62,25 @@ namespace ProyectoFinal
             // btnOrder
             // 
             this.btnOrder.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnOrder.Location = new System.Drawing.Point(147, 332);
+            this.btnOrder.Location = new System.Drawing.Point(210, 553);
+            this.btnOrder.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnOrder.Name = "btnOrder";
-            this.btnOrder.Size = new System.Drawing.Size(125, 23);
+            this.btnOrder.Size = new System.Drawing.Size(179, 38);
             this.btnOrder.TabIndex = 2;
             this.btnOrder.Text = "Realizar pedido";
             this.btnOrder.UseVisualStyleBackColor = true;
+            this.btnOrder.Click += new System.EventHandler(this.btnOrder_Click);
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(284, 367);
+            this.ClientSize = new System.Drawing.Size(406, 612);
             this.Controls.Add(this.btnOrder);
             this.Controls.Add(this.btnImport);
             this.Controls.Add(this.listImported);
-            this.MinimumSize = new System.Drawing.Size(300, 306);
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.MinimumSize = new System.Drawing.Size(419, 473);
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
