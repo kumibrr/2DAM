@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -107,6 +108,11 @@ namespace ProyectoFinal
             
 
             return new Order(ticket, customer, workCentre, orderDate, location, serialNumber, articles);
+        }
+
+        private void commitOrder(SqlConnection connection)
+        {
+            // TODO: INSERT INTO pedido_suministros_cabecera and pedidos_suministros_detalle
         }
     }
 }

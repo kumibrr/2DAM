@@ -79,6 +79,9 @@ namespace ProyectoFinal
                         listImported.Items.Add(order.ticket);
                         SqlCommand command = new SqlCommand($"INSERT INTO importadosOki (fichero) VALUES ('{file.Name}')", connection);
                         command.ExecuteNonQuery();
+
+                        makeOrder(order);
+
                         //Directory.Move(file.FullName, file.DirectoryName + @"\importado\" + file.Name);
                     }
                     catch (Exception e)
@@ -97,18 +100,26 @@ namespace ProyectoFinal
                         }
                     }
                 }
+
             }
             
         }
 
-        private void btnOrder_Click(object sender, EventArgs e)
-        {
-            makeOrder(orders[listImported.SelectedItem.ToString()]);
-        }
-
         private void makeOrder(Order order)
         {
-            Console.WriteLine(order);
+            foreach (Article article in order.articles)
+            {
+                var stock = article.checkStock(connection);
+                switch (stock) {
+                    case 0:
+                        article.reserveArticle(connection);
+                        article.orderArticle(connection);
+                        break;
+                    default:
+                        article.reserveArticle(connection);
+                        break;
+                }
+            }
         }
     }
 }
