@@ -110,9 +110,22 @@ namespace ProyectoFinal
             return new Order(ticket, customer, workCentre, orderDate, location, serialNumber, articles);
         }
 
-        private void commitOrder(SqlConnection connection)
+        public void commitOrder(SqlConnection connection)
         {
-            // TODO: INSERT INTO pedido_suministros_cabecera and pedidos_suministros_detalle
+            SqlCommand cmd = new SqlCommand("INSERT INTO pedidos_suministros_cabecera " +
+                "(Num_pedido, Fecha, serie, NOM_Cliente, DIR_CLIENTE, CP_CLIENTE, POBLACION_CLIENTE, FechaAveria, WORKC, fechamodificacion) " +
+                $"VALUES ('{ticket}', '{orderDate}', '{serialNumber}', '{customer.firstName + " " + customer.lastName}'," +
+                $"'{locationToSend.street}', '{locationToSend.postCode}', '{locationToSend.city}', '{orderDate}', '{workCentre}'," +
+                $"'{orderDate}')", connection);
+            cmd.ExecuteNonQuery();
+
+            foreach (Article article in articles)
+            {
+                cmd = new SqlCommand("INSERT INTO pedidos_suministros_detalle " +
+                    "(Num_pedido, Codigo, Descripcion, Cantidad, fechaEntrada, fechamodificacion, codigooriginal) " +
+                    $"VALUES ('{ticket}', '{article.id}', '{article.description}', '1', '{orderDate}', '{orderDate}', {article.id})", connection);
+                cmd.ExecuteNonQuery();
+            }
         }
     }
 }
