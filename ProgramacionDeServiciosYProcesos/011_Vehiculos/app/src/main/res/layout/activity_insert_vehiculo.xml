@@ -10,59 +10,74 @@
         android:id="@+id/textView7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="48dp"
         android:text="Marca"
-        tools:layout_editor_absoluteX="46dp"
-        tools:layout_editor_absoluteY="52dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="48dp"
         android:text="Modelo"
-        tools:layout_editor_absoluteX="46dp"
-        tools:layout_editor_absoluteY="131dp" />
+        app:layout_constraintEnd_toStartOf="@+id/txtModelo"
+        app:layout_constraintTop_toBottomOf="@+id/textView7" />
 
     <TextView
         android:id="@+id/textView9"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="48dp"
         android:text="Matricula"
-        tools:layout_editor_absoluteX="46dp"
-        tools:layout_editor_absoluteY="209dp" />
+        app:layout_constraintEnd_toStartOf="@+id/txtMatricula"
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
 
     <EditText
         android:id="@+id/txtMarca"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="32dp"
         android:ems="10"
         android:inputType="textPersonName"
-        tools:layout_editor_absoluteX="148dp"
-        tools:layout_editor_absoluteY="40dp" />
+        app:layout_constraintStart_toEndOf="@+id/textView7"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/txtModelo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="56dp"
         android:ems="10"
         android:inputType="textPersonName"
-        tools:layout_editor_absoluteX="148dp"
-        tools:layout_editor_absoluteY="119dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtMarca" />
 
     <EditText
         android:id="@+id/txtMatricula"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="56dp"
         android:ems="10"
         android:inputType="textPersonName"
-        tools:layout_editor_absoluteX="148dp"
-        tools:layout_editor_absoluteY="196dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtModelo" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/insertButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Añadior"
-        tools:layout_editor_absoluteX="155dp"
-        tools:layout_editor_absoluteY="287dp" />
+        android:layout_marginTop="100dp"
+        android:text="Añadir"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtMatricula" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

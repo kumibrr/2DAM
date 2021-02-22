@@ -57,19 +57,19 @@ public class DBAccess {
     public void updateVehiculo(int id, String brand, String model, String registrationId, int index) {
         SQLiteDatabase db = openHelper.getWritableDatabase();
         String query = "UPDATE vehiculo SET brand='" + brand + "', model='" + model + "', registration='" + registrationId + "' WHERE id=" + id + ";";
-        db.rawQuery(query, null);
-
-        Cursor cursor = database.rawQuery("SELECT * FROM vehiculo WHERE id=" + id + ";", null);
-        if (cursor.moveToFirst()) {
-            vehiculos.set(index, new Vehiculo(cursor.getInt(0), cursor.getString(1), cursor.getString(2), cursor.getString(3)));
-        }
-        cursor.close();
+        db.execSQL(query);
     }
 
     public void deleteVehiculo(int index) {
         SQLiteDatabase db = openHelper.getWritableDatabase();
         String query = "DELETE FROM vehiculo WHERE id=" + index + ";";
-        db.rawQuery(query, null);
+        db.execSQL(query);
         vehiculos.remove(index);
+    }
+
+    public void insertVehiculo(String brand, String model, String registrationId) {
+        SQLiteDatabase db = openHelper.getWritableDatabase();
+        String query = "INSERT INTO vehiculo (brand, model, registration) VALUES ('"+ brand + "', '"+ model +"', '"+ registrationId +"')";
+        db.execSQL(query);
     }
 }
