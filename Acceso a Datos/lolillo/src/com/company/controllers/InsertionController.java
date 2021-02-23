@@ -5,12 +5,16 @@ import com.company.model.*;
 import javax.swing.*;
 
 public class InsertionController {
-    private DAOTeam daoTeam = DAOTeam.getInstance();
-    private DAOPlayer daoPlayer = DAOPlayer.getInstance();
-    private DAOMatch daoMatch = DAOMatch.getInstance();
+    public DAOTeam daoTeam;
+    private final DAOPlayer daoPlayer = DAOPlayer.getInstance();
+    private final DAOMatch daoMatch = DAOMatch.getInstance();
 
-    public void insertTeam(JTextField nameTextBox, JComboBox regionCombo) {
-        daoTeam.insertTeam(new Team(0, nameTextBox.getText(), regionCombo.getSelectedItem().toString(), 0));
+    public InsertionController() {
+        this.daoTeam = DAOTeam.getInstance();
+    }
+
+    public boolean insertTeam(JTextField nameTextBox, JComboBox regionCombo) {
+        return daoTeam.insertTeam(new Team(0, nameTextBox.getText(), regionCombo.getSelectedItem().toString(), 0));
     }
 
     public void insertPlayer(String name, String lastname, String nick, String position, String team) {

@@ -6,7 +6,7 @@ import java.util.List;
 
 public class DAOMatch {
     private static DAOMatch instance;
-    private Connection connection;
+    private final Connection connection;
     private ArrayList<Match> matches;
 
     private DAOMatch() { this.connection = DBConnection.getInstance().getConnection();}

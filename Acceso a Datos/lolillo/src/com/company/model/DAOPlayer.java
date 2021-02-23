@@ -6,7 +6,7 @@ import java.util.List;
 
 public class DAOPlayer {
     private static DAOPlayer instance;
-    private Connection connection;
+    private final Connection connection;
     private ArrayList<Player> players;
 
     private DAOPlayer() { this.connection = DBConnection.getInstance().getConnection(); }

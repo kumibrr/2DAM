@@ -14,7 +14,7 @@ public class AddPlayerDialog extends JDialog {
     private JTextField nickTxt;
     private JComboBox comboBox1;
     private JComboBox comboBox2;
-    private InsertionController insertionController = new InsertionController();
+    private final InsertionController insertionController = new InsertionController();
 
     public AddPlayerDialog() {
         setTitle("Añadir jugador");

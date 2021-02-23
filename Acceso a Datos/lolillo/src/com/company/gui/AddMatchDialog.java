@@ -11,7 +11,7 @@ public class AddMatchDialog extends JDialog {
     private JButton buttonCancel;
     private JComboBox cmbTeamA;
     private JComboBox cmbTeamB;
-    private InsertionController insertionController = new InsertionController();
+    private final InsertionController insertionController = new InsertionController();
 
     public AddMatchDialog() {
         setTitle("Añadir partido");

@@ -7,10 +7,10 @@ import javax.swing.*;
 import javax.swing.table.*;
 
 public class TableController {
-    private DAOTeam daoTeam = DAOTeam.getInstance();
-    private DAOPlayer daoPlayer = DAOPlayer.getInstance();
-    private DAOMatch daoMatch = DAOMatch.getInstance();
-    private MainWindow window;
+    private final DAOTeam daoTeam = DAOTeam.getInstance();
+    private final DAOPlayer daoPlayer = DAOPlayer.getInstance();
+    private final DAOMatch daoMatch = DAOMatch.getInstance();
+    private final MainWindow window;
 
     public TableController(MainWindow window) {
         this.window = window;

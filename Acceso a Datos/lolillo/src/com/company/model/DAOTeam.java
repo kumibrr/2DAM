@@ -5,10 +5,10 @@ import java.util.List;
 
 public class DAOTeam {
     private static DAOTeam instance;
-    private Connection connection;
+    private final Connection connection;
     private ArrayList<Team> teams;
 
-    private DAOTeam() {
+    public DAOTeam() {
         this.connection = DBConnection.getInstance().getConnection();
     }
 

@@ -1,7 +1,6 @@
 package com.company.gui;
 
 import com.company.controllers.InsertionController;
-import javafx.scene.control.ComboBox;
 
 import javax.swing.*;
 import java.awt.event.*;
@@ -12,7 +11,7 @@ public class AddTeamDialog extends JDialog {
     private JButton buttonCancel;
     private JTextField textField1;
     private JComboBox comboBox1;
-    private InsertionController insertionController = new InsertionController();
+    private final InsertionController insertionController = new InsertionController();
 
     public AddTeamDialog() {
         setContentPane(contentPane);
