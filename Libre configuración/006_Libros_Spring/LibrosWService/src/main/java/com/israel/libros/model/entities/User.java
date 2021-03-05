@@ -1,11 +1,13 @@
-package com.israel.libros.model;
+package com.israel.libros.model.entities;
 
 import javax.persistence.*;
+import java.io.Serializable;
 import java.util.Objects;
 
 @Entity
-@Table(name = "user", schema = "libros_db", catalog = "")
-public class UserEntity {
+@Table(name = "user", schema = "libros_db")
+public class User implements Serializable {
+
     private Long id;
     private String username;
     private String password;
@@ -18,7 +20,7 @@ public class UserEntity {
     }
 
     public void setId(int id) {
-        this.id = id;
+        this.id = (long) id;
     }
 
     public void setId(Long id) {
@@ -49,7 +51,7 @@ public class UserEntity {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        UserEntity that = (UserEntity) o;
+        User that = (User) o;
         return Objects.equals(id, that.id) && Objects.equals(username, that.username) && Objects.equals(password, that.password);
     }
 

@@ -1,11 +1,11 @@
-package com.israel.libros.model;
+package com.israel.libros.model.entities;
 
 import javax.persistence.Column;
 import javax.persistence.Id;
 import java.io.Serializable;
 import java.util.Objects;
 
-public class UserBookEntityPK implements Serializable {
+public class UserBookPK implements Serializable {
     private int user;
     private String book;
 
@@ -33,7 +33,7 @@ public class UserBookEntityPK implements Serializable {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        UserBookEntityPK that = (UserBookEntityPK) o;
+        UserBookPK that = (UserBookPK) o;
         return user == that.user && Objects.equals(book, that.book);
     }
 

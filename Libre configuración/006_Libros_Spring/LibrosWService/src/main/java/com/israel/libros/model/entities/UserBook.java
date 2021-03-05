@@ -1,12 +1,13 @@
-package com.israel.libros.model;
+package com.israel.libros.model.entities;
 
 import javax.persistence.*;
+import java.io.Serializable;
 import java.util.Objects;
 
 @Entity
-@Table(name = "user_book", schema = "libros_db", catalog = "")
-@IdClass(UserBookEntityPK.class)
-public class UserBookEntity {
+@Table(name = "user_book", schema = "libros_db")
+@IdClass(UserBookPK.class)
+public class UserBook implements Serializable {
     private Long id;
     private int user;
     private String book;
@@ -45,7 +46,7 @@ public class UserBookEntity {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        UserBookEntity that = (UserBookEntity) o;
+        UserBook that = (UserBook) o;
         return user == that.user && Objects.equals(book, that.book);
     }
 
